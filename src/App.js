@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+
+import About from '../src/Components/Pages/About'
+import Expertise from '../src/Components/Pages/Expertise'
+import Projects from '../src/Components/Pages/Projects'
+import Culture from '../src/Components/Pages/Culture'
+import Perspectives from '../src/Components/Pages/Perspectives'
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+    <Router>
+    <div className='flex flex-col max-h-screen  min-h-screen '>  
+    <Navbar/>     
+    <div className='relative flex-1 flex '>  
+    <Routes>   
+      {/* <Route path='/' element={<HomePage/>}/> */}
+      <Route path="/about" element={<About/>} />
+      <Route path="/expertise" element={<Expertise />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/culture" element={<Culture />} />
+      <Route path="/perspectives" element={<Perspectives />} />       
+    </Routes>
     </div>
+    <Footer/>
+    </div>
+    </Router>
+    
   );
 }
 
