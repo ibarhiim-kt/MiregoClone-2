@@ -8,17 +8,16 @@ import Culture from '../src/Components/Pages/Culture'
 import Perspectives from '../src/Components/Pages/Perspectives'
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
-import HomePage from './Components/HomePage';
-
+import HomePage from './Components/HomePage/App'
 function App() {
   return (
      
     <Router>
-    <div className='flex flex-col max-h-screen  min-h-screen '>  
+    <div className='flex flex-col min-h-screen '>  
     <Navbar/>     
-    <div className='relative flex-1 flex '>  
+    <div>  
     <Routes>   
-      {/* <Route path='/' element={<HomePage/>}/> */}
+      <Route path='/' element={<HomePage/>}/>
       <Route path="/about" element={<About/>} />
       <Route path="/expertise" element={<Expertise />} />
       <Route path="/projects" element={<Projects />} />

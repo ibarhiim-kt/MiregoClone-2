@@ -6,7 +6,10 @@ module.exports = {
       fontFamily:{
         PTSerifRegular:["PTSerif-Regular"],
         Latine:["Latine"],
-        Newsreader:["Newsreader_14pt-ExtraLightItalic"]
+        Newsreader:["Newsreader_14pt-LightItalic"],
+        Lato:["Lato-light"],
+        AnekDevanagari:["AnekDevanagari-Light"],
+        AnekDevanagariRegular:["AnekDevanagari-Regular"]
       }
     },
   },

@@ -1,0 +1,94 @@
+/* .flip-animate span {
+    display: inline-block;
+    transition: transform 0.5s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+  }
+  
+  .flip {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }  
+  .show {
+    transform: rotateX(0);
+    opacity: 1;
+  } */
+  
+  /* .animate-wordSlide {
+    animation: wordSlide 2.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    
+} 
+  @keyframes wordSlide {
+    0% {
+        transform: translateY(0%);
+    }
+    6.66% {
+        transform: translateY(-6.66%);
+    }
+    13.32% {
+        transform: translateY(-13.32%);
+    }
+    19.98% {
+        transform: translateY(-19.98%);
+    }
+    26.64% {
+        transform: translateY(-26.64%);
+    }
+    33.3% {
+        transform: translateY(-33.3%);
+    }
+    39.96% {
+        transform: translateY(-39.96%);
+    }
+    46.62% {
+        transform: translateY(-46.62%);
+    }
+    53.28% {
+        transform: translateY(-53.28%);
+    }
+    59.94% {
+        transform: translateY(-59.94%);
+    }
+    66.6% {
+        transform: translateY(-66.6%);
+    }
+    73.26% {
+        transform: translateY(-73.26%);
+    }
+    79.92% {
+        transform: translateY(-79.92%);
+    }
+    86.58% {
+        transform: translateY(-86.58%);
+    }
+    100% {
+        transform: translateY(-93.3%);
+    }
+} */
+.animate-wordSlide {
+    animation: wordSlide 2s linear forwards;
+    /* height: calc(134px * 15 + 4px * 14);  */
+    position: absolute; /* Keep it in place */
+}
+
+@keyframes wordSlide {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-93.3%); /* Move to the last card */
+    }
+}
+
+/* video */
+.videoAnimation{
+    animation: animateVideo 1.5s cubic-bezier(.5,.5,0,1) forwards;
+}
+@keyframes animateVideo{
+    0%{
+        width: 20%;
+    }
+    100%{
+        width: 100%;
+    }
+}
