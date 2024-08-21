@@ -9,6 +9,7 @@ import Perspectives from '../src/Components/Pages/Perspectives'
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import HomePage from './Components/HomePage/App'
+// import PulseAnimation from './Components/pulseAnimation';
 function App() {
   return (
      
@@ -25,7 +26,7 @@ function App() {
       <Route path="/perspectives" element={<Perspectives />} />       
     </Routes>
     </div>
-    <Footer/>
+    <Footer/>   
     </div>
     </Router>
     

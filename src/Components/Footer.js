@@ -1,20 +1,37 @@
 import React from 'react'
 import globe from '../assets/globe.svg'
-import footerBeats from '../assets/footerBeats.svg'
-import pulseAnimation from '../assets/animation/pulseAnimation.json'
-import arrow from '../assets/arrow.svg'
-import GFooterImg from '../assets/GFooterImg.png'
-import { Player } from '@lottiefiles/react-lottie-player'
+import footerPulse from '../assets/footerBeats.svg'
+import gsap from 'gsap'
+import PulseAnimation from './pulseAnimation'
+import { LottiePlayer } from '@lottiefiles/lottie-player'
+import  wavesAnima from '../assets/animation/wavesAnima.json'
+
 export default function Footer() {
+  var values = "-100%;-10%".split(";"),
+    currentIndex = 0;
+
+  gsap.set("#path, #code", { visibility: "visible" });
+
+  function next() {
+    gsap.killTweensOf(next); //in case the user clicks, clear any delayed calls to this method.
+    if (++currentIndex === values.length) {
+      currentIndex = 0;
+    }
+    if (values[currentIndex] === "true") {
+      gsap.set("#current", { text: values[currentIndex] });
+    } else {
+      gsap.set("#current", { text: '"' + values[currentIndex] + '"' });
+    }
+    gsap.to("#path", {
+      drawSVG: values[currentIndex],
+      duration: 1,    
+      ease: "power1.inOut",
+    });
+  }
+
   return (
     <>
-    <div className='bg-[#242424] flex justify-between text-[#F7EDDE] px-[40px] pt-[64px] pb-[70px] min-h-[260px] rounded-t-[44px] mb-[-44px]'>
-      <div className='flex items-center h-[36px] '>
-      <a href="#" className='text-[28px]'>Go to Projects</a>
-      <img src={arrow} alt="" width={28} className='h-[28px] pl-[8px]'/>
-      </div>
-      <img src={GFooterImg} alt="GGo" width={100} className='h-[50px]'/>
-    </div>
+    
     <div className=' bg-[black] text-[#F7EDDE] overflow-x-hidden rounded-t-[44px]'>
       <div className='grid grid-cols-3 gap-x-[160px] text-[17px] pt-[48px] px-[60px]'>
         <div>
@@ -55,16 +72,28 @@ export default function Footer() {
           <p className='mt-[2.5px] mb-[2.5px] ml-[10px]'>FR</p>
         </div>
       </div>
-      <div className='pb-[80px] mx-[-30px]'>
-      {/* <Player src={pulseAnimation} speed='1' autoplay background='transparent'> */}
+      <div className='pb-[80px] mx-[-30px]'>      
       <div className='flex flex-col h-full w-full'>
       <div className='flex h-full w-full bg-transparent'>
-      <img src={footerBeats} alt="" />
+      <img src={footerPulse} alt="" className='pulseAnima'  />      
+        
       </div>
-      </div>      
-      {/* </Player> */}
+      </div>          
       </div>
-
+      {/* <div className='flex flex-col h-full w-full'> */}
+      {/* <div className='flex h-full w-full bg-transparent'> */}
+      {/* <img src={footerPulse} alt="Hi" /> */}
+      {/* <PulseAnimation/> */}
+      
+      {/* <LottiePlayer src={wavesAnima} autoplay speed='1'>
+          <img src={footerPulse} alt="helo" />
+      </LottiePlayer> */}
+      {/* </div>    
+      </div> */}
+      {/* <div className='w-full flex justify-center'>
+      <div id="code">drawSVG:<div id="current">"100%"</div></div>
+      <button id="next" onClick={next} class="dark-grey-button club-demo-button mb-[20px] block" >Next Example</button>
+      </div>   */}
       <div className='flex justify-between px-[60px] pb-[48px] text-[#5B5B5B]'>
         <h3>&copy; MIREGO</h3>
         <h3>Cookies Setting</h3>

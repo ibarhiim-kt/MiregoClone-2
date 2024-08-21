@@ -16,17 +16,21 @@ export default function Hero() {
         </p>
       </div>
       <div className='mt-3'>           
-      <div className='overflow-hidden h-[134px] relative'>
+      <div className='overflow-hidden h-[134px]'>
         <div className='animate-wordSlide'>
       {words.map((word)=>(      
-      <div className='mb-[4px]'>
+      <div className='mb-[4px] word-slide'>
       <div className='flex'>
-        <h className='text-[78px] py-[2px] px-[37px] border-[4px] border-black rounded-[70px]'>{word}</h>
+        <div className='py-[2px] text-[78px] px-[37px] border-[4px] border-black rounded-[70px]'>
+        <h className='flex gap-3 mb-[-22px] py-3 '>{word}</h>
+        </div>
       </div>
       </div>      
       ))}
       <div>  <img src={together} alt="" className='h-normal'/> </div>
       </div>
+      </div>
+      </div> 
       </div>
     {/* <div className='overflow-hidden h-[134px]'>
     <div className='animate-wordSlide flex flex-col gap-[4px]'>   
@@ -76,8 +80,7 @@ export default function Hero() {
     
     </div>
     </div> */}
-      </div> 
-      </div>
+      
       <div className="pt-[60px] px-[140px] pb-32">
       <p className='text-[56px] mb-12 leading-[112%] tracking-[-1.6px]'>
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p> 
