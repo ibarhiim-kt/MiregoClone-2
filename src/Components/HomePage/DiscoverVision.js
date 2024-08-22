@@ -2,7 +2,7 @@ import React from 'react'
 import digitalTrends from '../../assets/digitalTrends.webp'
 import arrow from '../../assets/arrow.svg'
 import githubCopilot from '../../assets/githubCopilot.webp'
-import bascicNeed from '../../assets/basicNeeds.webp'
+import basicNeeds from '../../assets/basicNeeds.webp'
 import symbol from '../../assets/symbol.svg'
 import yoshua from '../../assets/yoshua.jpeg'
 export default function DiscoverVision() {
@@ -20,9 +20,9 @@ export default function DiscoverVision() {
         </div>
       </div>
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px]'>
-        <a>
+        <a className='group'>
           <div className='relative overflow-hidden rounded-[44px] border-[1.5px] border-[#272425] text-white cursor-pointer font-AlmiregoRegular max-w-[354.4px] min-h-[408.8px]'>
-            <div className='absolute top-0 left-0 w-full h-full object-cover'>
+            <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
             <img src={digitalTrends} alt="digitalTrends" className='h-full w-full max-w-[100%] object-cover'/>
             </div>
             <div className='py-8 px-6 absolute text-white top-0 left-0 w-full h-full flex flex-col'>
@@ -33,7 +33,7 @@ export default function DiscoverVision() {
                 </ul>
                 <ul>
                   <a href="#" className='flex items-center'>
-                    <p className="text-[15px] mr-1">Read</p> 
+                    <p className="text-[15px] mr-1 group-hover:mr-2 duration-300">Read</p> 
                     <img src={arrow} alt="arrow"/></a>
                 </ul>
               </div>
@@ -43,9 +43,9 @@ export default function DiscoverVision() {
             </div>
           </div>
         </a>
-        <a>
+        <a className='group'>
           <div className='relative overflow-hidden rounded-[44px] border-[1.5px] border-[#e0dfe0] text-white cursor-pointer font-AlmiregoRegular max-w-[354.4px] h-[440.4px]'>
-            <div className='absolute top-0 left-0 w-full h-full object-cover'>
+            <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
             <img src={githubCopilot} alt="digitalTrends" className='h-full w-full object-cover opacity-100'/>
             </div>
             <div className='py-8 px-6 absolute text-white top-0 left-0 w-full h-full flex flex-col'>
@@ -56,7 +56,7 @@ export default function DiscoverVision() {
                 </ul>
                 <ul>
                   <a href="#" className='flex items-center'>
-                    <p className="text-[15px] mr-1">Read</p> 
+                    <p className="text-[15px] mr-1 group-hover:mr-2 duration-300">Read</p> 
                     <img src={arrow} alt="arrow"/></a>
                 </ul>
               </div>
@@ -71,7 +71,6 @@ export default function DiscoverVision() {
             
             <div className='py-8 px-6 text-transparent top-0 left-0 w-full h-full flex flex-col'>
                 <div className='relative  my-[88px] bg-clip-text ' style={{ background: 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)', WebkitBackgroundClip: 'text',textIndent:'60px' }}>
-
                   <img src={symbol} alt="symbol" className='absolute top-[12px] left-0 w-[52px]'/>
                   <p className="text-[40px] leading-[100%]">Artificial intelligence is not just about efficiency gains, it’s about opening up new possibilities, unlocking human potential and solving some of society’s biggest challenges.</p>
                 </div>
@@ -82,10 +81,10 @@ export default function DiscoverVision() {
             </div>
           </div>
         </a>
-        <a>
+        <a className='group'>
           <div className='relative overflow-hidden rounded-[44px] border-[1.5px] border-[#e0dfe0] text-white cursor-pointer font-AlmiregoRegular max-w-[354.4px] h-[440.4px]'>
-            <div className='absolute top-0 left-0 w-full h-full object-cover'>
-            <img src={bascicNeed} alt="digitalTrends" className='h-full w-full object-cover'/>
+            <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
+            <img src={basicNeeds} alt="digitalTrends" className='h-full w-full object-cover'/>
             </div>
             <div className='py-8 px-6 absolute text-white top-0 left-0 w-full h-full flex flex-col'>
               <div className='flex justify-between items-center'>
@@ -95,7 +94,7 @@ export default function DiscoverVision() {
                 </ul>
                 <ul>
                   <a href="#" className='flex items-center'>
-                    <p className="text-[15px] mr-1">Read</p> 
+                    <p className="text-[15px] mr-1 group-hover:mr-2 duration-300">Read</p> 
                     <img src={arrow} alt="arrow"/></a>
                 </ul>
               </div>

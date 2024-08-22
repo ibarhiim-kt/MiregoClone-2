@@ -113,3 +113,13 @@
     stroke-dashoffset: 14473.11328125px;
   }
   
+.overlay::after{
+    display: block;
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) 66.67%, rgba(0, 0, 0, .4) 100%), linear-gradient(0deg, rgba(0, 0, 0, .24) 0, rgba(0, 0, 0, .24) 100%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}  
