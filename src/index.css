@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
     font-family:"PTSerif-Regular" ;
     src: url('./fonts/PTSerif-Regular.ttf');    
 }
@@ -10,10 +10,7 @@
     font-family:"Latine" ;
     src: url('./fonts/Latine.ttf');
 }
-@font-face {
-    font-family:"Newsreader_14pt-LightItalic" ;
-    src: url('./fonts/Newsreader/static/Newsreader_14pt-LightItalic.ttf');
-}
+
 
 @font-face {
     font-family: "AnekDevanagari-Light";
@@ -22,4 +19,24 @@
 @font-face {
     font-family: "AnekDevanagari-Regular";
     src: url('./fonts/Anek_Devanagari/static/AnekDevanagari-Regular.ttf')  
+} */
+@font-face {
+    font-family:"Newsreader_14pt-LightItalic" ;
+    src: url('./fonts/Newsreader/static/Newsreader_14pt-LightItalic.ttf');
+}
+@font-face {
+    font-family:"AlmiregoDisplayRegular";
+    src: url('./fonts/Almirego/AlmiregoDisplayRegular.woff2');
+}
+@font-face {
+    font-family: "AlmiregoDisplayLight";
+    src: url('./fonts/Almirego/AlmiregoDisplayLight.ttf');
+}
+@font-face {
+    font-family:"AlmiregoRegular";
+    src: url('./fonts/Almirego/AlmiregoRegular.woff2');
+}
+@font-face {
+    font-family:"AlmiregoDisplayBold";
+    src: url('./fonts/Almirego/AlmiregoDisplayBold.woff2');
 }

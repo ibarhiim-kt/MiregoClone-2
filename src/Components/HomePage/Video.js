@@ -34,15 +34,15 @@ export default function Video() {
       </button>
     </div>
     
-    <div className='flex gap-2 pt-2'>
+    <div className='flex gap-2 pt-2 font-AlmiregoDisplayLight'>
     {cards.map((map)=>(
-      <div className='bg-[#f7edde] p-[32px] w-[25%] rounded-[32px]'>
-        <p>
-        <span className='text-[88px] font-AnekDevanagari'>{map.number}</span>
-        <sup className='text-[48.4px] font-AnekDevanagariS'>{map.plus}</sup>
+      <div className='bg-[#f7edde] p-8 w-[25%] rounded-[32px]'>
+        <p className=' mb-4 leading-[105%] mt-[38px]'>
+        <span className='text-[88px] font-AnekDevanagari tracking-[-1.75px]'>{map.number}</span>
+        <sup className='text-[48.4px] relative top-[-0.75em] font-AnekDevanagariS'>{map.plus}</sup>
         </p>
-        <p className="text-[21px]">{map.text}</p>
-      </div>
+        <p className="text-[21px] leading-[125%] mt-11 tracking-[0.4px] font-AlmiregoRegular"><br></br>{map.text}</p>
+      </div>        
     ))}
     </div>
     

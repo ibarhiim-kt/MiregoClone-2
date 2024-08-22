@@ -91,26 +91,25 @@
  * MIT license (https://opensource.org/licenses/MIT)
  * W. https://svgartista.net
  **************************************************/
-
-.svg-elem-1 {
+ svg .svg-elem-1 {
     stroke-dashoffset: 5184px;
     stroke-dasharray: 5184px;
     -webkit-transition: stroke-dashoffset 1s linear 0s;
             transition: stroke-dashoffset 1s linear 0s;
   }
   
- #ll.active .svg-elem-1 {
+  svg.active .svg-elem-1 {
     stroke-dashoffset: 10368px;
   }
   
-.svg-elem-2 {
+  svg .svg-elem-2 {
     stroke-dashoffset: 7236.556640625px;
     stroke-dasharray: 7236.556640625px;
     -webkit-transition: stroke-dashoffset 1s linear 0.12s;
             transition: stroke-dashoffset 1s linear 0.12s;
   }
   
-  #ll.active .svg-elem-2 {
+  svg.active .svg-elem-2 {
     stroke-dashoffset: 14473.11328125px;
   }
   
