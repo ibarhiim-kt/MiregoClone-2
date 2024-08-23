@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Video from './Video'
 import DiscoverVision from './DiscoverVision'
 import BlogTable from './BlogTable'
+import DistinctiveCulture from './DistinctiveCulture'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Video/> 
       <DiscoverVision/> 
       <BlogTable/>
+      <DistinctiveCulture/>
     </div>
   )
 }

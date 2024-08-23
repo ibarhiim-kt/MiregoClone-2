@@ -3,17 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily:{
-        // PTSerifRegular:["PTSerif-Regular"],
-        // Latine:["Latine"],
-        Newsreader:["Newsreader_14pt-LightItalic"],
-        // Lato:["Lato-light"],
-        // AnekDevanagari:["AnekDevanagari-Light"],
-        // AnekDevanagariRegular:["AnekDevanagari-Regular"],
+      fontFamily:{        
+        // Newsreader:["Newsreader_14pt-LightItalic"],        
         AlmiregoRegular:["AlmiregoRegular"],
         AlmiregoDisplayRegular:["AlmiregoDisplayRegular"],
         AlmiregoDisplayLight:["AlmiregoDisplayLight"],
-        AlmiregoDisplayBold:["AlmiregoDisplayBold"]
+        AlmiregoLight:["AlmiregoLight"],
+        AlmiregoDisplayBold:["AlmiregoDisplayBold"],
+        NewsreaderItalic:["newsreader-italic"]
       }
     },
   },

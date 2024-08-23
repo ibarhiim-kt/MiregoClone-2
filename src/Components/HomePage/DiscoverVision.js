@@ -7,11 +7,11 @@ import symbol from '../../assets/symbol.svg'
 import yoshua from '../../assets/yoshua.jpeg'
 export default function DiscoverVision() {
   return (
-    <div className='pt-64 text-[050307]'>
-      <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 '>Building for the future</h1>
-      <div className='pt-[64px] px-[140px] flex justify-between gap-[8px] mb-11'>
-        <div className='w-[50%]'></div>
-        <div className='w-[50%] font-AlmiregoRegular'>
+    <div className='pt-64 text-[050307] max-[1440px]:pt-52 max-xl:pt-40 max-[1024px]:pt-32 max-[768px]:pt-24'>
+      <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 max-[1440px]:text-[96px] max-[1024px]:text-[68px] max-[768px]:px-4'>Building for the future</h1>
+      <div className='pt-16 px-[140px] flex justify-between mb-11 max-xl:pt-14 max-xl:px-[72px] max-[1024px]:pt-12 max-[768px]:px-8 max-[768]:pt-8'>
+        <div className='w-[50%] max-[768px]:w-[90%]'></div>
+        <div className='w-[50%] font-AlmiregoRegular max-[768px]:w-[100%]'>
         <p className='text-[21px] tracking-[0.4px] leading-[125%]'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
         <div className='mt-12 flex'>
       <a href="#" className='px-5 py-3 bg-[#050307] rounded-xl text-[#FFFFFF] tracking-[0.3px] 
@@ -21,7 +21,7 @@ export default function DiscoverVision() {
       </div>
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px]'>
         <a className='group'>
-          <div className='relative overflow-hidden rounded-[44px] border-[1.5px] border-[#272425] text-white cursor-pointer font-AlmiregoRegular max-w-[354.4px] min-h-[408.8px]'>
+          <div className='relative overflow-hidden rounded-[44px] border-[1.5px] border-[#272425] text-white cursor-pointer font-AlmiregoRegular max-w-[354.4px] min-h-[440.4px]'>
             <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
             <img src={digitalTrends} alt="digitalTrends" className='h-full w-full max-w-[100%] object-cover'/>
             </div>
