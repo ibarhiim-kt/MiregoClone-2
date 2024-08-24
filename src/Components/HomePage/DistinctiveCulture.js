@@ -4,8 +4,9 @@ import distinctiveCultureImage from '../../assets/distinctiveCultureImage.webp'
 
 export default function DistinctiveCulture() {
   return (
-    <div className='pt-64 pb-2'>        
-        <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 '>A <span className='font-NewsreaderItalic font-light tracking-[-1.75px]'>distinctive </span>culture</h1>
+    <div className='pt-64 pb-2 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 
+       max-[424px]:pt-[88px] max-[320px]:pt-[72px]'>        
+        <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 max-[1440px]:text-[96px] max-lg:text-[68px] max-md:px-4 max-[424px]:px-2 max-[424px]:text-[40px] max-[320px]:text-[32px]'>A <span className='font-NewsreaderItalic font-light tracking-[-1.75px]'>distinctive </span>culture</h1>
       <div className='pt-16 px-[140px] flex justify-between gap-[8px] pb-2'>
         <div className='w-[50%]'></div>
         <div className='w-[50%] font-AlmiregoRegular'>
