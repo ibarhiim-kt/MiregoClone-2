@@ -26,7 +26,7 @@ export default function BlogTable() {
         
     ]
   return (
-    <div className='pt-64 px-[40px] font-AlmiregoRegular my-2 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-md:px-4'>
+    <div className='pt-64 px-[40px] font-AlmiregoRegular my-2 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-md:px-4 max-[424px]:px-2'>
       <div className='text-[#050307] flex  items-stretch justify-between gap-[8px] mb-2 max-lg:hidden'>
         <div className="py-11 px-10 text-[18px] flex flex-1 gap-[154px] bg-[#F7EDDE] rounded-3xl max-xl:gap-[16px]">
             <p className='flex  flex-col justify-between' style={{flex:1}}>DATE</p>
