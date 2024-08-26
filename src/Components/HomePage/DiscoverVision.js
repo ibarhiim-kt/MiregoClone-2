@@ -5,6 +5,11 @@ import githubCopilot from '../../assets/githubCopilot.webp'
 import basicNeeds from '../../assets/basicNeeds.webp'
 import symbol from '../../assets/symbol.svg'
 import yoshua from '../../assets/yoshua.jpeg'
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function DiscoverVision() {  
 
   const cards = [
@@ -38,29 +43,58 @@ export default function DiscoverVision() {
       para:'The future of work: three basic needs shaping the next evolution of work'
     }
   ]
+  useEffect(()=>{  
+    gsap.set(".paraAnima",{y:0, opacity:1})
+    gsap.from(".paraAnima",{
+      duration:0.8,
+      opacity:0,
+      y:50,
+      scrollTrigger:{
+      trigger:".paraAnima",            
+    } 
+    })
+    gsap.set(".buttonAnima",{y:0, opacity:1})
+    gsap.from(".buttonAnima",{      
+      delay:0.15,
+      duration:0.8,
+      opacity:0,
+      y:50,
+      scrollTrigger:{
+      trigger:".paraAnima",         
+    } 
+    })
+    gsap.set(".cardsGsap",{y:0, opacity:1})
+    gsap.from(".cardsGsap",{      
+      duration:0.8,
+      opacity:0,
+      y:70,
+      scrollTrigger:{
+      trigger:".cardsGsap",       
+    } 
+    })
+  },[])
   return (
     <div className='pt-64 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 
        max-[424px]:pt-[88px] max-[320px]:pt-[72px]'>
       <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 max-[1440px]:text-[96px] max-lg:text-[68px] max-md:px-4 max-[424px]:px-2 max-[424px]:text-[40px] max-[320px]:text-[32px]'>Building for the future</h1>
-      <div className='pt-16 px-[140px] gap-[8px] flex justify-between max-xl:pt-14 max-xl:px-[72px] max-lg:pt-12 max-md:px-8 max-md:pt-8  max-md:flex-col max-[390px]:px-6 max-[320px]:pt-6'> 
-        <div className='w-[50%] max-md:w-[0px]'></div>
+      <div className='pt-16 px-[140px] gap-[8px] flex justify-between max-xl:pt-14 max-xl:px-[72px] max-lg:pt-12 max-md:px-8 max-md:pt-8  max-md:flex-col max-[390px]:px-6 max-[320px]:pt-6 overflow-hidden'> 
+        <div className='w-[50%] max-md:w-0'></div>
         <div className='w-[50%] font-AlmiregoRegular max-md:w-[100%]'>
         <p className='tracking-[0.4px] leading-[125%] text-[21px] max-[424px]:text-[18px] 
-        max-[390px]:text-[17px]'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='mt-12 flex max-[424px]:mt-8'>
+        max-[390px]:text-[17px] paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
+        <div className='mt-12 flex max-[424px]:mt-8 buttonAnima'>
       <a href="#" className='text-[16px] px-5 py-3 bg-[#050307] rounded-xl text-[#FFFFFF] tracking-[0.3px] 
-      flex items-center justify-center leading-[1]'>Discover our vision of the future</a>
+      flex items-center justify-center leading-[1] hover:bg-[#242424]'>Discover our vision of the future</a>
       </div>  
-        </div>
+      </div>
       </div>
       
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
-       max-md:grid-cols-1 max-md:pt-16 max-md:px-4'>
+       max-md:grid-cols-1 max-md:pt-16 max-md:px-4 cardsGsap'>
       {cards.map((map,index)=>(
         <>
-        <a className='group' key={index}>
-          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'}
-          ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
+        <a className='group' key={index} >
+          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
           ${index=== 0 ? 'border-[#272425]':'border-[#e0dfe0]'} text-white cursor-pointer font-AlmiregoRegular `}>
            {index<2 || index == 3 ?(
             <>
@@ -82,8 +116,7 @@ export default function DiscoverVision() {
               </div>
               <div className='mt-64'>
                 <p className="text-2xl leading-[125%]">{map.para}</p>
-              </div>
-              
+              </div>              
             </div>
             </>
            ):(            

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import blackArrow from '../../assets/blackArrow.svg'
 import conpin from '../../assets/conpin.webp'
 import keyboard from '../../assets/keyboard.webp'
 import dc24 from '../../assets/dc24.webp'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function BlogTable() {
     const blogTable = [
         {
@@ -25,9 +29,26 @@ export default function BlogTable() {
         },
         
     ]
+    useEffect(()=>{  
+      const animateCard = (selector) => {
+        gsap.set(selector, { y: 0, opacity: 1 });
+        gsap.from(selector, {
+          duration: 0.8,
+          opacity: 0,
+          y: 50,
+          scrollTrigger: {
+            trigger: selector,            
+          },
+        });
+      };        
+      animateCard('.card1');
+      animateCard('.card2');
+      animateCard('.card3');
+      animateCard('.card4');
+    }, []);
   return (
     <div className='pt-64 px-[40px] font-AlmiregoRegular my-2 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-md:px-4 max-[424px]:px-2'>
-      <div className='text-[#050307] flex  items-stretch justify-between gap-[8px] mb-2 max-lg:hidden'>
+      <div className='text-[#050307] flex  items-stretch justify-between gap-[8px] mb-2 max-lg:hidden card1'>
         <div className="py-11 px-10 text-[18px] flex flex-1 gap-[154px] bg-[#F7EDDE] rounded-3xl max-xl:gap-[16px]">
             <p className='flex  flex-col justify-between' style={{flex:1}}>DATE</p>
             <div style={{flex:2}}>NEWS</div>
@@ -37,9 +58,9 @@ export default function BlogTable() {
             <img src={blackArrow} alt="arrow" />
         </div>
       </div>
-    {blogTable.map((map)=>(
-      <div className='text-[#050307] flex items-stretch justify-between gap-[8px] mb-[8px] 
-      cursor-point max-md:flex-col'>
+    {blogTable.map((map,index)=>(
+      <div className={`text-[#050307] flex items-stretch justify-between gap-[8px] mb-[8px] 
+      cursor-point max-md:flex-col ${index === 0?"card2":index===1?"card3":"card4"}`}>
         <div className="py-11 px-10 flex flex-1 gap-[154px] bg-[#F7EDDE] rounded-3xl min-h-[240px] max-xl:gap-[16px] max-lg:flex-col max-lg:p-6">
             <div className='flex flex-col justify-between flex-1 max-md:flex-none'>
             <p className='flex text-[18px] flex-col justify-between max-lg:text-[16px] max-lg:mb-4 max-md:mb-3'>{map.date}</p>

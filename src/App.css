@@ -1,5 +1,4 @@
 
-
 .animate-wordSlide {
     animation: slide 2.5s ease-in-out forwards;  }
 
@@ -51,10 +50,13 @@
         }
       
   }
-/* video */
-.videoAnimation{
-    animation: animateVideo 1.5s cubic-bezier(.5,.5,0,1) forwards;
-}
+  .custom-cursor {
+    position: fixed;
+    pointer-events: none; 
+    transform: translate(-50%, -50%); 
+    transition: transform 0.1s ease; 
+    z-index: 9999;
+  }
 @keyframes animateVideo{
     0%{
         width: 20%;
@@ -62,7 +64,7 @@
     100%{
         width: 100%;
     }
-}
+} */
 /* #path {
     fill: none;
   }
