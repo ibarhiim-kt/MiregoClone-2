@@ -84,7 +84,7 @@ export default function DiscoverVision() {
         max-[390px]:text-[17px] paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
         <div className='mt-12 flex max-[424px]:mt-8 buttonAnima'>
       <a href="#" className='text-[16px] px-5 py-3 bg-[#050307] rounded-xl text-[#FFFFFF] tracking-[0.3px] 
-      flex items-center justify-center leading-[1]'>Discover our vision of the future</a>
+      flex items-center justify-center leading-[1] hover:bg-[#242424]'>Discover our vision of the future</a>
       </div>  
       </div>
       </div>

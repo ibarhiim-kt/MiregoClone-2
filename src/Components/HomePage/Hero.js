@@ -51,7 +51,7 @@ export default function Hero() {
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p> 
       <div className='mt-12 flex max-[454px]:mt-8'>
       <a href="#" className='px-5 py-3 bg-[#050307] rounded-xl text-[#FFFFFF] tracking-[0.3px] 
-      flex items-center justify-center leading-[1]'>Learn more about our expertise</a>
+      flex items-center justify-center leading-[1] hover:bg-[#242424]'>Learn more about our expertise</a>
       </div>  
       </div>  
     </div>

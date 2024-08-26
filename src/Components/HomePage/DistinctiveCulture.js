@@ -50,7 +50,7 @@ export default function DistinctiveCulture() {
         max-[390px]:text-[17px] distinctiveParaAnima'>We aim to create the best place to work. Crafting digital products is more than a job to us: it's a calling. Our strategy, design, and development teams are made up of inspired and inspiring people. Our passion for our art is boundless.</p>
         <div className='mt-12 flex max-[424px]:mt-8 overflow-hidden'>
       <a href="#" className='px-5 py-3 bg-[#050307] rounded-xl text-[#FFFFFF] tracking-[0.3px] 
-      flex items-center justify-center leading-[1] distinctiveButtonAnima'>Discover our culture</a>
+      flex items-center justify-center leading-[1] distinctiveButtonAnima hover:bg-[#242424]'>Discover our culture</a>
       </div>  
       </div>
       </div>
