@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import lottie from 'lottie-web';
+import wavesAnima from '../assets/animation/wavesAnima.json';
 import globe from '../assets/globe.svg'
 import footerPulse from '../assets/footerBeats.svg'
 import gsap from 'gsap'
 import purpleArrow from '../assets/purpleArrow.svg'
 import PulseAnimation from './pulseAnimation'
 import { LottiePlayer } from '@lottiefiles/lottie-player'
-import  wavesAnima from '../assets/animation/wavesAnima.json'
 
 export default function Footer() {
   var values = "-100%;-10%".split(";"),
@@ -30,18 +31,28 @@ export default function Footer() {
     });
   }
 
+  {/* Lottie Animation (wave effect)*/}
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-footer'),
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      animationData: wavesAnima,
+    });
+  }, []);
+
   const socialLinks = [
-    {text:'LinkedIn'},
-    {text:'GitHub'},
-    {text:'Instagram'},
-    {text:'Facebook'},
-    {text:'YouTube'}
-  ]
+    { text: 'LinkedIn' },
+    { text: 'GitHub' },
+    { text: 'Instagram' },
+    { text: 'Facebook' },
+    { text: 'YouTube' },
+  ];
 
-  return (      
-    <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'> 
-
-    {/* For responsive */}
+  return (
+    <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'>
+      {/* For responsive */}
       <div className='text-[17px] pt-[48px] px-[60px] max-[1076px]:text-[16px] max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-[390px]:pt-6 max-[390px]:gap-[16px] max-[390px]:px-5 max-[390px]:gap-[16px] max-[390px]:pb-3'>
       <div className="hidden max-lg:inline">
           <h1 className='text-[36px] mb-4 max-w-[83.33%] leading-[1.1] max-md:text-[28px] max-[390px]:text-[24px]'>Join our team</h1>
@@ -102,14 +113,14 @@ export default function Footer() {
         </div>
         </div>
       </div>
-      <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>      
+      {/* <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>      
       <div className='flex flex-col h-full w-full'>
       <div className='flex h-full w-full bg-transparent'>
       <img src={footerPulse} alt="" className='pulseAnima'  />      
         
       </div>
       </div>          
-      </div>
+      </div> */}
       {/* <div className='flex flex-col h-full w-full'> */}
       {/* <div className='flex h-full w-full bg-transparent'> */}
       {/* <img src={footerPulse} alt="Hi" /> */}
@@ -124,15 +135,21 @@ export default function Footer() {
       <div id="code">drawSVG:<div id="current">"100%"</div></div>
       <button id="next" onClick={next} class="dark-grey-button club-demo-button mb-[20px] block" >Next Example</button>
       </div>   */}
-      <div className='flex justify-between px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-[390px]:px-5 max-[390px]:pb-0 
-      max-[320px]:flex-col'>
+
+      {/* Lottie Animation */}
+      <div className=' pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
+        <div className='flex justify-center'>
+          <div id="lottie-footer" className='w-100% h-[350px] overflow-hidden'></div>
+        </div>
+      </div>
+     
+      {/* Ending footer tags */} 
+      <div className='flex justify-between px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-[390px]:px-5 max-[390px]:pb-0 max-[320px]:flex-col'>
         <h3 className='max-[320px]:hidden'>&copy; 2024 MIREGO</h3>
         <a href='#' className='hover:text-[#F7EDDE] mt-[-5px]'>Cookies Settings</a>
         <h3 className='max-[320px]:inline hidden'>&copy; 2024 MIREGO</h3>
         <a href='#' className='hover:text-[#F7EDDE] max-[390px]:mt-[12px]'>Privacy policy</a>
       </div>
-
     </div>
-    
-  )
+  );
 }
