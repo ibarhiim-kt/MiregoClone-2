@@ -42,7 +42,8 @@ export default function Footer() {
     <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'> 
 
     {/* For responsive */}
-      <div className='text-[17px] pt-[48px] px-[60px] max-[1076px]:text-[16px] max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-[390px]:pt-6 max-[390px]:gap-[16px] max-[390px]:px-5 max-[390px]:gap-[16px] max-[390px]:pb-3'>
+    {/* max-[390px]:gap-[16px] */}
+      <div className='text-[17px] pt-[48px] px-[60px] max-[1076px]:text-[16px] max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-[390px]:pt-6 max-[390px]:gap-[16px] max-[390px]:px-5 max-[390px]:pb-3'>
       <div className="hidden max-lg:inline">
           <h1 className='text-[36px] mb-4 max-w-[83.33%] leading-[1.1] max-md:text-[28px] max-[390px]:text-[24px]'>Join our team</h1>
           <a href="#" className='font-AlmiregoLight flex group hover:text-[#b5a6ff] text-[16px] leading-[1]'>Available positions <span className='ml-1 hidden group-hover:inline'><img src={purpleArrow} alt="purpleArrow"/></span></a>
@@ -105,7 +106,7 @@ export default function Footer() {
       <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>      
       <div className='flex flex-col h-full w-full'>
       <div className='flex h-full w-full bg-transparent'>
-      <img src={footerPulse} alt="" className='pulseAnima'  />      
+      <img src={footerPulse} alt="" className='pulseAnima w-full'/>      
         
       </div>
       </div>          

@@ -1,12 +1,29 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import together from '../../assets/together.svg'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Hero() {
     const words = ['of bussiness','of organization','of sports','of media','of entertainment','of travel','of agriculture','of retail','of food','of health','of real estate','of manufacturing','of finance', 'of insurance'];
+
+    useEffect(()=>{  
+      gsap.set(".gsapAnima",{y:0 , opacity:1})
+      gsap.from(".gsapAnima",{      
+        duration:0.8,
+        opacity:0,
+        y:50,
+        scrollTrigger:{
+        trigger:".gsapAnima",        
+        } 
+      })
+    },[])
   return (
     <div>    
-    <div className='pt-[149.5px] px-[140px] font-AlmiregoDisplayLight max-xl:pt-[113.5px] max-xl:px-[72px] max-[1024px]:pt-20 max-[1024px]:flex items-center gap-[13px] max-[1014px]:block max-[1014px]:pt-[92.5px] max-md:flex max-md:gap-[5px] max-md:px-8 max-md:pt-[64px] max-[563px]:block max-[563px]:pt-[70.5px] max-[425px]:pt-12 max-[425px]:pt-[55px] max-[390px]:px-6 '>
-       <div className='text-[88px] leading-[110%] max-xl:text-[80px] max-[1024px]:text-[56px] max-[1024px]:leading-[112%] max-md:text-[32px] max-[320px]:text-[28px]'>
-        <p>
+      {/* max-[425px]:pt-[55px] */}
+    <div className='pt-[149.5px] px-[140px] font-AlmiregoDisplayLight max-xl:pt-[113.5px] max-xl:px-[72px] max-[1024px]:pt-20 max-[1024px]:flex items-center gap-[13px] max-[1014px]:block max-[1014px]:pt-[92.5px] max-md:flex max-md:gap-[5px] max-md:px-8 max-md:pt-[64px] max-[563px]:block max-[563px]:pt-[70.5px] max-[425px]:pt-12  max-[390px]:px-6 '>
+       <div className='text-[88px] leading-[110%] max-xl:text-[80px] max-[1024px]:text-[56px] max-[1024px]:leading-[112%] max-md:text-[32px] max-[320px]:text-[28px] overflow-hidden'>
+        <p className=' gsapAnima'>
           Building the future
         </p>
       </div>
@@ -27,10 +44,9 @@ export default function Hero() {
       </div>
       </div>
       </div> 
-      </div>
-    
+      </div>   
       
-      <div className="pt-[62px] px-[140px] pb-32 font-AlmiregoDisplayRegular max-xl:pt-[56px] max-xl:px-[72px] max-xl:pb-[96px] max-[1024px]:pt-[48px] max-[1024px]:pb-20 max-md:pt-[30px] max-md:px-8 max-md:pb-16 max-[390px]:px-6 max-[320px]:pt-[15px] max-[320px]:pb-[48px]">
+      <div className="pt-[62px] px-[140px] pb-32 font-AlmiregoDisplayRegular max-xl:pt-[56px] max-xl:px-[72px] max-xl:pb-[96px] max-[1024px]:pt-[48px] max-[1024px]:pb-20 max-md:pt-[30px] max-md:px-8 max-md:pb-16 max-[390px]:px-6 max-[320px]:pt-[15px] max-[320px]:pb-[48px] gsapAnima">
       <p className='text-[56px] leading-[112%] max-xl:text-[52px] max-[1024px]:text-[36px] max-[454px]:text-[28px] max-[320px]:text-[24px]'>
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p> 
       <div className='mt-12 flex max-[454px]:mt-8'>
