@@ -50,19 +50,14 @@ export default function Footer() {
     { text: 'YouTube' },
   ];
 
-<<<<<<< HEAD
-  return (
-    <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'>
-      {/* For responsive */}
-      <div className='text-[17px] pt-[48px] px-[60px] max-[1076px]:text-[16px] max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-[390px]:pt-6 max-[390px]:gap-[16px] max-[390px]:px-5 max-[390px]:gap-[16px] max-[390px]:pb-3'>
-=======
+
   return (      
     <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'> 
 
     {/* For responsive */}
     {/* max-[390px]:gap-[16px] */}
       <div className='text-[17px] pt-[48px] px-[60px] max-[1076px]:text-[16px] max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-[390px]:pt-6 max-[390px]:gap-[16px] max-[390px]:px-5 max-[390px]:pb-3'>
->>>>>>> d565f10e67e5de11c3fc84c595f482ca2e070e7b
+ {/* d565f10e67e5de11c3fc84c595f482ca2e070e7b */}
       <div className="hidden max-lg:inline">
           <h1 className='text-[36px] mb-4 max-w-[83.33%] leading-[1.1] max-md:text-[28px] max-[390px]:text-[24px]'>Join our team</h1>
           <a href="#" className='font-AlmiregoLight flex group hover:text-[#b5a6ff] text-[16px] leading-[1]'>Available positions <span className='ml-1 hidden group-hover:inline'><img src={purpleArrow} alt="purpleArrow"/></span></a>
