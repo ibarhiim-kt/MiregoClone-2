@@ -2,11 +2,14 @@ import React, { useEffect } from 'react';
 import lottie from 'lottie-web';
 import wavesAnima from '../assets/animation/wavesAnima.json';
 import globe from '../assets/globe.svg'
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import footerPulse from '../assets/footerBeats.svg'
 import gsap from 'gsap'
 import purpleArrow from '../assets/purpleArrow.svg'
 import PulseAnimation from './pulseAnimation'
 import { LottiePlayer } from '@lottiefiles/lottie-player'
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
   var values = "-100%;-10%".split(";"),
@@ -33,13 +36,23 @@ export default function Footer() {
 
   {/* Lottie Animation (wave effect)*/}
   useEffect(() => {
-    lottie.loadAnimation({
+    const animation = lottie.loadAnimation({
       container: document.getElementById('lottie-footer'),
       renderer: 'svg',
       loop: false,
-      autoplay: true,
+      autoplay: false, 
       animationData: wavesAnima,
     });
+
+    ScrollTrigger.create({
+      trigger: '#lottie-footer',
+      start: 'top 80%', 
+      onEnter: () => {
+        animation.play();
+      },
+    });
+
+    
   }, []);
 
   const socialLinks = [
@@ -49,7 +62,6 @@ export default function Footer() {
     { text: 'Facebook' },
     { text: 'YouTube' },
   ];
-
 
   return (      
     <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'> 
@@ -141,9 +153,9 @@ export default function Footer() {
       </div>   */}
 
       {/* Lottie Animation */}
-      <div className=' pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
+      <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
         <div className='flex justify-center'>
-          <div id="lottie-footer" className='w-100% h-[350px] overflow-hidden'></div>
+          <div id="lottie-footer" className='w-full h-[350px] overflow-hidden'></div>
         </div>
       </div>
      
