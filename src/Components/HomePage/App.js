@@ -12,7 +12,7 @@ export default function App() {
     <div>
       <Hero/> 
       <Video/>       
-      {/* <StickyCards/>     */}
+      <StickyCards/>    
       <DiscoverVision/> 
       <BlogTable/>
       <DistinctiveCulture/>

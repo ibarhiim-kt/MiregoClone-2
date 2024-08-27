@@ -50,7 +50,6 @@ export default function Footer() {
     { text: 'YouTube' },
   ];
 
-
   return (      
     <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular'> 
 
@@ -142,7 +141,7 @@ export default function Footer() {
 
       {/* Lottie Animation */}
       <div className=' pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
-        <div className='flex justify-center'>
+        <div className=''>
           <div id="lottie-footer" className='w-100% h-[350px] overflow-hidden'></div>
         </div>
       </div>
