@@ -129,29 +129,7 @@ export default function Footer() {
         </div>
         </div>
       </div>
-      {/* <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>      
-      <div className='flex flex-col h-full w-full'>
-      <div className='flex h-full w-full bg-transparent'>
-      <img src={footerPulse} alt="" className='pulseAnima w-full'/>      
-        
-      </div>
-      </div>          
-      </div> */}
-      {/* <div className='flex flex-col h-full w-full'> */}
-      {/* <div className='flex h-full w-full bg-transparent'> */}
-      {/* <img src={footerPulse} alt="Hi" /> */}
-      {/* <PulseAnimation/> */}
       
-      {/* <LottiePlayer src={wavesAnima} autoplay speed='1'>
-          <img src={footerPulse} alt="helo" />
-      </LottiePlayer> */}
-      {/* </div>    
-      </div> */}
-      {/* <div className='w-full flex justify-center'>
-      <div id="code">drawSVG:<div id="current">"100%"</div></div>
-      <button id="next" onClick={next} class="dark-grey-button club-demo-button mb-[20px] block" >Next Example</button>
-      </div>   */}
-
       {/* Lottie Animation */}
       <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
         <div className='flex justify-center'>
