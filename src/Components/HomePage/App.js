@@ -9,7 +9,7 @@ import DistinctiveCulture from './DistinctiveCulture'
 
 export default function App() {
   return (
-    <div>
+    <div className='selection:bg-[#b5a6ff]'>
       <Hero/> 
       <Video/>       
       <StickyCards/>    

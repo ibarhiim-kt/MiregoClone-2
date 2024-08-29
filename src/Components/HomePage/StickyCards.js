@@ -64,18 +64,6 @@ const StickyCards = () => {
         mt:1  
      }
   ]  
-  // useEffect(()=>{
-    
-  //   gsap.to(".stickyCardsAnima",{  
-  //     y :-1300,
-  //     scrollTrigger:{
-  //       trigger:".stickyCardsTrigger",
-  //       markers:true,        
-  //       start:"top 52%",        
-  //       scrub:true  
-  //     }
-  //   })
-  // })
   return (   
       
       <div className="pt-32 max-xl:pt-24 max-lg:pt-20 max-md:pt-16 max-[424px]:pt-12">
@@ -93,7 +81,8 @@ const StickyCards = () => {
           {cardSlider.map((map,index)=>(
           <div className={`cursor-pointer group aspect-[7/3] sticky overflow-hidden p-8 pb-0 rounded-[32px] border-[2px] border-[white] max-xl:rounded-[24px] max-md:rounded-[32px] max-md:aspect-[1/1] max-md:pt-7 max-md:px-7  max-[424px]:p-6 max-[424px]:pb-0 ${index===3?"bg-black":''}`} style={{ top:`${40 + (index + 1) * 100}px`,marginBottom:`${(4 - index)*100}px`, marginTop:`${(4-map.mt)*-100}px` }}>
 
-            <img src={map.img} alt="" className={`absolute top-0 left-0 w-full h-full object-cover ${index>2?"hidden":'inline'}`}/>
+            <img src={map.img} alt="" className={`absolute top-0 left-0 w-full h-full 
+               object-cover ${index>2?"hidden":'inline'}`}/>
             <div className={`stickyCardsOverlay ${index>2?"hidden":'inline'}`}></div>
 
             <div className="flex flex-col justify-between w-full h-full">           
@@ -116,10 +105,10 @@ const StickyCards = () => {
                 <li className="h-[32px] w-[32px] rounded-[50%] bg-white max-md:w-[16px] max-md:h-[16px] max-[424px]:w-[12px] max-[424px]:h-[12px]"></li>
               </ul>
               </div>                              
-              <div className={`flex cursor-grab mb-[80px] overflow-hidden gap-[16px] slider font-AlmiregoDisplayRegular
-                ${index < 3 ? "opacity-0 w-0":"inline"}`}>
+              <div className={`flex  mb-[80px] overflow-hidden gap-[16px] slider font-AlmiregoDisplayRegular
+                ${index < 3 ? "opacity-0 w-0":"cursor-grab"}`}>
               {sliderContent.map((map)=>(
-                <h1 className={`text-[rgba(255,255,255,.3)] slide text-[64px] py-[27px] px-[45px] border-[4px] border-[rgba(255,255,255,.3)] rounded-[500px] flex items-center justify-center hover:bg-[rgba(255,255,255,.3)] hover:border-[rgba(255,255,255,.3)] hover:text-black max-lg:py-[6px] max-lg:px-8 max-lg:text-[48px] max-lg:border-[3px] max-[424px]:text-[24px] max-[424px]:px-[16px] 
+                <h1 className={`text-[rgba(255,255,255,.3)] slide text-[64px] py-[27px] px-[45px] border-[4px] hover:border-transparent border-[rgba(255,255,255,.3)] rounded-[500px] flex items-center justify-center hover:bg-[rgba(255,255,255,.3)] hover:text-black max-lg:py-[6px] max-lg:px-8 max-lg:text-[48px] max-lg:border-[3px] max-[424px]:text-[24px] max-[424px]:px-[16px] 
                   max-md:border-[2px] max-[424px]:py-[3.5px]`}>{map.text}
                 </h1>
               ))}
@@ -127,8 +116,7 @@ const StickyCards = () => {
             </div> 
           </div>
           ))}    
-          </div>       
-           
+          </div>            
       </div>
        
   );

@@ -71,7 +71,7 @@ export default function Video() {
   return (
     <div className='px-10 max-md:px-4 max-[424px]:px-2 gsapVideoTrigger' >
       {isHovering &&(
-      <img src={go} alt="Go svg" style={{left:`${cursorPosition.x}px`, top:`${cursorPosition.y}px`}} 
+      <img src={go} alt="Go svg" style={{height:"7.5vw",width:"7.5vw", left:`${cursorPosition.x}px`, top:`${cursorPosition.y}px`}} 
       className={`custom-cursor`}/>)}
     <div className='flex justify-between mb-8 uppercase tracking-[0.3px] opacity-0'>
         <span>Digital</span>

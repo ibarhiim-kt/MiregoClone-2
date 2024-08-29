@@ -90,7 +90,7 @@ export default function DiscoverVision() {
       </div>
       
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
-       max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-[424px]:px-2 ScardsGsap'>
+       max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-[424px]:px-2 cardsGsap'>
       {cards.map((map,index)=>(
         <>
         <a className='group' key={index} >
