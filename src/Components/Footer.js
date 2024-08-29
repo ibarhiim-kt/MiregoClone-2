@@ -57,12 +57,12 @@ export default function Footer() {
   useEffect(() => {
     const animation = lottie.loadAnimation({
       container: document.getElementById('lottie-footer'),
-      renderer: 'svg',
+      renderer: 'svg',      
       loop: false,
       autoplay: false, 
       animationData: wavesAnima,
     });
-
+    
     ScrollTrigger.create({
       trigger: '#lottie-footer',
       start: 'top 80%', 
@@ -70,6 +70,9 @@ export default function Footer() {
         animation.play();
       },
     });   
+    return () => {
+      animation.destroy(); // Ensures the previous animation is removed
+    };
   }, []);
   const socialLinks = [
     { text: 'LinkedIn' },
@@ -171,12 +174,12 @@ export default function Footer() {
       
       {/* Lottie Animation */}
       <div className='pb-[80px] mx-[-30px] max-lg:pb-[48px] max-[425px]:pb-[32px]'>
-        <div className='flex justify-center'>
-          <div id="lottie-footer" className='w-full h-[350px] overflow-hidden'></div>
+        <div>
+          <div id="lottie-footer" className='w-full overflow-hidden'></div>
         </div>
       </div>
      
-      {/* Ending footer tags */} 
+      {/* Ending footer tags */}
       <div className='flex justify-between px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-[390px]:px-5 max-[390px]:pb-0 max-[320px]:flex-col'>
         <h3 className='max-[320px]:hidden'>&copy; 2024 MIREGO</h3>
         <a href='#' className='hover:text-[#F7EDDE] mt-[-5px]'>Cookies Settings</a>
