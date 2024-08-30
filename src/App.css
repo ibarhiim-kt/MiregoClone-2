@@ -139,3 +139,32 @@
     height: 100%;
     left: 0;
 }  
+
+/* Logo---------------------------------- */
+/* ._link__logo_84be5d {
+  width: 122px;
+  height: 24px;
+  transition: .3s cubic-bezier(.215,.61,.355,1);
+  transition-property: fill;
+}
+._application-header__nav_84be5d._theme--light_84be5d ._link__logo_84be5d path {
+  fill: #050307;
+}
+._link__logo_84be5d path {
+  transition-property: fill;
+}
+._link__logo_84be5d path, ._link_q07wjm, ._link_ro57wi {
+  transition: .3s cubic-bezier(.215,.61,.355,1);
+}
+._column_84be5d {
+  
+  pointer-events: all;
+}
+
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+} */

@@ -56,7 +56,7 @@ export default function DistinctiveCulture() {
       </div>
       <div className='pt-16 pb-64 px-10 flex justify-between gap-2 max-[1440px]:pb-52 max-xl:pt-12 max-xl:pb-42 max-lg:pt-11  max-lg:pb-32  max-md:flex-col max-md:px-4 max-md:pb-24 max-md:pt-8  max-[424px]:px-2
        max-[320px]:pb-[72px] distinctiveCardTrigger'>
-        <div className='w-[33%] overflow-hidden max-md:w-[100%]'>
+        <div className='w-[33%] overflow-hidden max-md:w-[100%] min-[2400px]:w-[30%] min-[3100px]:w-[20%] min-[4700px]:w-[15%]'>
         <video src={distinctiveCultureVideo} autoPlay loop muted className='w-full rounded-[20px]'></video>
         </div>
         <div className='w-[66%] overflow-hidden  max-md:w-[100%] distinctiveCardGsap'>

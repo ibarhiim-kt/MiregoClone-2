@@ -97,7 +97,7 @@ export default function Footer() {
   ]
 
   return (      
-    <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular selection:bg-[#b5a6ff] blackNavbarTrigger'> 
+    <div className='bg-black text-[#F7EDDE] overflow-x-hidden rounded-t-[44px] font-AlmiregoDisplayRegular selection:bg-[#b5a6ff] blackNavbarTrigger pb-10'> 
 
     {/* For responsive */}
     {/* max-[390px]:gap-[16px] */}
@@ -163,12 +163,11 @@ export default function Footer() {
         </div>
         <div className='flex'>        
         <div className='flex my-20 group cursor-pointer max-xl:mt-16 max-lg:mt-0 max-lg:mb-[48px] max-md:mb-0 max-h-[30px] '>
-          <img src={globe} alt="globe" width={25} className='h-[25px] group-hover:hidden'/>
-          <img src={purpleGlobe} alt="purpleGlobe" width={25} className='h-[25px] hidden group-hover:inline' />
+          <img src={globe} alt="globe" width={25} className='h-[25px] transition-opacity duration-300 ease-in-out group-hover:opacity-0'/>
+          <img src={purpleGlobe} alt="purpleGlobe" width={25} className='h-[25px] absolute transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100'/>
           <p className='mt-[2.5px] mb-[2.5px] ml-[10px] text-[17px] max-lg:text-[16px] max-md:mt-[3.3px] max-md:mb-[3.3px] group-hover:text-[#b5a6ff] transition-colors duration-300 ease-in-out'>FR</p>
         </div>
         </div>
-
         </div>
       </div>
       
@@ -177,12 +176,12 @@ export default function Footer() {
         <div>
           <div id="lottie-footer" className='w-full overflow-hidden'></div>
         </div>
-      </div>
+      </div>                                                                                                                                      
      
       {/* Ending footer tags */}
-      <div className='flex justify-between px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-[390px]:px-5 max-[390px]:pb-0 max-[320px]:flex-col'>
+      <div className='flex justify-between items-center font-AlmiregoRegular px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-[390px]:px-5 max-[390px]:pb-0 max-[320px]:flex-col'>
         <h3 className='max-[320px]:hidden'>&copy; 2024 MIREGO</h3>
-        <a href='#' className='hover:text-[#F7EDDE] mt-[-5px]'>Cookies Settings</a>
+        <a href='#' className='hover:text-[#F7EDDE] '>Cookies Settings</a>
         <h3 className='max-[320px]:inline hidden'>&copy; 2024 MIREGO</h3>
         <a href='#' className='hover:text-[#F7EDDE] max-[390px]:mt-[12px]'>Privacy policy</a>
       </div>

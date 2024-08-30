@@ -94,7 +94,7 @@ export default function DiscoverVision() {
       {cards.map((map,index)=>(
         <>
         <a className='group' key={index} >
-          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
+          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0 cursor-text selection:text-[white]':''}
           ${index=== 0 ? 'border-[#272425]':'border-[#e0dfe0]'} text-white cursor-pointer font-AlmiregoRegular `}>
            {index<2 || index == 3 ?(
             <>

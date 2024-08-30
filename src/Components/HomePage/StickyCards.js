@@ -108,7 +108,7 @@ const StickyCards = () => {
               <div className={`flex  mb-[80px] overflow-hidden gap-[16px] slider font-AlmiregoDisplayRegular
                 ${index < 3 ? "opacity-0 w-0":"cursor-grab"}` }>
               {sliderContent.map((map)=>(
-                <h1 className={`text-[rgba(255,255,255,.3)] slide text-[64px] py-[27px] px-[45px] border-[4px] hover:border-transparent border-[rgba(255,255,255,.3)] rounded-[500px] flex items-center justify-center hover:bg-[rgba(255,255,255,.3)] hover:text-black max-lg:py-[6px] max-lg:px-8 max-lg:text-[48px] max-lg:border-[3px] max-[424px]:text-[24px] max-[424px]:px-[16px] 
+                <h1 className={`text-[rgba(255,255,255,.3)] slide text-[64px] py-[16.2px] px-[45px] border-[4px] hover:border-transparent border-[rgba(255,255,255,.3)] rounded-[500px] flex items-center justify-center hover:bg-[rgba(255,255,255,.3)] hover:text-black max-lg:py-[6px] max-lg:px-8 max-lg:text-[48px] max-lg:border-[3px] max-[424px]:text-[24px] max-[424px]:px-[16px] 
                   max-md:border-[2px] max-[424px]:py-[3.5px]`}>{map.text}
                 </h1>
               ))}
