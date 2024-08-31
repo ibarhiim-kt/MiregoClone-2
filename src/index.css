@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@font-face {
+    font-family:"Newsreader_14pt-LightItalic" ;
+    src: url('./fonts/Newsreader/static/Newsreader_14pt-LightItalic.ttf');
+}
+@font-face {
+    font-family:"AlmiregoDisplayRegular";
+    src: url('./fonts/Almirego/AlmiregoDisplayRegular.woff2');
+}
+@font-face {
+    font-family: "AlmiregoDisplayLight";
+    src: url('./fonts/Almirego/AlmiregoDisplayLight.ttf');
+}
+@font-face {
+    font-family:"AlmiregoRegular";
+    src: url('./fonts/Almirego/AlmiregoRegular.woff2');
+}
+@font-face {
+    font-family:"AlmiregoDisplayBold";
+    src: url('./fonts/Almirego/AlmiregoDisplayBold.woff2');
+}
+@font-face {
+    font-family:"newsreader-italic";
+    src: url('./fonts/Almirego/newsreader-italic.ttf');
+}
+@font-face {
+    font-family: "AlmiregoLight";
+    src: url('./fonts/Almirego/AlmiregoLight.woff2');
 }
