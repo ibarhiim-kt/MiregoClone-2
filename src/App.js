@@ -6,10 +6,10 @@ import Expertise from '../src/Components/Pages/Expertise'
 import Projects from '../src/Components/Pages/Projects'
 import Culture from '../src/Components/Pages/Culture'
 import Perspectives from '../src/Components/Pages/Perspectives'
-import Footer from './Components/Footer';
-import Navbar from './Components/Navbar';
-import HomePage from './Components/HomePage/App'
-// import PulseAnimation from './Components/pulseAnimation';
+import Footer from './Components/Layout/Footer';
+import Navbar from './Components/Layout/Navbar';
+import HomePage from './Components/Pages/HomePage/App'
+
 function App() {
   return (
      
@@ -18,8 +18,8 @@ function App() {
     <Navbar/>     
     <div>  
     <Routes>   
-      <Route path='/' element={<HomePage/>}/>
-      <Route path="/about" element={<About/>} />
+      <Route path='/' element={<HomePage />}/>
+      <Route path="/about" element={<About />} />
       <Route path="/expertise" element={<Expertise />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/culture" element={<Culture />} />

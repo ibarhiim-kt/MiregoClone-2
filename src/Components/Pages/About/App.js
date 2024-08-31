@@ -15,7 +15,7 @@ export default function App() {
       <BuildFuture/>
       <div className='bg-[#050307] rounded-t-[44px]'>
       <Enterprenuership/>
-      <ValueCards/>
+      {/* <ValueCards/> */}
       </div>
     </div>
   )

@@ -1,14 +1,11 @@
-.aboutSlider {
+/* .aboutSlider {
     width: max-content; 
     animation: aboutSlider-left 20s infinite; 
   }
   .aboutSlider:hover {
     animation-play-state: paused; 
   }
-  /* .slide {
-    min-width: 200px;  
-    text-align: center;
-  } */
+  
   
   @keyframes aboutSlider-left {
     from {
@@ -18,4 +15,4 @@
       transform: translateX(-100%); 
     }
   }
-  
+   */
