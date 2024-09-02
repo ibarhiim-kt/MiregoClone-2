@@ -2,6 +2,7 @@ import React, { useEffect,useState } from 'react';
 import gsap from 'gsap'
 import lottie from 'lottie-web';
 import wavesAnima from './assets/animation/wavesAnima.json';
+// import ttt from '../../assets/Animation - 1725281135664.json'
 import globe from './assets/globe.svg'
 import purpleGlobe from './assets/purpleGlobe.svg'
 import ScrollTrigger from 'gsap/ScrollTrigger';

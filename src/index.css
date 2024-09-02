@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
     font-family:"AlmiregoDisplayRegular";
     src: url('./fonts/Almirego/AlmiregoDisplayRegular.woff2');

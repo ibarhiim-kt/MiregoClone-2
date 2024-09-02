@@ -1,8 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 // import arrow from '../assets/arrow.svg'
 // import GFooterImg from '../assets/GFooterImg.png'
 export default function Expertise() {
   return (
+    <>
+    <Helmet>   
+      <title>Expertise - Mirego</title>
+      <meta name="description" content="This is the expertise page description" />      
+    </Helmet>
     <div className='pt-32 px-[140px] flex'>
       <div>
       <div className='text-[88px] font-light leading-[105%] tracking-[-1.75px]'>
@@ -22,5 +28,6 @@ export default function Expertise() {
       <img src={GFooterImg} alt="GGo" width={100} className='h-[50px]'/>
     </div> */}
     </div>
+    </>
   )
 }

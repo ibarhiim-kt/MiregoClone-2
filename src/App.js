@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-
+import { HelmetProvider } from 'react-helmet-async';
 import About from '../src/Components/Pages/About/App'
 import Expertise from '../src/Components/Pages/Expertise'
 import Projects from '../src/Components/Pages/Projects'
@@ -12,7 +12,7 @@ import HomePage from './Components/Pages/HomePage/App'
 
 function App() {
   return (
-     
+    <HelmetProvider>
     <Router>
     <div className='flex flex-col min-h-screen '>  
     <Navbar/>     
@@ -29,7 +29,7 @@ function App() {
     <Footer/>   
     </div>
     </Router>
-    
+    </HelmetProvider>
   );
 }
 
