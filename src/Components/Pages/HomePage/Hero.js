@@ -27,13 +27,12 @@ export default function Hero() {
         </p>
   
       <div className='pt-[2px] align-middle inline-block max-1014:mt-[1.5px]'>           
-      <div className='overflow-hidden h-[134px] max-xl:h-[121.94px] max-lg:h-[84px] max-md:h-[50px] max-[320px]:mt-[-3px]'>
+      <div className='overflow-hidden h-134 max-xl:h-121.94 max-lg:h-84 max-md:h-50 max-320:mt-[-3px]'>
         <div className='animate-wordSlide'>
       {words.map((word)=>(      
-      <div className='mb-[4px] word-slide max-lg:mb-[2px]'>
+      <div className='mb-1 word-slide max-lg:mb-[2px]'>
       <div className='flex leading-[1.334]'>
-        <div className='py-[2px] text-[90px] px-[33px] border-[4px] border-black rounded-[70px] max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-[3px] max-md:text-[32px] max-md:px-[12px] max-md:py-[3px] max-md:border-[2px] 
-        max-[320px]:border-[1px] max-[320px]:py-[1px]'>
+        <div className='py-[2px] text-[90px] px-[33px] border-[4px] border-black rounded-[70px] max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-[3px] max-md:text-[32px] max-md:px-3 max-md:py-[3px] max-md:border-[2px] max-320:border-[1px] max-320:py-[1px]'>
         <h className='flex gap-3'>{word}</h>
         </div>
       </div>
