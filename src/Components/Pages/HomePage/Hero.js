@@ -19,15 +19,15 @@ export default function Hero() {
       })
     },[])
   return (    
-    <div className='font-AlmiregoDisplayRegular px-25 max-xl:px-8 max-md:px-4 max-390:px-2'>
+    <div className='font-AlmiregoDisplayRegular px-25 max-xl:px-8 max-md:px-4 min-1921:px-60'>
       <div className='font-AlmiregoDisplayLight'>   
      
-        <p className='gsapAnima text-88 mr-[1.5vw] align-middle inline-block leading-110 max-xl:text-80 max-lg:text-56 max-md:text-32 max-md:mr-[0.7vw] max-320:text-28'>
+        <p className='gsapAnima text-88 mr-3 align-middle inline-block leading-110 max-xl:text-80 max-lg:text-56 max-md:text-32 max-md:mr-2 max-320:text-28'>
           Building the future
         </p>
   
-      <div className='pt-[2px] align-middle inline-block max-[1014px]:mt-[1.5px]'>           
-      <div className=' h-[134px] max-xl:h-[121.94px] max-lg:h-[84px] max-md:h-[50px] max-[320px]:mt-[-3px]'>
+      <div className='pt-[2px] align-middle inline-block max-1014:mt-[1.5px]'>           
+      <div className='overflow-hidden h-[134px] max-xl:h-[121.94px] max-lg:h-[84px] max-md:h-[50px] max-[320px]:mt-[-3px]'>
         <div className='animate-wordSlide'>
       {words.map((word)=>(      
       <div className='mb-[4px] word-slide max-lg:mb-[2px]'>
@@ -45,7 +45,7 @@ export default function Hero() {
       </div> 
       
       </div>         
-      <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-22 max-390:pb-12'>
+      <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-8 max-390:pb-12'>
       
       <p className='text-56 leading-110 max-xl:text-52 max-lg:text-36 max-424:text-28 '>
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p>
