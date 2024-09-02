@@ -74,27 +74,26 @@ export default function DiscoverVision() {
     })
   },[])
   return (
-    <div className='pt-64 max-[1440px]:pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 
-       max-s:pt-[88px] max-xs:pt-[72px]'>
-      <h1 className='text-[120px] font-AlmiregoDisplayLight leading-[105%] px-10 max-[1440px]:text-[96px] max-lg:text-[68px] max-md:px-4 max-s:px-2 max-s:text-[40px] max-xs:text-[32px]'>Building for the future</h1>
-      <div className='pt-16 px-[140px] gap-2 flex justify-between max-xl:pt-14 max-xl:px-[72px] max-lg:pt-12 max-md:px-8 max-md:pt-8  max-md:flex-col max-m:px-6 max-xs:pt-6 overflow-hidden'> 
+    <div className='pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-424:pt-[88px] max-320:pt-[72px]'>
+      <h1 className='text-[120px] font-AlmiregoDisplayLight leading-105 max-[1440px]:text-[96px] max-lg:text-[68px] max-424:text-[40px] max-320:text-[32px]'>Building for the future</h1>
+      <div className='pt-16 px-25 gap-2 flex justify-between max-xl:pt-14 max-xl:px-8 max-lg:pt-12 max-md:px-4 max-md:pt-8  max-md:flex-col max-390:px-2 max-320:pt-6 overflow-hidden'> 
         <div className='w-1/2 max-md:w-0'></div>
         <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='tracking-[0.4px] leading-[125%] text-[21px] max-s:text-lg 
-        max-m:text-[17px] paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='mt-12 flex max-s:mt-8 buttonAnima'>
-      <a href="#" className='text-[16px] px-5 py-3 bg-[#050307] rounded-xl text-white tracking-[0.3px] 
-      flex items-center justify-center leading-none hover:bg-[#242424]'>Discover our vision of the future</a>
+        <p className='tracking-[0.4px] leading-[125%] text-[21px] max-424:text-lg 
+        max-390:text-[17px] paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
+        <div className='mt-12 flex max-424:mt-8 buttonAnima'>
+      <a href="#" className='text-[16px] px-5 py-3 bg-#050307 rounded-xl text-white tracking-[0.3px] 
+      flex items-center justify-center leading-none hover:bg-#242424'>Discover our vision of the future</a>
       </div>  
       </div>
       </div>
       
-      <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
-       max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-s:px-2 cardsGsap'>
+      <div className='pt-32 grid grid-cols-4 gap-8 max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
+       max-md:grid-cols-1 max-md:pt-16 cardsGsap'>
       {cards.map((map,index)=>(
         <>
         <a className='group' key={index} >
-          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
+          <div className={`relative overflow-hidden border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
           ${index=== 0 ? 'border-[#272425]':'border-[#e0dfe0]'} text-white cursor-pointer font-AlmiregoRegular `}>
            {index<2 || index == 3 ?(
             <>

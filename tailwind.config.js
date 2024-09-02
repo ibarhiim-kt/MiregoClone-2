@@ -12,15 +12,23 @@ module.exports = {
         NewsreaderItalic:["newsreader-italic"]
       },
       screens: {
-        's': '424px',
-        'm': '390px',
-        'xs': '320px',
+        '424': '424px',
+        '390': '390px',
+        '320': '320px',
       },
       borderRadius: {
         '4xl': '32px',
       },
       fontSize:{
         '3.5xl': '32px'
+      },
+      colors:{
+        '#f7edde':'#f7edde',
+        '#050307':'#050307',
+        '#242424':'#242424' 
+      },
+      lineHeight:{
+        '105':'105%'
       }
     },
   },
