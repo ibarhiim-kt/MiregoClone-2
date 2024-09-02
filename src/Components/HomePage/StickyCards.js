@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import Arrow from '../../assets/arrow.svg'
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ScrollSmoother from "gsap/ScrollSmoother";
 import Img1 from '../../assets/sliderCards/card1.webp'
 import Img2 from '../../assets/sliderCards/card2.webp'
 import Img3 from '../../assets/sliderCards/card3.webp'
