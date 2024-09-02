@@ -19,14 +19,15 @@ export default function Hero() {
       })
     },[])
   return (    
-    <div className='font-AlmiregoDisplayRegular px-25'>
-      <div className='font-AlmiregoDisplayLight'>     
-        <p className='gsapAnima text-88 leading-110'>
+    <div className='font-AlmiregoDisplayRegular px-25 max-xl:px-8 max-md:px-4 max-390:px-2'>
+      <div className='font-AlmiregoDisplayLight'>   
+     
+        <p className='gsapAnima text-88 mr-[1.5vw] align-middle inline-block leading-110 max-xl:text-80 max-lg:text-56 max-md:text-32 max-md:mr-[0.7vw] max-320:text-28'>
           Building the future
         </p>
   
-      <div className='pt-[2px] max-[1014px]:mt-[1.5px]'>           
-      <div className='overflow-hidden h-[134px] max-xl:h-[121.94px] max-lg:h-[84px] max-md:h-[50px] max-[320px]:mt-[-3px]'>
+      <div className='pt-[2px] align-middle inline-block max-[1014px]:mt-[1.5px]'>           
+      <div className=' h-[134px] max-xl:h-[121.94px] max-lg:h-[84px] max-md:h-[50px] max-[320px]:mt-[-3px]'>
         <div className='animate-wordSlide'>
       {words.map((word)=>(      
       <div className='mb-[4px] word-slide max-lg:mb-[2px]'>
@@ -42,15 +43,17 @@ export default function Hero() {
       </div>
       </div>
       </div> 
-      </div>         
       
-      <p className='text-56 leading-110 pt-16 gsapAnima'>
-      Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p> 
-      <div className='mt-12 flex'>
+      </div>         
+      <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-22 max-390:pb-12'>
+      
+      <p className='text-56 leading-110 max-xl:text-52 max-lg:text-36 max-424:text-28 '>
+      Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p>
+      <div className='mt-12 flex max-424:mt-8 max-390:mt-6'>
       <a href="#" className='px-5 py-3 bg-#050307 rounded-xl tracking-0.3 text-white
       flex items-center justify-center leading-none hover:bg-#242424'>Learn more about our expertise</a>
       </div>  
-     
+      </div>
        {/* <div className='pt-[149.5px] px-[140px] font-AlmiregoDisplayLight max-xl:pt-[113.5px] max-xl:px-[72px] max-lg:pt-20 max-lg:flex items-center gap-[13px] max-[1014px]:block max-[1014px]:pt-[92.5px] max-md:flex max-md:gap-[5px] max-md:px-8 max-md:pt-[64px] max-[563px]:block max-[563px]:pt-[70.5px] max-[425px]:pt-12 max-[390px]:px-6 min-[1670px]:flex min-[1670px]:pt-[128px] min-[1670px]:gap-[22px] min-[1921px]:px-[280px] min-[1921px]:block min-[1921px]:pt-[150.5px] min-[1951px]:flex min-[1951px]:pt-[128.5px]'>
        <div className='text-[88px] leading-[110%] max-xl:text-[80px] max-lg:text-[56px] max-lg:leading-[112%] max-md:text-[32px] max-[320px]:texst-[28px] overflow-hidden'>
         <p className='gsapAnima'>

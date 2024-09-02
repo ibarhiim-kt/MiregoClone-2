@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@dotlottie/dotlottie-js": "^0.8.1",
+    "@dotlottie/player-component": "^2.7.12",
     "@lottiefiles/lottie-player": "^2.0.4",
     "@lottiefiles/react-lottie-player": "^3.5.4",
     "@testing-library/jest-dom": "^5.17.0",

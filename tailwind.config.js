@@ -12,15 +12,23 @@ module.exports = {
         NewsreaderItalic:["newsreader-italic"],        
       },
       padding:{
-        "25":'100px'
+        "25":'100px',
+        "56":'56px',
+        "22":'22px'
       },
       margin:{
         "140":"140px",
-        "62":"62px"
+        "62":"62px",
+        "59":"59px"
       },
       fontSize:{
         "88":'88px',
-        "56":'56px'
+        "80":'80px',
+        "56":'56px',
+        "52":'52px',
+        "36":'36px',
+        "32":'32px',
+        "28":'28px',        
       },
       lineHeight:{
         "110":"111%",
@@ -35,6 +43,11 @@ module.exports = {
       },
       letterSpacing:{
         "0.3":"0.3px"
+      },
+      screens:{
+        "424":"424px",
+        "390":"390px",
+        "320":"320px"
       }
     },
   },

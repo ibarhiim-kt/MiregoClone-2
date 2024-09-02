@@ -8,7 +8,6 @@ import purpleGlobe from './assets/purpleGlobe.svg'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import goPurple from './assets/goPurple.svg'
 // import footerPulse from '../assets/footerBeats.svg'
-
 import purpleArrow from './assets/purpleArrow.svg'
 // import PulseAnimation from './pulseAnimation'
 // import { LottiePlayer } from '@lottiefiles/lottie-player'
@@ -38,7 +37,7 @@ export default function Footer() {
   useEffect(() => {
     const animation = lottie.loadAnimation({
       container: document.getElementById('lottie-footer'),
-      renderer: 'svg',      
+      renderer: 'svg',            
       loop: false,
       autoplay: false, 
       animationData: wavesAnima,
