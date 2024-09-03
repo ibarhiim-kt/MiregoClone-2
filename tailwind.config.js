@@ -95,9 +95,15 @@ module.exports = {
         "sm":"50px",  
         "xs" :"41px"     
       },
+      width:{
+        "lg":"33%",
+        "md":"30%",
+        "sm":"15%"
+      },
       borderRadius: {
         '5xl': '500px',
         '4xl': '32px',
+        '3xl':'20px',
          "xl": '9.5px'
       },
       

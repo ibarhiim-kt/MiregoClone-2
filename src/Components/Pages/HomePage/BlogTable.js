@@ -69,7 +69,7 @@ export default function BlogTable() {
             </ul>
             </div>
             <div className="text-xs max-lg:text-sm-base" style={{flex:2}}>
-            <h2  className='leading-xs'>{map.para} </h2>
+            <h2  className='leading-tight-xs'>{map.para} </h2>
             </div>
         </div>
         <div className='overflow-hidden flex items-center justify-center max-w-60 bg-cream-primary rounded-3xl max-md:max-w-none'>            
