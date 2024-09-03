@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components{
     .home-h1{
-       @apply font-AlmiregoDisplayLight leading-tight-sm text-7 xl max-lg:text-2xl max-s:text-md max-xxs:text-xs
+       @apply font-AlmiregoDisplayLight leading-tight-sm text-7xl max-lg:text-2xl max-s:text-md max-xxs:text-xs
     }
     .h1-span{
         @apply font-NewsreaderItalic font-light tracking-[-1.75px]
@@ -26,5 +26,8 @@
     }
     .sticky-cards-li{
         @apply pt-1.5 pb-[3px] px-[13px] bg-white-primary rounded-4xl max-s:py-[3px] flex items-center justify-center
+    }
+    .discover-vision-li{
+        @apply py-[2px] px-3 rounded-[50vh] border border-white
     }
 }

@@ -86,13 +86,13 @@ export default function DiscoverVision() {
       </div>
       </div>
       
-      <div className='pt-32 grid grid-cols-4 gap-8 max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
+      <div className='pt-32 grid grid-cols-4 gap-8 max-2xl:grid-cols-3 max-lg:grid-cols-2 
        max-md:grid-cols-1 max-md:pt-16 cardsGsap'>
       {cards.map((map,index)=>(
         <>
         <a className='group' key={index} >
-          <div className={`relative overflow-hidden border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
-          ${index=== 0 ? 'border-[#272425]':'border-[#e0dfe0]'} text-white cursor-pointer font-AlmiregoRegular `}>
+          <div className={`relative overflow-hidden border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-2xl:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
+          ${index=== 0 ? 'border-black-primary':'border-cream-primary'} text-white cursor-pointer font-AlmiregoRegular `}>
            {index<2 || index == 3 ?(
             <>
             <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
@@ -101,9 +101,9 @@ export default function DiscoverVision() {
             </div>
             <div className='py-8 px-6 relative text-white top-0 left-0 w-full h-full flex flex-col'>
               <div className='flex justify-between items-center'>
-                <ul className='flex items-center max-w-[80%] gap-1 text-sm'>
-                  <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn1}</li>
-                  <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn2}</li>
+                <ul className='flex items-center max-w-[80%] gap-1 text-xxs'>
+                  <li className='discover-vision-li'>{map.btn1}</li>
+                  <li className='discover-vision-li'>{map.btn2}</li>
                 </ul>
                 <ul>
                   <a href="#" className='flex items-center'>
@@ -112,17 +112,17 @@ export default function DiscoverVision() {
                 </ul>
               </div>
               <div className='mt-64'>
-                <p className="text-2xl leading-[125%]">{map.para}</p>
+                <p className="text-sm-base leading-relaxed-lg">{map.para}</p>
               </div>              
             </div>
             </>
            ):(            
-            <div className='py-8 px-6 text-transparent top-0 left-0 w-full h-full flex flex-col bg-[#242424]'>
-              <div className='relative my-[88px] bg-clip-text max-[1440px]:my-16 max-lg:my-[88px]' style={{ background: 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)', WebkitBackgroundClip: 'text',textIndent:'60px'}}>
+            <div className='py-8 px-6 text-transparent top-0 left-0 w-full h-full flex flex-col bg-black-secondary'>
+              <div className='relative my-2xl bg-clip-text max-2xl:my-16' style={{ background: 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)', WebkitBackgroundClip: 'text',textIndent:'60px'}}>
                 <img src={symbol} alt="symbol" className='absolute top-[12px] left-0 w-[52px]'/>
-                <p className="text-[40px] leading-[100%] max-[1440px]:text-[32px] max-lg:text-[40px]">{map.para}</p>
+                <p className="text-md leading-normal max-2xl:text-xs max-lg:text-md">{map.para}</p>
               </div>
-              <div className='items-center inline-flex text-white gap-[15px]'>
+              <div className='items-center inline-flex text-white gap-md'>
                 <img src={map.image} alt="Yoshua Bengio" className='w-[44px] h-[44px] rounded-[50%] overflow-hidden object-cover'/>
                 <p className='text-[15px]'>{map.name}</p>
               </div>
