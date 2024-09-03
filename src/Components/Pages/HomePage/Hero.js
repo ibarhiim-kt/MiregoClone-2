@@ -19,7 +19,7 @@ export default function Hero() {
       })
     },[])
   return (    
-    <div className='font-AlmiregoDisplayRegular px-25 max-xl:px-8 max-md:px-4 min-1921:px-60'>
+    <div className='font-AlmiregoDisplayRegular px-25 max-xl:px-8 max-md:px-4 2xl:px-60'>
       <div className='font-AlmiregoDisplayLight'>   
      
         <p className='gsapAnima text-88 mr-3 align-middle inline-block leading-110 max-xl:text-80 max-lg:text-56 max-md:text-32 max-md:mr-2 max-320:text-28'>

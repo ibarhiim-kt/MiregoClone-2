@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+// import './Home.css'
 import Hero from './Hero'
 import Video from './Video'
 import StickyCards from './StickyCards'
