@@ -41,15 +41,14 @@ export default function DistinctiveCulture() {
   },[])
   
   return (
-    <div className='pb-2 pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-424:pt-88 max-320:pt-72'>        
-        <h1 className='font-AlmiregoDisplayLight leading-105 text-96 max-lg:text-68 max-424:text-40 max-320:text-[32px]'>A <span className='font-NewsreaderItalic font-light tracking-[-1.75px]'>distinctive </span>culture</h1>
-      <div className='pt-16 px-25 flex justify-between gap-2 pb-2 max-xl:pt-14 max-xl:px-8 max-lg:pt-12 max-md:px-4 max-md:pt-8 max-md:flex-col max-390:px-6 max-320:pt-6'>
+    <div className='pb-2 dist-disc-container'>        
+        <h1 className='home-h1'>A <span className='h1-span'>distinctive </span>culture</h1>
+      <div className='pb-2 para-container'>
         <div className='w-1/2 max-md:w-0'></div>
         <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='text-[21px] tracking-0.4 leading-125 max-424:text-18 max-390:text-[17px] distinctiveParaAnima'>We aim to create the best place to work. Crafting digital products is more than a job to us: it's a calling. Our strategy, design, and development teams are made up of inspired and inspiring people. Our passion for our art is boundless.</p>
-        <div className='mt-12 flex max-424:mt-8 overflow-hidden'>
-      <a href="#" className='px-5 py-3 bg-#050307 rounded-xl text-#FFFFFF tracking-0.3
-      flex items-center justify-center leading-none distinctiveButtonAnima hover:bg-#242424'>Discover our culture</a>
+        <p className='home-para distinctiveParaAnima'>We aim to create the best place to work. Crafting digital products is more than a job to us: it's a calling. Our strategy, design, and development teams are made up of inspired and inspiring people. Our passion for our art is boundless.</p>
+        <div className='home-btn-container overflow-hidden'>
+      <a href="#" className='home-btns distinctiveButtonAnima'>Discover our culture</a>
       </div>  
       </div>
       </div>

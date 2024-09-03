@@ -36,7 +36,7 @@ module.exports = {
         "sm":'36px',
         "xs":'32px',
         "base":'28px',
-        "sm-base":"24px",
+        "sm-base":"24px",        
         "small":'18px',
         "x-small":'17px',
         "xxs":'16px',        
@@ -54,26 +54,30 @@ module.exports = {
         "xxs":"320px",        
       },
       lineHeight:{
+        "relaxed-xl":"155%",
         "relaxed-lg":"125%",
         "relaxed-md":"112%",
         "tight-md":"110%",
         "tight-sm":"105%"               
       },
-      backgroundColor:{
-        // "#050307":"#050307",
+      backgroundColor:{        
         "black-primary":"#050307",
         "black-secondary":"#242424",
-        "cream-primary":"#F7EDDE"
+        "cream-primary":"#F7EDDE",
+               
       },
       colors:{
-        // "#FFFFFF":"#FFFFFF",
+        "white-primary":"#FFFFFF",
+        "gray-primary":"rgba(255,255,255,.3)"         
         // "#050307":"#050307"
+      },
+      borderColor:{
+        "gray-primary":"rgba(255,255,255,.3)" 
       },
       letterSpacing:{
         "tight":"0.3px",
         "normal":"0.4px"
-      },
-      
+      },      
       gap:{
         "xl":"154px"
       },
@@ -85,6 +89,7 @@ module.exports = {
         "xs" :"41px"     
       },
       borderRadius: {
+        '5xl': '500px',
         '4xl': '32px',
       },
     },

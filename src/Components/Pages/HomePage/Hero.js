@@ -48,9 +48,8 @@ export default function Hero() {
       
       <p className='text-xl leading-tight-md max-xl:text-lg max-lg:text-sm max-s:text-base max-xxs:text-sm-base'>
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p>
-      <div className='mt-12 flex max-s:mt-8'>
-      <a href="#" className='px-5 py-3 bg-black rounded-xl tracking-tight text-white
-      flex items-center justify-center leading-none hover:bg-dark-gray'>Learn more about our expertise</a>
+      <div className='home-btn-container'>
+      <a href="#" className='home-btns'>Learn more about our expertise</a>
       </div>  
       </div>       
     </div>
