@@ -15,7 +15,9 @@ module.exports = {
         "xl":'100px',
         "lg":'72px',        
         "md":'56px',
-        "sm":'22px'
+        "sm":'22px',
+        "xs":"12.387px",
+        "base":"2.55px"
       },
       margin:{
         "2xl":"140px",
@@ -23,8 +25,7 @@ module.exports = {
         "lg":"62px",
         "md":"71px",    
         "sm":"34px"    
-      },
-      
+      },      
       fontSize:{
         "7xl":'96px',
         "6xl":'90px',
@@ -38,11 +39,11 @@ module.exports = {
         "sm":'36px',
         "xs":'32px',
         "base":'28px',
-        "sm-base":"24px",        
+        "sm-base":"24px", 
+        "xs-base":"19px",       
         "small":'18px',
         "x-small":'17px',
-        "xxs":'16px',        
-        // '3.5xl': '32px'        
+        "xxs":'16px',              
       },
       screens:{        
         "6xl":"4700px",
@@ -61,6 +62,7 @@ module.exports = {
         "relaxed-md":"112%",
         "tight-md":"110%",
         "tight-sm":"105%",
+        'tight-xs': "1.175",       
         "normal":"100%"               
       },
       backgroundColor:{        
@@ -83,7 +85,8 @@ module.exports = {
         "normal":"0.4px"
       },      
       gap:{
-        "xl":"154px"
+        "xl":"154px",
+        "md":"15px"
       },
       height:{
         "xl":"134px",
@@ -95,10 +98,9 @@ module.exports = {
       borderRadius: {
         '5xl': '500px',
         '4xl': '32px',
+         "xl": '9.5px'
       },
-      gap:{
-        "md":"15px"
-      }
+      
     },
   },
   plugins: [],

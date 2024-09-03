@@ -113,17 +113,17 @@ export default function DiscoverVision() {
               </div>
               <div className='mt-64'>
                 <p className="text-sm-base leading-relaxed-lg">{map.para}</p>
-              </div>              
+              </div>               
             </div>
             </>
            ):(            
             <div className='py-8 px-6 text-transparent top-0 left-0 w-full h-full flex flex-col bg-black-secondary'>
-              <div className='relative my-2xl bg-clip-text max-2xl:my-16' style={{ background: 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)', WebkitBackgroundClip: 'text',textIndent:'60px'}}>
+              <div className='relative my-2xl bg-clip-text max-2xl:my-16' style={{ background:'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)', WebkitBackgroundClip: 'text',textIndent:'60px'}}>
                 <img src={symbol} alt="symbol" className='absolute top-[12px] left-0 w-[52px]'/>
                 <p className="text-md leading-normal max-2xl:text-xs max-lg:text-md">{map.para}</p>
               </div>
               <div className='items-center inline-flex text-white gap-md'>
-                <img src={map.image} alt="Yoshua Bengio" className='w-[44px] h-[44px] rounded-[50%] overflow-hidden object-cover'/>
+                <img src={map.image} alt="Yoshua Bengio" className='w-[44px] h-[44px] rounded-full overflow-hidden object-cover'/>
                 <p className='text-[15px]'>{map.name}</p>
               </div>
           </div>
