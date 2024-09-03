@@ -52,6 +52,7 @@ module.exports = {
         "3xl":"1921px", 
         "2xl":"1440px",       
         "large":"1014px",
+        "medium":"563px",
         "s":"424px",
         "xs":"390px",
         "xxs":"320px",        
@@ -89,16 +90,25 @@ module.exports = {
         "md":"15px"
       },
       height:{
-        "xl":"134px",
-        "lg":"121.94px",
+        "2xl":"134px",
+        "xl":"121.94px",
+        "lg":"117.94",        
         "md":"84px",
-        "sm":"50px",  
-        "xs" :"41px"     
+        "sm":"80px",
+        "xs":"50px",  
+        "base":"46px",
+        "sm-base":"40px"
       },
       width:{
         "lg":"33%",
         "md":"30%",
         "sm":"15%"
+      },
+      borderWidth:{
+        "lg":"4px",
+        "md":"3px",
+        "sm":"2px",
+        "normal":"1px"
       },
       borderRadius: {
         '5xl': '500px',
