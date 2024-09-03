@@ -65,7 +65,7 @@ export default function Video() {
           className="fixed h-[7.5vw] w-[7.5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
         />
       )}
-      <div className='flex justify-between mb-8 uppercase tracking-[0.3px] opacity-0'>
+      <div className='flex justify-between mb-8 uppercase tracking-tight opacity-0'>
         <span>Digital</span>
         <span>Visionaries</span>
       </div>
@@ -82,13 +82,13 @@ export default function Video() {
         {cards.map((map, index) => (
           <div
             key={index}
-            className={`bg-#F7EDDE p-8 w-1/4 rounded-4xl max-lg:rounded-3xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-424:p-7 animaCard${index + 1}`}>
-            <div>
-              <p className='mb-4 leading-105 mt-[38px] max-md:mt-[21px] max-424:mt-[15px] max-320:mt-2'>
-                <span className='text-[88px] tracking-[-1.75px] max-xl:text-7xl max-md:text-[56px] max-424:text-[40px] max-320:text-32'>{map.number}</span>
-                <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-424:text-[22px] max-320:text-[17.6px]'>{map.plus}</sup>
+            className={`bg-cream-primary p-8 w-1/4 rounded-4xl max-lg:rounded-3xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-s:p-7 animaCard${index + 1}`}>
+            <div> 
+              <p className='mb-4 leading-tight-sm mt-[38px] max-md:mt-[21px] max-s:mt-[15px] max-xxs:mt-2'>
+                <span className='text-5xl tracking-[-1.75px] max-xl:text-7xl max-md:text-xl max-s:text-md max-xxs:text-xs'>{map.number}</span>
+                <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-s:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
               </p>
-              <p className="text-[21px] leading-[125%] mt-11 tracking-[0.4px] font-AlmiregoRegular max-md:text-lg max-md:mt-[26.6px] max-424:mt-[22.2px] max-390:text-[17px] max-320:mt-[21.2px]">
+              <p className="text-[21px] leading-relaxed-lg mt-11 tracking-normal font-AlmiregoRegular max-md:text-small  max-xs:text-x-small ">
                 {map.text}
               </p>
             </div>

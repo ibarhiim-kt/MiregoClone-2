@@ -38,6 +38,7 @@ module.exports = {
         "base":'28px',
         "sm-base":"24px",
         "small":'18px',
+        "x-small":'17px',
         "xxs":'16px',        
         // '3.5xl': '32px'        
       },
@@ -60,8 +61,9 @@ module.exports = {
       },
       backgroundColor:{
         // "#050307":"#050307",
-        "dark-gray":"#242424",
-        "light-cream":"#F7EDDE"
+        "black-primary":"#050307",
+        "black-secondary":"#242424",
+        "cream-primary":"#F7EDDE"
       },
       colors:{
         // "#FFFFFF":"#FFFFFF",
