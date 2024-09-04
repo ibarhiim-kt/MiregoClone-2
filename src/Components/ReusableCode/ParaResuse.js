@@ -17,6 +17,7 @@ export default function ParaResuse({
     stickyCardsClasses,
     stickyCardsPadding,
     aboutHeroParaClasses,
+    buildFutureClasses,
     paraContainer,
 }) {    
   return (
@@ -26,7 +27,7 @@ export default function ParaResuse({
       </p>
 
       {showParagraph && (
-        <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} 
+        <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses}
         ${aboutHeroParaClasses}`}>
           <div className='w-1/2 max-md:w-0'></div>
           <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>

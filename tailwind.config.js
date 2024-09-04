@@ -106,6 +106,7 @@ module.exports = {
         "sm-base":"40px"
       },
       width:{
+        "xl":"43%",
         "lg":"33%",
         "md":"30%",
         "sm":"15%"
