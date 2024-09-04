@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import together from './assets/together.svg'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import ParaResuse from '../../ReusableCode/ParaResuse';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
@@ -44,10 +45,8 @@ export default function Hero() {
       </div> 
       
       </div>         
-      <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-8 max-xxs:pt-6 max-xxs:pb-12'>
-      
-      <p className='text-xl leading-tight-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base'>
-      Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p>
+      <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-8 max-xxs:pt-6 max-xxs:pb-12'>      
+      <ParaResuse text1="Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners."/>
       <div className='home-btn-container'>
       <a href="#" className='home-btns'>Learn more about our expertise</a>
       </div>  

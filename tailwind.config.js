@@ -12,6 +12,8 @@ module.exports = {
         NewsreaderItalic:["newsreader-italic"],        
       },
       padding:{
+        "3xl":"280px",
+        "2xl":"140px",
         "xl":'100px',
         "lg":'72px',        
         "md":'56px',

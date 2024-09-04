@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function valueCards() {
+export default function ValueCard() {
   return (
     <div className='pt-16 pb-64 px-[140px]'>
     <ul>

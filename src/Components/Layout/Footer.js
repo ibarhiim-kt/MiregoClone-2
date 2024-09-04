@@ -79,7 +79,7 @@ export default function Footer() {
 
     {/* For responsive */} 
     {/* max-xs:gap-4 */}  
-      <div className='text-x-small pt-[48px] px-[60px] max-[1076px]:text-xxs max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-xs:pt-6 max-xs:gap-4 max-xs:px-5 max-xs:pb-3'>
+      <div className='text-x-small pt-12 px-[60px] max-[1076px]:text-xxs max-lg:px-10 max-md:px-6 max-md:pb-[48px] max-md:pt-8 max-xs:pt-6 max-xs:gap-4 max-xs:px-5 max-xs:pb-3'>
 
       <div className="hidden max-lg:inline">
           <h1 className='text-sm mb-4 max-w-[83.33%] leading-[1.1] max-md:text-base max-xs:text-sm-base'>Join our team</h1>
@@ -90,7 +90,7 @@ export default function Footer() {
           <h3 className='text-base mb-4 leading-[1.1718] max-xl:text-sm-base max-lg:text-[20px] max-md:hidden'>Let's work <br className='hidden max-[1256px]:inline max-lg:hidden'/> together</h3>
           <ul className='flex flex-col gap-4 leading-[1.177] font-AlmiregoLight max-lg:gap-3'>
           <a href="#" className='group footer-col1-a'>Quebec City <span className='hidden group-hover:inline max-xxs:inline'>— G1N 4C2</span></a>
-          <a href="#" className='group fotter-col1-a'>Montreal <span className='hidden group-hover:inline max-xxs:inline'> — H3C 1W1</span></a>
+          <a href="#" className='group footer-col1-a'>Montreal <span className='hidden group-hover:inline max-xxs:inline'> — H3C 1W1</span></a>
           </ul>
         </div>
         {/* For responsive */}
@@ -99,8 +99,7 @@ export default function Footer() {
         <a href="#" className='leading-[1.177] mt-4 underline hover:text-purple-primary self-start transition-colors duration-300 ease-in-out'>info@mirego.com</a>
         </div>
 
-        <div className='max-md:hidden'>
-          
+        <div className='max-md:hidden'>          
           <h3 className='text-base mb-4 leading-[1.1718] max-xl:text-sm-base max-lg:text-[20px] max-md:hidden'>Share our <br className='hidden max-[1132px]:inline max-lg:hidden'/>expertise</h3>         
           <div className='flex flex-col gap-4 leading-[1.177] font-AlmiregoLight max-lg:gap-13 '>
           {expertise.map((map)=>(
@@ -112,7 +111,7 @@ export default function Footer() {
         <div className='max-lg:hidden'>
         {isHovering &&(
         <img src={goPurple} alt="Go svg" style={{height:"6vw",width:"6vw", left:`${cursorPosition.x}px`, top:`${cursorPosition.y}px`}}  className="custom-cursor"/>)}
-          <h1 className='text-[52px] mb-4 max-w-[83.33%] leading-[1.1] max-[1440px]:text-[48px] max-xl:text-sm-base  transition-colors duration-[300ms] ease-in-out cursor-none' onMouseEnter={handleMouseEnter} 
+          <h1 className='text-[52px] mb-4 max-w-[83.33%] leading-[1.1] max-2xl:text-[48px] max-xl:text-sm-base  transition-colors duration-[300ms] ease-in-out cursor-none' onMouseEnter={handleMouseEnter} 
           onMouseLeave={handleMouseLeave}>Join our <br className='hidden max-[1076px]:inline'/>team</h1>
           <a href="#" className='font-AlmiregoLight flex group hover:text-purple-primary text-x-small'>Available positions <span className='ml-1 opacity-0 transform group-hover:translate-x-1 group-hover:opacity-100 transition-all duration-300 ease-in-out'><img src={purpleArrow} alt="purpleArrow"/></span></a>
         </div>
@@ -158,11 +157,11 @@ export default function Footer() {
       </div>                                                                                                                                      
      
       {/* Ending footer tags */}
-      <div className='flex justify-between items-center font-AlmiregoRegular px-60 text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-xs:px-5 max-xs:pb-0 max-xxs:flex-col'>
+      <div className='flex justify-between items-center font-AlmiregoRegular px-[60px] text-[15px] pb-12 text-[#5B5B5B] max-lg:text-[14px] max-lg:px-10 max-lg:pb-6 max-md:px-6 max-md:text-[12px] max-xs:px-5 max-xs:pb-0 max-xxs:flex-col'>
         <h3 className='max-xxs:hidden'>&copy; 2024 MIREGO</h3>
-        <a href='#' className='hover:text-[#F7EDDE] '>Cookies Settings</a>
+        <a href='#' className='hover:text-cream-primary'>Cookies Settings</a>
         <h3 className='max-xxs:inline hidden'>&copy; 2024 MIREGO</h3>
-        <a href='#' className='hover:text-[#F7EDDE] max-xs:mt-[12px]'>Privacy policy</a>
+        <a href='#' className='hover:text-cream-primary max-xs:mt-[12px]'>Privacy policy</a>
       </div>
     </div>
   );

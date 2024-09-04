@@ -46,7 +46,7 @@ export default function Navbar() {
     setIsClicked(index);
   };
   return (
-    <header className='pt-[161.5px]'>
+    <header className='pt-2xl'>
       {/* pb-[54px] */}
     <div className='flex justify-between items-center pt-[60px] px-[60px] w-full font-AlmiregoDisplayRegular fixed top-0 z-50  max-lg:p-10  max-md:p-8 max-[424px]:p-6 max-[320px]:p-5'>
       <a href="/" className='pr-[18px] py-3'>

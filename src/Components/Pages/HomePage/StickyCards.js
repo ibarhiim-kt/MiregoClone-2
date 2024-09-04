@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Img1 from './assets/sliderCards/card1.webp'
 import Img2 from './assets/sliderCards/card2.webp'
 import Img3 from './assets/sliderCards/card3.webp'
+import ParaResuse from "../../ReusableCode/ParaResuse";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,12 +67,13 @@ const StickyCards = () => {
       
       <div className="pt-32 max-xl:pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-12">
            <h1 className='home-h1'>Made with <span className='h1-span'>passion </span></h1>
-      <div className='py-16 flex justify-between gap-2 max-xl:pt-14 max-lg:pt-12 max-md:py-8 max-md:flex-col max-xxs:pt-6'>
+           <ParaResuse text2="Through the years, we've built digital products that millions of people use every day on phones, web browsers, tablets, connected watches, TVs, kiosks, and voice assistants." stickyCardsPadding="pb-[51px] max-xl:pb-[43px] max-lg:pb-[35px]" showParagraph={true}  buttonLink='#' stickyCardsClasses="py-16 flex justify-between gap-2 max-xl:pt-14 max-lg:pt-12 max-md:py-8 max-md:flex-col max-xxs:pt-6" stickyCardsParaAnima="stickyCardsParaAnima" />
+      {/* <div className='py-16 flex justify-between gap-2 max-xl:pt-14 max-lg:pt-12 max-md:py-8 max-md:flex-col max-xxs:pt-6'>
         <div className='w-1/2 max-md:w-0'></div>
         <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='home-para pb-[51px] distinctiveParaAnima max-xl:pb-[43px] max-lg:pb-[35px]'>Through the years, we've built digital products that millions of people use every day on phones, web browsers, tablets, connected watches, TVs, kiosks, and voice assistants.</p>
+        <p className='home-para pb-[51px]  max-xl:pb-[43px] max-lg:pb-[35px]'>Through the years, we've built digital products that millions of people use every day on phones, web browsers, tablets, connected watches, TVs, kiosks, and voice assistants.</p>
       </div>    
-      </div>
+      </div> */}
       <div className="relative pt-16 -translate-y-11 -mb-36 max-xl:pt-14 max-lg:pt-12 max-md:pt-8 max-xxs:pt-6 flex flex-col ">
       
           {cardSlider.map((map,index)=>(

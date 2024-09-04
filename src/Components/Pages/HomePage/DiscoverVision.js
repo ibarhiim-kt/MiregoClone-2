@@ -8,6 +8,7 @@ import yoshua from './assets/yoshua.jpeg'
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import ParaResuse from '../../ReusableCode/ParaResuse'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function DiscoverVision() {  
@@ -44,23 +45,23 @@ export default function DiscoverVision() {
     }
   ]
   useEffect(()=>{  
-    gsap.set(".paraAnima",{y:0, opacity:1})
-    gsap.from(".paraAnima",{
+    gsap.set(".discoverParaAnima",{y:0, opacity:1})
+    gsap.from(".discoverParaAnima",{
       duration:0.8,
       opacity:0,
       y:50,
       scrollTrigger:{
-      trigger:".paraAnima",            
+      trigger:".discoverParaAnima",            
     } 
     })
-    gsap.set(".buttonAnima",{y:0, opacity:1})
-    gsap.from(".buttonAnima",{      
+    gsap.set(".discoverButtonAnima",{y:0, opacity:1})
+    gsap.from(".discoverButtonAnima",{      
       delay:0.15,
       duration:0.8,
       opacity:0,
       y:50,
       scrollTrigger:{
-      trigger:".paraAnima",         
+      trigger:".discoverParaAnima",         
     } 
     })
     gsap.set(".cardsGsap",{y:0, opacity:1})
@@ -75,16 +76,17 @@ export default function DiscoverVision() {
   },[])
   return (
     <div className='dist-disc-container'>
-      <h1 className='home-h1'>Building for the future</h1>
-      <div className='para-container overflow-hidden'> 
+      <h1 className='home-h1'>Building for the future</h1>      
+        <ParaResuse text2="Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future." buttonText="Discover our vision of the future" showParagraph={true} showButton={true} buttonLink='#' discoverClasses="overflow-hidden" discoverParaAnima="discoverParaAnima" paraContainer="para-container" discoverButtonAnima="discoverButtonAnima"/>
+      {/* <div className='para-container overflow-hidden'> 
         <div className='w-1/2 max-md:w-0'></div>
         <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='home-para paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='home-btn-container buttonAnima'>
+        <p className='home-para discoverParaAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
+        <div className='home-btn-container discoverButtonAnima'>
       <a href="#" className='home-btns'>Discover our vision of the future</a>
       </div>  
       </div>
-      </div>
+      </div> */}
       
       <div className='pt-32 grid grid-cols-4 gap-8 max-2xl:grid-cols-3 max-lg:grid-cols-2 
        max-md:grid-cols-1 max-md:pt-16 cardsGsap'>
