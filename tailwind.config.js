@@ -9,19 +9,91 @@ module.exports = {
         AlmiregoDisplayLight:["AlmiregoDisplayLight"],
         AlmiregoLight:["AlmiregoLight"],
         AlmiregoDisplayBold:["AlmiregoDisplayBold"],
-        NewsreaderItalic:["newsreader-italic"]
+        NewsreaderItalic:["newsreader-italic"],        
       },
-      screens: {
-        's': '424px',
-        'm': '390px',
-        'xs': '320px',
+      padding:{
+        "xl":'100px',
+        "lg":'72px',        
+        "md":'56px',
+        "sm":'22px'
       },
-      borderRadius: {
-        '4xl': '32px',
+      margin:{
+        "xl":"140px",
+        "lg":"62px",
+        "md":"71px",    
+        "sm":"34px"    
       },
       fontSize:{
-        '3.5xl': '32px'
-      }
+        "7xl":'96px',
+        "6xl":'90px',
+        "5xl":'88px',
+        "4xl":'80px',
+        "3xl":'72px',
+        "2xl":'68px',
+        "xl":'56px',
+        "lg":'52px',
+        "md":'40px',
+        "sm":'36px',
+        "xs":'32px',
+        "base":'28px',
+        "sm-base":"24px", 
+        "m": "20px",       
+        "small":'18px',
+        "x-small":'17px',
+        "xxs":'16px',        
+        // '3.5xl': '32px'        
+      },
+      screens:{        
+        "6xl":"4700px",
+        "5xl":"3100px",
+        "4xl":"2400px",
+        "3xl":"1921px", 
+        "2xl":"1440px",       
+        "large":"1014px",
+        "s":"424px",
+        "xs":"390px",
+        "xxs":"320px",        
+      },
+      lineHeight:{
+        "relaxed-xl":"155%",
+        "relaxed-lg":"125%",
+        "relaxed-md":"112%",
+        "tight-md":"110%",
+        "tight-sm":"105%" ,
+        "tight-s":"100%"              
+      },
+      backgroundColor:{        
+        "black-primary":"#050307",
+        "black-secondary":"#242424",
+        "cream-primary":"#F7EDDE",
+               
+      },
+      colors:{
+        "white-primary":"#FFFFFF",
+        "gray-primary":"rgba(255,255,255,.3)"         
+        // "#050307":"#050307"
+      },
+      borderColor:{
+        "gray-primary":"rgba(255,255,255,.3)" 
+      },
+      letterSpacing:{
+        "tight":"0.3px",
+        "normal":"0.4px"
+      },      
+      gap:{
+        "xl":"154px"
+      },
+      height:{
+        "xl":"134px",
+        "lg":"121.94px",
+        "md":"84px",
+        "sm":"50px",  
+        "xs" :"41px"     
+      },
+      borderRadius: {
+        '5xl': '500px',
+        '4xl': '32px',
+      },
     },
   },
   plugins: [],

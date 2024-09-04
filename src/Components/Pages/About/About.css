@@ -1,0 +1,18 @@
+/* .aboutSlider {
+    width: max-content; 
+    animation: aboutSlider-left 20s infinite; 
+  }
+  .aboutSlider:hover {
+    animation-play-state: paused; 
+  }
+  
+  
+  @keyframes aboutSlider-left {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%); 
+    }
+  }
+   */
