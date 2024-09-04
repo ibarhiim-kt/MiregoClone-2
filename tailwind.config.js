@@ -53,7 +53,7 @@ module.exports = {
         "2xl":"1440px",       
         "large":"1014px",
         "medium":"563px",
-        "s":"424px",
+        "sm":"424px",
         "xs":"390px",
         "xxs":"320px",        
       },
@@ -69,12 +69,15 @@ module.exports = {
       backgroundColor:{        
         "black-primary":"#050307",
         "black-secondary":"#242424",
-        "cream-primary":"#F7EDDE",               
+        "cream-primary":"#F7EDDE",
+        "purple-primary":"#b5a6ff"            
       },
       colors:{
+        "black-primary":"#050307",
         "white-primary":"#FFFFFF",
-        "gray-primary":"rgba(255,255,255,.3)"         
-        // "#050307":"#050307"
+        "gray-primary":"rgba(255,255,255,.3)",
+        "cream-primary":"#F7EDDE", 
+        "purple-primary":"#b5a6ff"              
       },
       borderColor:{
         "black-primary":"#272425",
@@ -87,7 +90,8 @@ module.exports = {
       },      
       gap:{
         "xl":"154px",
-        "md":"15px"
+        "md":"15px",
+        "sm":"6px"
       },
       height:{
         "2xl":"134px",
@@ -112,11 +116,12 @@ module.exports = {
       },
       borderRadius: {
         '5xl': '500px',
-        '4xl': '32px',
-        '3xl':'20px',
-         "xl": '9.5px'
-      },
-      
+        '4xl': '44px',
+        '3xl': '32px',
+        '2xl': '24px',
+        'xl':  '20px',
+        "lg":  '9.5px'    
+      },      
     },
   },
   plugins: [],

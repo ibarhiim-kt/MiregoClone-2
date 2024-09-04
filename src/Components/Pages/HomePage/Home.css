@@ -3,29 +3,29 @@
 @tailwind utilities;
 @layer components{
     .home-h1{
-       @apply font-AlmiregoDisplayLight leading-tight-sm text-7xl max-lg:text-2xl max-s:text-md max-xxs:text-xs
+       @apply font-AlmiregoDisplayLight leading-tight-sm text-7xl max-lg:text-2xl max-sm:text-md max-xxs:text-xs
     }
     .h1-span{
         @apply font-NewsreaderItalic font-light tracking-[-1.75px]
     }
     .dist-disc-container{
-        @apply pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-s:pt-[88px] max-xxs:pt-lg
+        @apply pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-sm:pt-[88px] max-xxs:pt-lg
     }
     .para-container{
         @apply pt-16 px-xl flex justify-between gap-2  max-xl:pt-14 max-xl:px-8 max-lg:pt-12 max-md:px-4 max-md:pt-8 max-md:flex-col max-xxs:pt-6
     }
     .home-para{
-        @apply text-[21px] tracking-normal leading-relaxed-lg max-s:text-small max-xs:text-x-small
+        @apply text-[21px] tracking-normal leading-relaxed-lg max-sm:text-small max-xs:text-x-small
     }
     .home-btn-container{
-        @apply mt-12 flex max-s:mt-8
+        @apply mt-12 flex max-sm:mt-8
     }
     .home-btns{
-        @apply px-5 py-3 bg-black-primary rounded-xl tracking-tight text-white-primary
+        @apply px-5 py-3 bg-black-primary rounded-lg tracking-tight text-white-primary
         flex items-center justify-center leading-none hover:bg-black-secondary
     }
     .sticky-cards-li{
-        @apply pt-1.5 pb-[3px] px-[13px] bg-white-primary rounded-4xl max-s:py-[3px] flex items-center justify-center
+        @apply pt-1.5 pb-[3px] px-[13px] bg-white-primary rounded-3xl max-sm:py-[3px] flex items-center justify-center
     }
     .discover-vision-li{
         @apply py-[2px] px-3 rounded-[50vh] border border-white

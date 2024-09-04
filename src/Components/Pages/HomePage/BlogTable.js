@@ -49,11 +49,11 @@ export default function BlogTable() {
   return (
     <div className='pt-52 font-AlmiregoRegular my-2 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 2xl:pt-64'>
       <div className='text-black-primary flex items-stretch justify-between gap-2 mb-2 max-lg:hidden card1'>
-        <div className="py-11 px-10 text-small flex flex-1 gap-xl bg-cream-primary rounded-3xl max-xl:gap-4">
+        <div className="py-11 px-10 text-small flex flex-1 gap-xl bg-cream-primary rounded-xl max-xl:gap-4">
             <p className='flex flex-col justify-between' style={{flex:1}}>DATE</p>
             <div style={{flex:2}}>NEWS</div>
         </div>
-        <div className='flex items-center justify-center w-60 bg-cream-primary rounded-3xl cursor-pointer'>
+        <div className='flex items-center justify-center w-60 bg-cream-primary rounded-xl cursor-pointer'>
             <p className='mr-1 font-AlmiregoDisplayBold'>SEE ALL</p>
             <img src={blackArrow} alt="arrow" />
         </div>
@@ -61,18 +61,18 @@ export default function BlogTable() {
     {blogTable.map((map,index)=>(
       <div className={`text-black-primary flex items-stretch justify-between gap-2 mb-2
       cursor-pointer max-md:flex-col ${index === 0?"card2":index===1?"card3":"card4"}`}>
-        <div className="py-11 px-10 flex flex-1 gap-xl bg-cream-primary rounded-3xl min-h-60 max-xl:gap-4 max-lg:flex-col max-lg:p-6">
+        <div className="py-11 px-10 flex flex-1 gap-xl bg-cream-primary rounded-xl min-h-60 max-xl:gap-4 max-lg:flex-col max-lg:p-6">
             <div className='flex flex-col justify-between flex-1 max-md:flex-none'>
             <p className='flex text-small flex-col justify-between max-lg:text-xxs max-lg:mb-4 max-md:mb-3'>{map.date}</p>
             <ul className='flex'>
-            <li className='rounded-xl py-base px-xs border border-black-primary text-xs-base'>{map.blogText}</li>
+            <li className='rounded-lg py-base px-xs border border-black-primary text-xs-base'>{map.blogText}</li>
             </ul>
             </div>
             <div className="text-xs max-lg:text-sm-base" style={{flex:2}}>
             <h2  className='leading-tight-xs'>{map.para} </h2>
             </div>
         </div>
-        <div className='overflow-hidden flex items-center justify-center max-w-60 bg-cream-primary rounded-3xl max-md:max-w-none'>            
+        <div className='overflow-hidden flex items-center justify-center max-w-60 bg-cream-primary rounded-xl max-md:max-w-none'>            
           <img src={map.img} alt="arrow" className='w-full h-full object-cover'/>
         </div>
       </div>

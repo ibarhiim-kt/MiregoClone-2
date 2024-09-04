@@ -46,7 +46,7 @@ export default function Hero() {
       </div>         
       <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-8 max-xxs:pt-6 max-xxs:pb-12'>
       
-      <p className='text-xl leading-tight-md max-xl:text-lg max-lg:text-sm max-s:text-base max-xxs:text-sm-base'>
+      <p className='text-xl leading-tight-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base'>
       Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners.</p>
       <div className='home-btn-container'>
       <a href="#" className='home-btns'>Learn more about our expertise</a>

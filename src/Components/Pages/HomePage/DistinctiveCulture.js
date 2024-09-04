@@ -54,10 +54,10 @@ export default function DistinctiveCulture() {
       </div>
       <div className='pt-16 pb-52 flex justify-between gap-2 max-xl:pt-12 max-xl:pb-42 max-lg:pt-11  max-lg:pb-32 max-md:flex-col max-md:pb-24 max-md:pt-8 max-xxs:pb-72 distinctiveCardTrigger'>
         <div className='w-lg overflow-hidden max-md:w-full 4xl:w-md 5xl:w-1/5 6xl:w-sm'>
-        <video src={distinctiveCultureVideo} autoPlay loop muted className='w-full rounded-3xl'></video>
+        <video src={distinctiveCultureVideo} autoPlay loop muted className='w-full rounded-xl'></video>
         </div>
         <div className='w-2/3 overflow-hidden  max-md:w-full distinctiveCardGsap'>
-            <img src={distinctiveCultureImage} alt="distinctiveCultureImage" className='rounded-3xl w-full'/>
+            <img src={distinctiveCultureImage} alt="distinctiveCultureImage" className='rounded-xl w-full'/>
         </div>
       </div>
     </div>
