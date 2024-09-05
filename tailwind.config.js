@@ -9,7 +9,7 @@ module.exports = {
         AlmiregoDisplayLight:["AlmiregoDisplayLight"],
         AlmiregoLight:["AlmiregoLight"],
         AlmiregoDisplayBold:["AlmiregoDisplayBold"],
-        NewsreaderItalic:["newsreader-italic"],        
+        NewsreaderItalic:["newsreader-italic"]
       },
       padding:{
         "xl":'100px',

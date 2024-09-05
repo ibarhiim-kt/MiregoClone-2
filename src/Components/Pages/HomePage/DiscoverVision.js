@@ -1,10 +1,10 @@
 import React from 'react'
-import digitalTrends from './assets/digitalTrends.webp'
-import arrow from './assets/arrow.svg'
-import githubCopilot from './assets/githubCopilot.webp'
-import basicNeeds from './assets/basicNeeds.webp'
-import symbol from './assets/symbol.svg'
-import yoshua from './assets/yoshua.jpeg'
+import digitalTrends from '../../assets/digitalTrends.webp'
+import arrow from '../../assets/arrow.svg'
+import githubCopilot from '../../assets/githubCopilot.webp'
+import basicNeeds from '../../assets/basicNeeds.webp'
+import symbol from '../../assets/symbol.svg'
+import yoshua from '../../assets/yoshua.jpeg'
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -100,11 +100,11 @@ export default function DiscoverVision() {
             <>
             <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
              
-            <img src={map.image} alt="digitalTrends" className='h-full w-full max-w-full object-cover'/>
+            <img src={map.image} alt="digitalTrends" className='h-full w-full max-w-[100%] object-cover'/>
             </div>
             <div className='py-8 px-6 relative text-white top-0 left-0 w-full h-full flex flex-col'>
               <div className='flex justify-between items-center'>
-                <ul className='flex items-center max-w-[80%] gap-1 text-sm'>
+                <ul className='text-base flex  items-center max-w-[80%] gap-1 text-[14px]'>
                   <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn1}</li>
                   <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn2}</li>
                 </ul>
