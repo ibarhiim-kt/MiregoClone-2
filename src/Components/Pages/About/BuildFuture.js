@@ -1,7 +1,6 @@
 import React, { useState,useRef } from 'react'
 import sliderImg1 from './assets/sliderImg1.png'
 import sliderImg2 from './assets/sliderImg2.png'
-// import sider from 'react-slick'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

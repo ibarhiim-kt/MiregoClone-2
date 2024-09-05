@@ -42,6 +42,7 @@ module.exports = {
         "xs":'32px',
         "base":'28px',
         "sm-base":"24px", 
+        "md-base":"20px",
         "xs-base":"19px",       
         "small":'18px',
         "x-small":'17px',
