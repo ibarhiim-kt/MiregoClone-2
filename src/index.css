@@ -26,3 +26,9 @@
     font-family:"newsreader-italic";
     src: url('./fonts/Almirego/newsreader-italic.ttf');
 }
+
+@layer components{
+    .footer-col1-a{
+        @apply hover:text-purple-primary self-start transition-colors duration-100 ease-in-out
+    }
+}
