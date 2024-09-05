@@ -1,10 +1,10 @@
 import React from 'react'
-import digitalTrends from '../../assets/digitalTrends.webp'
-import arrow from '../../assets/arrow.svg'
-import githubCopilot from '../../assets/githubCopilot.webp'
-import basicNeeds from '../../assets/basicNeeds.webp'
-import symbol from '../../assets/symbol.svg'
-import yoshua from '../../assets/yoshua.jpeg'
+import digitalTrends from '../../../assets/digitalTrends.webp'
+import arrow from '../../../assets/arrow.svg'
+import githubCopilot from '../../../assets/githubCopilot.webp'
+import basicNeeds from '../../../assets/basicNeeds.webp'
+import symbol from '../../../assets/symbol.svg'
+import yoshua from '../../../assets/yoshua.jpeg';
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -87,7 +87,7 @@ export default function DiscoverVision() {
       flex items-center justify-center leading-none hover:bg-#242424'>Discover our vision of the future</a>
       </div>  
       </div>
-      </div> */}
+      </div> 
       
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
        max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-[424px]:px-2 cardsGsap'>
@@ -104,7 +104,7 @@ export default function DiscoverVision() {
             </div>
             <div className='py-8 px-6 relative text-white top-0 left-0 w-full h-full flex flex-col'>
               <div className='flex justify-between items-center'>
-                <ul className='text-base flex  items-center max-w-[80%] gap-1 text-[14px]'>
+                <ul className='flex  items-center max-w-[80%] gap-1 text-[14px]'>
                   <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn1}</li>
                   <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn2}</li>
                 </ul>
