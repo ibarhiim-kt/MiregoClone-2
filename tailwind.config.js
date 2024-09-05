@@ -29,6 +29,7 @@ module.exports = {
         "sm":"34px"    
       },      
       fontSize:{
+        "8xl":'120px',
         "7xl":'96px',
         "6xl":'90px',
         "5xl":'88px',

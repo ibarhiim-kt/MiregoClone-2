@@ -18,9 +18,9 @@ export default function App() {
       <Hero/> 
       <VideoSec/>      
       <BuildFuture/>
-      <div className='bg-black-primary rounded-t-4xl px-[140px] max-xl:px-[72px] max-md:px-8 max-[390px]:px-6'>
+      <div className='bg-black-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6'>
       <Enterprenuership/>
-      {/* <ValueCard/> */}
+      <ValueCard/>
       </div>
     </div>
     </>

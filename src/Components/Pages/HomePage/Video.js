@@ -84,13 +84,14 @@ export default function Video() {
       {cards.map((map, index) => (
         <div 
         key={index}
-        className={`bg-cream-primary p-8 w-1/4 rounded-3xl max-lg:rounded-xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-7 animaCard${index + 1}`}>
+        className={`bg-cream-primary p-8 w-1/4 rounded-3xl max-lg:rounded-xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 animaCard${index + 1}`}>
         <div> 
-          <p className='mb-4 leading-tight-sm mt-[38px] max-md:mt-[21px] max-sm:mt-[15px] max-xxs:mt-2'>
-            <span className='text-5xl tracking-[-1.75px] max-xl:text-7xl max-md:text-xl max-sm:text-md max-xxs:text-xs'>{map.number}</span>
+        {/* mt-[38px] max-md:mt-[21px] max-sm:mt-[15px] max-xxs:mt-2 */}
+          <p className='leading-tight-sm '>
+            <span className='text-5xl leading-[100%] tracking-[-1.75px] max-2xl:text-4xl max-xl:text-3xl max-md:text-xl max-sm:text-md max-xxs:text-xs'>{map.number}</span>
             <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
           </p>
-          <p className="text-[21px] leading-relaxed-lg mt-11 tracking-normal font-AlmiregoRegular max-md:text-small max-xs:text-x-small ">
+          <p className="text-[21px] leading-relaxed-lg mt-[65px] tracking-normal font-AlmiregoRegular max-md:text-small max-md:mt-11 max-xs:text-x-small ">
             {map.text}
           </p>
         </div>
