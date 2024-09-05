@@ -13,7 +13,7 @@ export default function Expertise() {
 
   useEffect(() => {
     gsap.to('#arrowRight', {
-      duration: 10,  // Slower speed with a longer duration
+      duration: 10,  
       repeat: -1,
       motionPath: {
         path: '#pathTop',
@@ -21,11 +21,11 @@ export default function Expertise() {
         autoRotate: true,
         alignOrigin: [0.5, 0.5],
       },
-      ease: "linear",  // Consistent speed throughout the animation
+      ease: "linear",  
     });
 
     gsap.to('#arrowLeft', {
-      duration: 10,  // Slower speed with a longer duration
+      duration: 10,  
       repeat: -1,
       motionPath: {
         path: '#pathBottom',
@@ -35,7 +35,7 @@ export default function Expertise() {
         start: 0.25,
         end: 1.25,
       },
-      ease: "linear",  // Consistent speed throughout the animation
+      ease: "linear",  
     });
   }, []);
 
@@ -60,7 +60,7 @@ export default function Expertise() {
       title: 'Build',
       subtitle: 'Development and operation',
       content: 'The build phase involves hands-on development, ensuring the product is built to the highest standards...',
-      keyServices: false, // No "Key Services" sentence, but still has services list
+      keyServices: false, 
       services: ['Mobile and tablet platforms', 'Web and cloud-native', 'Smart watch', 'Kiosk (trade shows, customer demos)', 'Smart TV & media streaming', 'AI and ML', 'Blockchain', 'IoT'],
       index: 2,
     },
@@ -68,7 +68,7 @@ export default function Expertise() {
       title: 'Evolution',
       subtitle: 'Iteration & Support',
       content: 'Once the product is live, we move into an evolution phase where we continuously iterate...',
-      keyServices: false, // No "Key Services" sentence, but still has services list
+      keyServices: false, 
       services: ['Continuous development', 'Ad hoc development', '24/7 support', 'Product audits (security, accessibility, UX)'],
       index: 3,
     },
@@ -87,7 +87,6 @@ export default function Expertise() {
         <meta name="description" content="This is the expertise page description" />
       </Helmet>
       <div className='mx-auto max-w-screen-xl'>
-        {/* Page header */}
         <div className='pt-24 px-lg flex'>
           <div>
             <p className='text-2xl font-[AlmiregoDisplayLight] font-extralight leading-[98%] max-2xl:text-5xl min-2xl:px-24 max-xl:text-4xl'>
@@ -192,28 +191,12 @@ export default function Expertise() {
                       </p>
 
                       {/* Chevron Button */}
-                      <button
-  onClick={() => toggleSection(section.index)}
-  className={`border-2 rounded-full w-7 h-7 flex justify-center items-center transition-all duration-300 ${
-    openSections[section.index] ? 'bg-white' : ''
-  } hover:bg-white`} // Background change on hover
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    className={`w-6 h-6 transition-transform duration-300 ${
-      openSections[section.index] ? '' : 'hover:rotate-180'
-    }`} // Chevron rotates only on hover, no rotation on click
-    fill={openSections[section.index] ? '#113b31' : '#FFFFFF'} // Adjust fill color based on state
-    onMouseEnter={(e) => (e.currentTarget.style.fill = '#113b31')} // Change color on hover
-    onMouseLeave={(e) => (e.currentTarget.style.fill = openSections[section.index] ? '#113b31' : '#FFFFFF')} // Revert color when hover ends
-  >
-    <path
-      d="M12 15.75l-6-6 1.06-1.06L12 13.69l4.94-4.94 1.06 1.06z"
-    />
-  </svg>
-</button>
-
+                      <button  onClick={() => toggleSection(section.index)}  className={`border-2 rounded-full w-7 h-7 flex justify-center items-center transition-all duration-300 ${openSections[section.index] ? 'bg-white' : '' } hover:bg-white`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={`w-6 h-6 transition-transform duration-300 ${openSections[section.index] ? '' : 'hover:rotate-180'}`} 
+                        fill={openSections[section.index] ? '#113b31' : '#FFFFFF'} onMouseEnter={(e) => (e.currentTarget.style.fill = '#113b31')} onMouseLeave={(e) => (e.currentTarget.style.fill = openSections[section.index] ? '#113b31' : '#FFFFFF')}>
+                      <path d="M12 15.75l-6-6 1.06-1.06L12 13.69l4.94-4.94 1.06 1.06z"/>
+                       </svg>
+                      </button>
                     </div>
 
                     {/* Section Content */}
