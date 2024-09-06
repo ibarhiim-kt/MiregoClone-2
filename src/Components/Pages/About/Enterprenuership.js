@@ -27,7 +27,7 @@ export default function Enterprenuership() {
     <div className='pt-32 max-xl:pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-12 text-cream-primary'>
     <div className="flex justify-between gap-2 font-AlmiregoDisplayLight text-5xl leading-tight-sm  max-xl:text-4xl max-lg:text-xl max-md:flex-col max-sm:text-xs max-xxs:text-base">
       
-    <h1 className='w-[66%] max-md:w-full'>✲ Entrepreneurship is in our DNA</h1>
+    <h1 className='w-2/3 max-md:w-full'>✲ Entrepreneurship is in our DNA</h1>
     <div className="w-lg max-md:w-0"></div>
     </div>
     <ParaResuse text2="From day one, we've had a unique culture and DNA. We learn by doing. We think while we're building. We don't just buy software, we build it. We have a rigorous process for identifying the right things to build and the ideal way to build them. And with each iteration, we help create digital businesses driven by new digital products and services." showParagraph={true} paraContainer="para-container" enterprenuershipClasses="flex-row-reverse px-0"/>
@@ -46,12 +46,11 @@ export default function Enterprenuership() {
       </div>        
     ))}
     </div>
-    <div className="py-32 font-AlmiregoDisplayLight max-xl:py-24 max-xl:text-4xl max-lg:py-20 max-md:py-16  max-sm:pt-12 ">
-        <h1 className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-320:text-base inline-block'>
-        Our culture is what defines, differentiates, and makes us unique. We work together towards a common mission and share these eight <span className='font-NewsreaderItalic font-light'>core</span> principles.
+    <div className="py-32 font-AlmiregoDisplayLight max-xl:py-24 max-xl:text-4xl max-lg:py-20 max-md:py-16  max-sm:pt-12">
+        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-320:text-base'>
+        Our culture is what defines, differentiates, and makes us unique. We work together towards a common mission and share these eight <span className='font-NewsreaderItalic font-light'>core</span> principles.       
+        </p>
         <img src={profilePics} alt="Profile Pictures" className='h-[130px] max-xl:h-lg max-lg:h-sm max-md:h-base max-xxs:h-[42px] inline-block'/>
-        </h1>
-        
     </div>
     </div>
   )

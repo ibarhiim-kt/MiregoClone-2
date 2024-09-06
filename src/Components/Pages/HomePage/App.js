@@ -21,6 +21,7 @@ export default function App() {
       <DiscoverVision/>   
       <BlogTable/>
       <DistinctiveCulture/>
+      
     </div>
     </>
   )

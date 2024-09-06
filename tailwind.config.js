@@ -13,6 +13,7 @@ module.exports = {
       },
       padding:{
         "3xl":"280px",
+        "2.5xl":"180px",
         "2xl":"140px",
         "xl":'100px',
         "lg":'72px',        

@@ -74,6 +74,7 @@
         width: 100%;
     }
 } 
+
 .slider {
   display: flex;
   width: max-content; 
@@ -140,3 +141,17 @@
     left: 0;
 }  
 
+/* .worldSlide{
+position: relative;
+}
+.worldSlide{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+width: 50px;
+height: 50px;
+background-color: red;
+z-index: 10;
+margin-top: 50px;
+} */
