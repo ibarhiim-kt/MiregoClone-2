@@ -43,7 +43,7 @@ export default function Expertise() {
     {
       title: 'Discover',
       subtitle: 'Research & Strategy',
-      content: 'First, the discovery phase enables our team to understand the context in which your business operates...',
+      content: 'First, the discovery phase enables our team to understand the context in which your business operates, the goals you want to achieve, and the users you are trying to serve. Once armed with a comprehensive understanding of your reality and that of the market, our team begins a series of exercises that seek to explore different creative avenues. We then prioritize the best ideas, validate their feasibility, deliver prototypes that will be validated with users, and deliver a concrete, actionable plan.',
       keyServices: true,
       services: ['Competitive analysis (benchmark)', 'Product performance analysis (analytics)', 'User surveys and interviews', 'Field observation and journey mapping', 'Technological analysis', 'User concept testing', 'Product visions and roadmaps'],
       index: 0,
@@ -51,7 +51,7 @@ export default function Expertise() {
     {
       title: 'Define',
       subtitle: 'Design & Product Management',
-      content: 'During the define phase, we shape ideas and design solutions that solve real business problems...',
+      content: 'Once the product vision has been clarified and the main functionalities are known, the design team proceeds with product definition and design. At Mirego, we believe that the quality of the experience delivered to users is intimately linked to the number of iterations carried out in the design phase. Thanks to the various activities in this phase, our product definition process achieves the maximum number of iterations on interfaces in the minimum possible time. We move fast and prefer to create prototypes that can be tested by users rather than heavy documentation that ends up gathering dust.',
       keyServices: true,
       services: ['Backlog definition & prioritization', 'Information architecture', 'Visual prototype', 'Usability testing', 'Screen mockups', 'Digital brand design'],
       index: 1,
@@ -59,7 +59,10 @@ export default function Expertise() {
     {
       title: 'Build',
       subtitle: 'Development and operation',
-      content: 'The build phase involves hands-on development, ensuring the product is built to the highest standards...',
+      content: [
+        <p>Once the product vision and design have been defined, we start building it by using the best technologies, tools, and practices in order to reach world-class quality and experience levels. We use the Agile software development methodology to run two-week sprints that allow us to constantly deliver features that can be tested and validated through functional deliverables. Once the product has been deployed in production, we make sure it stays highly available and runs smoothly.</p>,
+        <p className='mt-3'>We are technology-agnostic, which means we are not bound to a finite set of technologies—we favour using the right platforms and technologies for the right product. We have extensive experience building applications for:</p>
+      ],
       keyServices: false, 
       services: ['Mobile and tablet platforms', 'Web and cloud-native', 'Smart watch', 'Kiosk (trade shows, customer demos)', 'Smart TV & media streaming', 'AI and ML', 'Blockchain', 'IoT'],
       index: 2,
@@ -67,7 +70,7 @@ export default function Expertise() {
     {
       title: 'Evolution',
       subtitle: 'Iteration & Support',
-      content: 'Once the product is live, we move into an evolution phase where we continuously iterate...',
+      content: "Products only survive if they can adapt. We believe that lasting solutions are constantly evolving. A product's past performance doesn't guarantee its future success. Staying one step ahead allows us to create user experiences that remain relevant over time.",
       keyServices: false, 
       services: ['Continuous development', 'Ad hoc development', '24/7 support', 'Product audits (security, accessibility, UX)'],
       index: 3,
@@ -93,7 +96,7 @@ export default function Expertise() {
               We help build <span className='font-NewsreaderItalic font-light -tracking-[1.75px]'>digital businesses. </span>
             </p>
             <div className='mt-12'>
-              <button href="#" className='px-5 py-[9px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-xl text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
+              <button href="#" className='px-5 py-[8px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-lg text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
                 Discover our approach
               </button>
             </div>
@@ -209,7 +212,7 @@ export default function Expertise() {
                           <p className='text-[20px] font-AlmiregoDisplayBold mt-4'>Key services:</p>
                         )}
 
-                        <ul className='mt-4'>
+                        <ul className='mt-3'>
                           {section.services.map((service, idx) => (
                             <li key={idx} className='mt-2 pb-4 text-small font-AlmiregoRegular'>• {service}</li>
                           ))}
