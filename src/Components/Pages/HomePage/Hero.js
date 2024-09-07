@@ -1,34 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import together from './assets/together.svg'; // Import your SVG
-import ParaResuse from '../../ReusableCode/ParaResuse'; // Import the reusable component
+import together from './assets/together.svg'; 
+import ParaResuse from '../../ReusableCode/ParaResuse'; 
 
 export default function Hero() {
   const words = ['of business', 'of organization', 'of sports', 'of media', 'of entertainment', 'of travel', 'of agriculture', 'of retail', 'of food', 'of health', 'of real estate', 'of manufacturing', 'of finance', 'of insurance'];
   const [index, setIndex] = useState(0);
   const [showTogether, setShowTogether] = useState(false);
 
-  // Update every 150ms for faster tag transitions
   useEffect(() => {
     if (index < words.length) {
       const intervalId = setInterval(() => {
         setIndex((prevIndex) => prevIndex + 1);
-      }, 210); // 150ms for each word for faster transitions
-      return () => clearInterval(intervalId); // Clean up interval on component unmount
+      }, 210); 
+      return () => clearInterval(intervalId); 
     } else {
-      setShowTogether(true); // Show SVG after all words
+      setShowTogether(true); // to show SVG after all words
     }
   }, [index, words.length]);
 
   return (
     <div className="font-AlmiregoDisplayRegular px-xl max-xl:px-8 max-md:px-4 3xl:px-60">
       <div className="font-AlmiregoDisplayLight">
-        {/* Heading */}
         <p className="text-5xl mr-3 align-middle inline-block leading-tight-md max-xl:text-4xl max-lg:text-xl max-md:text-xs max-md:mr-2 max-xxs:text-base">
-          Building the future
-        </p>
+          Building the future</p>
 
-        {/* Text bubble animation container */}
         <div className="pt-[2px] align-middle inline-block max-large:mt-[1.5px] max-xxs:mt-0">
           <div className="overflow-hidden h-40 max-xl:h-32 max-lg:h-28 max-md:h-24 max-xxs:h-20">
             <AnimatePresence mode="wait">
@@ -38,7 +34,7 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -50 }}
-                  transition={{ duration: 0.05, ease: 'easeInOut' }}  // Faster animation duration
+                  transition={{ duration: 0.05, ease: 'easeInOut' }}  
                   className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]"
                   style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
                 >
@@ -47,7 +43,6 @@ export default function Hero() {
               )}
             </AnimatePresence>
 
-            {/* Together SVG */}
             {showTogether && (
               <div className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0">
                 <img
