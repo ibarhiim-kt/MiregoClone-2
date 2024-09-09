@@ -42,8 +42,7 @@ export default function Hero() {
                   className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] inline-block max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]"
                   style={{ whiteSpace: 'nowrap', transform: 'rotate(-14deg)' }}> {/* apply the tilt  */}
                   {words[index]}
-                </motion.div>
-              )}
+                </motion.div>)}
             </AnimatePresence>
 
             {showTogether && (
