@@ -21,7 +21,10 @@ export default function ParaResuse({
     buildFutureClasses,
     enterprenuershipClasses,
     paraContainer,
-    
+    text3,
+    teamClasses,
+    teamParaAnima,
+    teamText2Class,
     // showCards=false,
     // cardsNumber,
     // cardsPlus,
@@ -35,12 +38,14 @@ export default function ParaResuse({
       </p>
 
       {showParagraph && (
-        <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses} ${enterprenuershipClasses}
-        ${aboutHeroParaClasses}`}>
+        <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses} ${enterprenuershipClasses} ${aboutHeroParaClasses} ${teamClasses}`}>
           <div className='w-1/2 max-md:w-0'></div>
           <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-            <p className={`home-para ${distinctiveParaAnima} ${discoverParaAnima} ${stickyCardsPadding}`}>
+            <p className={`home-para ${distinctiveParaAnima} ${discoverParaAnima} ${stickyCardsPadding} ${teamParaAnima} ${teamText2Class}`}>
               {text2}
+            </p>
+            <p className="home-para">
+              {text3}
             </p>
             {showButton && (
               <div className='home-btn-container overflow-hidden'>  

@@ -89,42 +89,42 @@ export default function ValueCard() {
   };
   
   return (
-    <div className="relative grid grid-cols-4 gap-2">
+    <div className="relative grid grid-cols-4 gap-2 pb-52 pt-16 max-xl:grid-cols-2 max-xl:pt-14 max-lg:pt-12 max-md:pt-8   max-md-large:grid-cols-1">
     
     {cards.map((map, index) => (
       <div key={index} className="relative font-AlmiregoDisplayRegular rounded-3xl group overflow-hidden" onMouseEnter={() => handleMouseEnter(`.valueCardsGsap-${index}`)}>
-        <div className="p-7 max-2xl:p-6 border rounded-3xl text-cream-primary aspect-[2/3] flex flex-col justify-between">
+        <div className="p-7 max-2xl:p-6 border rounded-3xl text-cream-primary aspect-[2/3] flex flex-col justify-between max-xl:p-8">
           <div>
-            <div className="text-xs-base mb-12 flex gap-1 max-2xl:mb-9">
-              <div className="border border-cream-primary py-[3px] px-[13px] rounded-full">
+            <div className="text-xs-base mb-12 flex gap-1 max-sm:mb-6">
+              <div className="border border-cream-primary py-[3px] px-[13px] rounded-full ">
                 {map.btn}
               </div>
               <div className="border border-cream-primary py-[3px] px-[13px] rounded-[9.5px]">
                 {map.number}
               </div>
             </div>
-            <div className="text-sm max-2xl:text-base leading-[118%]">
+            <div className="text-sm max-2xl:text-base leading-[118%] max-xl:text-md max-sm:text-sm-base">
               {map.text}
             </div>
           </div>
           <img
             src={map.img}
             alt={map.text}
-            className="h-[8.1391vw] w-[8.1391vw]"
+            className="h-[8.1391vw] w-[8.1391vw] max-xl:h-[19.481vw] max-xl:w-[19.481vw] max-md-large:h-[40.52vw] max-md-large:w-[40.52vw] max-sm:w-[34.72vw} max-sm:h-auto max-sm:w-[34.72vw]"
           />
         </div>
         <div className={`valueCardsGsap-${index} rounded-3xl hidden group-hover:${index == index?"inline":""} absolute top-0 left-0 w-full h-full z-10  overflow-hidden pointer-events-none  ${index == 0 || index == 6 ?"bg-[#b5a6ff]":index == 1 || index == 7?"bg-[#ff4524]":index == 2 || index==4?"bg-cream-primary":index == 3 || index == 5? "bg-[#3e8372]":""}`}>
-          <div className="p-7 max-2xl:p-6 aspect-[2/3] flex flex-col justify-between opacity-75">
+          <div className="p-7 max-2xl:p-6 aspect-[2/3] flex flex-col justify-between opacity-75 max-xl:p-8">
             <div>
-              <div className="text-xs-base mb-12 flex gap-1 max-2xl:mb-9">
-                <div className="border border-black py-[3px] px-[13px] rounded-full">
+              <div className="text-xs-base mb-12 flex gap-1 max-sm:mb-6">
+                <div className="border border-black py-[3px] px-[13px] rounded-full ">
                   {map.btn}
                 </div>
                 <div className="border border-black py-[3px] px-[13px] rounded-[9.5px]">
                   {map.number}
                 </div>  
               </div>
-              <div className="font-AlmiregoDisplayRegular text-small max-2xl:text-base leading-[118%]">
+              <div className="font-AlmiregoDisplayRegular text-small max-2xl:text-base leading-[118%] max-xl:text-[21px]">
                 {map.para}
               </div>
             </div>

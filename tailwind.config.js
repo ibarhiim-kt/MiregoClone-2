@@ -57,6 +57,7 @@ module.exports = {
         "3xl":"1921px", 
         "2xl":"1440px",       
         "large":"1014px",
+        "md-large":"670px",
         "medium":"563px",
         "sm":"424px",
         "xs":"390px",

@@ -5,6 +5,7 @@ import VideoSec from './VideoSec'
 import BuildFuture from './BuildFuture'
 import Enterprenuership from './Enterprenuership'
 import ValueCard from './ValueCard'
+import Team from './Team'
 import { Helmet } from 'react-helmet-async';
 
 export default function App() {
@@ -20,7 +21,12 @@ export default function App() {
       <BuildFuture/>
       <div className='bg-black-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6'>
       <Enterprenuership/>
-      <ValueCard/>  
+      <ValueCard/>             
+      </div>
+      <div className='bg-black-primary'>
+      <div className="bg-cream-primary rounded-t-4xl px-2xl">
+        <Team/>
+      </div> 
       </div>
     </div>
     </>
