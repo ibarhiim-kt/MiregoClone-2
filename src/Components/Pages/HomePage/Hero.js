@@ -30,20 +30,17 @@ export default function Hero() {
             <AnimatePresence mode="wait">
               {index < words.length && (
                 <motion.div
-                  key={index}
-                  initial={{ opacity: 1, translateY: 50 }}  
-                  animate={{ opacity: 1, translateY: 0 }}   
+                  key={index} initial={{ opacity: 1, translateY: 50 }} animate={{ opacity: 1, translateY: 0 }}   
                   exit={{ 
                     opacity: 1, 
-                    translateY: -50,  // exit upwards 
+                    translateY: -50, 
                     scaleX: 1.03,  
                     scaleY: 0.96,  
                     transition: { duration: 0.05, ease: 'linear' } 
                   }}
                   transition={{ duration: 0.05, ease: 'linear' }}  
-                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] transform rotate-6 scale-100 max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]" // Increase tilt to rotate-6
-                  style={{ whiteSpace: 'nowrap' }}
-                >
+                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] inline-block max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]"
+                  style={{ whiteSpace: 'nowrap', transform: 'rotate(-14deg)' }}> {/* apply the tilt  */}
                   {words[index]}
                 </motion.div>
               )}
@@ -52,16 +49,9 @@ export default function Hero() {
             {showTogether && (
               <motion.div
                 key="together-svg"
-                initial={{ opacity: 0, translateY: 50 }} 
-                animate={{ opacity: 1, translateY: 0 }}   
-                transition={{ duration: 0.05, ease: 'linear' }}  
-                className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0"
-              >
-                <img
-                  src={together}
-                  alt="Together"
-                  className="max-xl:h-lg max-lg:h-sm max-md:h-base max-md:translate-y-[-13%] max-xxs:h-[42px]"
-                />
+                initial={{ opacity: 0, translateY: 50 }} animate={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.05, ease: 'linear' }}  
+                className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0">
+                <img src={together} alt="Together" className="max-xl:h-lg max-lg:h-sm max-md:h-base max-md:translate-y-[-13%] max-xxs:h-[42px]"/>
               </motion.div>
             )}
           </div>
