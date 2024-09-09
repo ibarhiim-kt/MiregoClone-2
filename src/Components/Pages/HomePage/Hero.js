@@ -15,7 +15,7 @@ export default function Hero() {
       }, 210); 
       return () => clearInterval(intervalId); 
     } else {
-      setShowTogether(true); // to show the SVG after all words
+      setShowTogether(true);  // to show the SVG after all words
     }
   }, [index, words.length]);
 
@@ -31,21 +31,18 @@ export default function Hero() {
               {index < words.length && (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 1, translateY: 50 }}  
+                  animate={{ opacity: 1, translateY: 0 }}   
                   exit={{ 
-                    opacity: 0, 
-                    y: -32,  // move the bubble upwards slightly
-                    rotate: -5,  // a slightly  noticeable rotation (rotating counter-clockwise)
+                    opacity: 1, 
+                    translateY: -50,  // exit upwards 
                     scaleX: 1.03,  
                     scaleY: 0.96,  
-                    originX: 1,  
-                    originY: 0,  
-                    transition: { duration: 0.05, ease: 'easeInOut' }
+                    transition: { duration: 0.05, ease: 'linear' } 
                   }}
-                  transition={{ duration: 0.05, ease: 'easeInOut' }}  
-                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]"
-                  style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
+                  transition={{ duration: 0.05, ease: 'linear' }}  
+                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] transform rotate-6 scale-100 max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]" // Increase tilt to rotate-6
+                  style={{ whiteSpace: 'nowrap' }}
                 >
                   {words[index]}
                 </motion.div>
@@ -53,13 +50,19 @@ export default function Hero() {
             </AnimatePresence>
 
             {showTogether && (
-              <div className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0">
+              <motion.div
+                key="together-svg"
+                initial={{ opacity: 0, translateY: 50 }} 
+                animate={{ opacity: 1, translateY: 0 }}   
+                transition={{ duration: 0.05, ease: 'linear' }}  
+                className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0"
+              >
                 <img
                   src={together}
                   alt="Together"
                   className="max-xl:h-lg max-lg:h-sm max-md:h-base max-md:translate-y-[-13%] max-xxs:h-[42px]"
                 />
-              </div>
+              </motion.div>
             )}
           </div>
         </div>
