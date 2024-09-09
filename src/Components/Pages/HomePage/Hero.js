@@ -65,8 +65,7 @@ export default function Hero() {
                   style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
                 >
                   {words[index]}
-                </motion.div>
-              )}
+                </motion.div>)}
             </AnimatePresence>
 
             {showTogether && (
