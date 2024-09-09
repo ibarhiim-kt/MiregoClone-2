@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
         </div>
       </div> 
-          <div className='animate-wordSlide' >
+          {/* <div className='animate-wordSlide' >
         {words.map((word,index)=>(      
         <div className={`mb-1 word-slide max-lg:mb-0.5 transform `}>
         <div className='flex leading-[1.334]'>
@@ -91,7 +91,7 @@ export default function Hero() {
         </div>      
         ))}
         <div className='max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-0.5 max-medium:pl-0'>   <img src={together} alt="togetherImg" className='max-xl:h-lg max-lg:h-sm max-md:h-base max-md:translate-y-[-13%] max-xxs:h-[42px]'/> </div>
-        </div>
+        </div> */}
         
       
         
