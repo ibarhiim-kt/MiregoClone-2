@@ -34,10 +34,10 @@ export default function Enterprenuership() {
     
     <div className='flex gap-2 pt-16 font-AlmiregoDisplayLight cardsTrigger overflow-hidden text-black max-xl:pt-14  max-lg:pt-12 max-lg:flex-wrap max-md:pt-8 max-md:flex-col'>
     {aboutCards.map((map,index)=>(
-      <div className={`p-8 w-1/4 rounded-3xl  max-lg:rounded-2xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 ${index === 0 ? 'animaCard1 bg-[#FF4524]': index === 1 ? 'animaCard2 bg-[#F7EDDE]':index===2 ?'animaCard3 bg-[#3E8372]' : 'animaCard4 bg-[#B5A6FF]' }`} >
-        <div className={`${index === 0 ? 'animaCard1': index === 1 ? 'animaCard2':index===2 ?'animaCard3' : 'animaCard4' }`}> 
+      <div className={`p-8 w-1/4 rounded-3xl  max-lg:rounded-2xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 ${index === 0 ? 'animaCard1 bg-[#FF4524]': index === 1 ? 'animaCard2 bg-[#F7EDDE]':index===2 ?'animaCard3 bg-[#3E8372]' : 'animaCard4 bg-[#B5A6FF]' }`}>
+        <div className={`${index === 0 ? 'animaCard1': index === 1 ? 'animaCard2':index===2 ?'animaCard3' : 'animaCard4' }`}>
         <p className=' mb-4 leading-tight-sm animaCard1'>
-        <span className='text-5xl leading-[100%] tracking-[-1.75px] max-xl:text-3xl max-md:text-xl
+        <span className='text-5xl leading-normal tracking-[-1.75px] max-xl:text-3xl max-md:text-xl
          max-sm:text-md max-xxs:text-xs '>{map.number}</span>
         <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
         </p>
@@ -47,10 +47,11 @@ export default function Enterprenuership() {
     ))}
     </div>
     <div className="py-32 font-AlmiregoDisplayLight max-xl:py-24 max-xl:text-4xl max-lg:py-20 max-md:py-16  max-sm:pt-12">
-        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-320:text-base'>
+        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-320:text-base inline'>
         Our culture is what defines, differentiates, and makes us unique. We work together towards a common mission and share these eight <span className='font-NewsreaderItalic font-light'>core</span> principles.       
+        <img src={profilePics} alt="Profile Pictures" className='h-[130px] mt-[-33px] max-xl:h-lg max-lg:h-sm max-md:h-base max-xxs:h-[42px] inline-block'/>
         </p>
-        <img src={profilePics} alt="Profile Pictures" className='h-[130px] max-xl:h-lg max-lg:h-sm max-md:h-base max-xxs:h-[42px] inline-block'/>
+        
     </div>
     </div>
   )

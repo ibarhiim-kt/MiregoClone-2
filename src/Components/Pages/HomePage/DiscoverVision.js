@@ -48,7 +48,7 @@ export default function DiscoverVision() {
     gsap.set(".discoverParaAnima",{y:0, opacity:1})
     gsap.from(".discoverParaAnima",{
       duration:0.8,
-      opacity:0,
+      opacity:0,  
       y:50,
       scrollTrigger:{
       trigger:".discoverParaAnima",            
