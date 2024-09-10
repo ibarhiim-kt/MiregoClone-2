@@ -31,18 +31,19 @@ export default function Hero() {
               {index < words.length && (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 1, translateY: 50, rotate: -0.5 }}  
-                  animate={{ opacity: 1, translateY: 0, rotate: -0.5 }}   // keep subtle tilt throughout
+                  initial={{ opacity: 0, y: 30, scale: 0.9, rotate: -1 }}  // Enter animation
+                  animate={{ opacity: 1, y: 0, scale: 1, rotate: -0.5 }}   // Mid-animation
                   exit={{ 
-                    opacity: 1, 
-                    translateY: -50,   
-                    scaleX: 1.03,  
-                    scaleY: 0.96,  
-                    rotate: -0.3,  // subtle tilt on exit
-                    transition: { duration: 0.05, ease: 'linear' } 
+                    opacity: 0, 
+                    y: -20,   
+                    scale: 0.95,  
+                    rotate: 0.5,  // Exit animation
+                    transition: { duration: 0.05, ease: 'easeInOut' } 
                   }}
-                  transition={{ duration: 0.05, ease: 'linear' }}  
-                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] inline-block max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]">
+                  transition={{ duration: 0.05, ease: 'easeInOut' }}  
+                  className="py-[2px] text-6xl px-[33px] border-lg border-black rounded-[70px] inline-block max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-[4px] max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-[1px]"
+                  style={{ whiteSpace: 'nowrap' }}
+                >
                   {words[index]}
                 </motion.div>
               )}
@@ -51,9 +52,9 @@ export default function Hero() {
             {showTogether && (
               <motion.div
                 key="together-svg"
-                initial={{ opacity: 0, translateY: 50 }}  
-                animate={{ opacity: 1, translateY: 0 }}   
-                transition={{ duration: 0.05, ease: 'linear' }}  
+                initial={{ opacity: 0, translateY: 50 }}  // Start slightly below
+                animate={{ opacity: 1, translateY: 0 }}   // Move into view quickly
+                transition={{ duration: 0.05, ease: 'easeInOut' }}  
                 className="max-lg:pt-[5px] max-md:pt-[7px] max-md:pl-[2px] max-medium:pl-0">
                 <img src={together} alt="Together"
                   className="max-xl:h-lg max-lg:h-sm max-md:h-base max-md:translate-y-[-13%] max-xxs:h-[42px]"/>
