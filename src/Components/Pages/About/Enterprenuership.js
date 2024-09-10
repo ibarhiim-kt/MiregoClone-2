@@ -47,7 +47,7 @@ export default function Enterprenuership() {
     ))}
     </div>
     <div className="py-32 font-AlmiregoDisplayLight max-xl:py-24 max-xl:text-4xl max-lg:py-20 max-md:py-16  max-sm:pt-12">
-        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-320:text-base inline'>
+        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-xxs:text-base inline'>
         Our culture is what defines, differentiates, and makes us unique. We work together towards a common mission and share these eight <span className='font-NewsreaderItalic font-light'>core</span> principles.       
         <img src={profilePics} alt="Profile Pictures" className='h-[130px] mt-[-33px] max-xl:h-lg max-lg:h-sm max-md:h-base max-xxs:h-[42px] inline-block'/>
         </p>
