@@ -102,7 +102,7 @@ module.exports = {
       height:{
         "2xl":"134px",
         "xl":"121.94px",
-        "lg":"117.94",        
+        "lg":"117.94px",        
         "md":"84px",
         "sm":"80px",
         "xs":"50px",  

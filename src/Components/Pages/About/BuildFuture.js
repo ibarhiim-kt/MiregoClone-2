@@ -23,7 +23,7 @@ export default function BuildFuture() {
   return (
     <div className='pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-sm:pt-5xl max-xxs:pt-lg min-2xl:pt-64'>
 
-      <div className='px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6 max-xxs:pt-6'>
+      <div className='px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6 max-xxs:pt-6 3xl:px-3xl'>
 
       <div className="flex justify-between gap-2 font-AlmiregoDisplayLight text-5xl leading-tight-sm max-xl:text-4xl max-lg:text-xl max-md:flex-col max-sm:text-xs max-xxs:text-base min-3xl:pt-64 min-3xl:px-3xl">
 

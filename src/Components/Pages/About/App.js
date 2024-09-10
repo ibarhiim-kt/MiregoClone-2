@@ -19,7 +19,7 @@ export default function App() {
       <Hero/> 
       <VideoSec/>      
       <BuildFuture/>
-      <div className='bg-black-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6 min-3xl:px-3xl'>
+      <div className='bg-black-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6 3xl:px-3xl'>
       <Enterprenuership/>
       <ValueCard/>             
       </div>

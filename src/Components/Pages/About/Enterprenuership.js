@@ -41,15 +41,16 @@ export default function Enterprenuership() {
          max-sm:text-md max-xxs:text-xs '>{map.number}</span>
         <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
         </p>
-        <p className="text-[21px] leading-relaxed-lg max-md:mt-11 tracking-normal font-AlmiregoRegular max-md:text-small max-xs:text-x-small"><br></br>{map.text}</p>
+        <p className="text-[21px] leading-relaxed-lg  tracking-normal font-AlmiregoRegular 
+        max-md:mt-[22px] max-md:text-small max-xs:text-x-small"><br></br>{map.text}</p>
         </div>
       </div>        
     ))}
     </div>
     <div className="py-32 font-AlmiregoDisplayLight max-xl:py-24 max-xl:text-4xl max-lg:py-20 max-md:py-16  max-sm:pt-12">
-        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-xxs:text-base inline'>
+        <p className='text-5xl leading-[133.5%] max-xl:text-4xl max-lg:text-xl max-md:text-xs max-xxs:text-base inline max-xl:inline-block'>
         Our culture is what defines, differentiates, and makes us unique. We work together towards a common mission and share these eight <span className='font-NewsreaderItalic font-light'>core</span> principles.       
-        <img src={profilePics} alt="Profile Pictures" className='h-[130px] mt-[-33px] max-xl:h-lg max-lg:h-sm max-md:h-base max-xxs:h-[42px] inline-block'/>
+        <img src={profilePics} alt="Profile Pictures" className='h-[130px] mt-[-33px] max-xl:h-lg max-lg:h-sm max-md:h-base max-md:mt-[-17px] max-xxs:h-[42px] inline-block'/>
         </p>
         
     </div>

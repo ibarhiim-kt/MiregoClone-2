@@ -89,7 +89,7 @@ export default function ValueCard() {
   };
   
   return (
-    <div className="relative grid grid-cols-4 gap-2 pb-52 pt-16 max-xl:grid-cols-2 max-xl:pt-14 max-lg:pt-12 max-md:pt-8   max-md-large:grid-cols-1">
+    <div className="relative grid grid-cols-4 gap-2 pb-52 pt-16 max-xl:grid-cols-2 max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-md-large:grid-cols-1 max-sm:pb-[88px]">
     
     {cards.map((map, index) => (
       <div key={index} className="relative font-AlmiregoDisplayRegular rounded-3xl group overflow-hidden" onMouseEnter={() => handleMouseEnter(`.valueCardsGsap-${index}`)}>

@@ -75,10 +75,8 @@ export default function Team() {
               className={`teamShapes absolute inset-0 transition-transform duration-500 ease-in-out ${
                 showShapes === index ? 'translate-x-[-100%]' : 'translate-x-0'
               }`}            
-            >
-              
-            </div>         
-            
+            >               
+            </div>                    
               <div className={`px-6 py-7 rounded-t-2xl absolute bottom-0 left-0 right-0 backdrop-blur-[40px] transition-transform duration-500 ease-in-out ${showShapes === index? 'translate-y-0' :'translate-y-full'}`} style={{ background: "rgba(247, 237, 222, 0.16)" }}>
                 <h1 className='text-base mb-6 leading-relaxed-md'>{map.name}</h1>
                 <p className='text-[15px]'>{map.expertise}</p>
