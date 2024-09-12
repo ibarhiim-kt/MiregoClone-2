@@ -1,15 +1,54 @@
 import { Helmet } from 'react-helmet-async';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import Img1 from '../../assets/expertise-1.webp';
-import Img2 from '../../assets/expertise-2.webp';
-import Img3 from '../../assets/expertise-3.webp';
+import Img1 from './assets/expertise-1.webp';
+import Img2 from './assets/expertise-2.webp';
+import Img3 from './assets/expertise-3.webp';
+import Img4 from './assets/expertise-4.webp';
+import Img5 from './assets/expertise-5.webp';
+import Person1 from './assets/person-1.webp';
+import Person2 from './assets/person-2.webp';
+import Person3 from './assets/person-3.webp';
+import Person4 from './assets/person-4.webp';
+import Person5 from './assets/person-5.webp';
+import './Expertise.css';
+import GFoot from '../../assets/GFooterImg.png';
+import Arrow from '../../assets/arrow.svg';
 
 gsap.registerPlugin(MotionPathPlugin);
 
 export default function Expertise() {
   const [openSections, setOpenSections] = useState([false, false, false, false]);
+  const ourApproachRef = useRef(null); 
+  const tags = [
+    'IGA', 'Golf Canada', 'SAQ', 'Winnipeg Jets', 'Schluter',
+    'Canadian Football League', 'Cominar', 'Bombardier', 'Archibald',
+    'DAVIDs TEA', 'TV5 Québec Canada', 'Sinai Health System', 'Airthings',
+    'Familiprix', 'Air Transat', 'Glo Bakery', 'BRP GO!', 'DuProprio',
+    'Bell', 'Le Massif de Charlevoix', 'Premier Tech', 'The Montréal Canadiens',
+    'Groupe Capitales Médias', 'Cineplex'
+  ];
+
+  const randomizeTags = () => {
+    return tags
+      .map(tag => ({ tag, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ tag }) => tag);
+  };
+
+  const generateShape = (index) => {
+    switch (index % 3) {
+      case 0:
+        return 'rounded-ls'; // Rectangular with rounded corners
+      case 1:
+        return 'rounded-[72px]'; // Fully round
+      case 2:
+        return 'rounded-[40px]'; // Semi-rectangle semi-round
+      default:
+        return '';
+    }
+  };
 
   useEffect(() => {
     gsap.to('#arrowRight', {
@@ -83,20 +122,34 @@ export default function Expertise() {
     setOpenSections(newOpenSections);
   };
 
+  // Scroll to "Our Approach" section when button is clicked
+  const scrollToApproach = () => {
+    ourApproachRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const avatars = [
+    { imgSrc: Person1, outlineColor: '#ff451e' },
+    { imgSrc: Person2, outlineColor: '#3d8371' },
+    { imgSrc: Person3, outlineColor: '#b5a6ff' },
+    { imgSrc: Person4, outlineColor: '#f7ecde' },
+    { imgSrc: Person5, outlineColor: '#ff4523' },
+  ];
+
   return (
     <>
       <Helmet>
         <title>Expertise - Mirego</title>
         <meta name="description" content="This is the expertise page description" />
       </Helmet>
-      <div className='mx-auto max-w-screen-xl'>
+      <div className='min-h-screen mx-auto max-w-screen-xl'>
+        <div className='flex-grow'>
         <div className='pt-24 px-lg flex'>
           <div>
             <p className='text-2xl font-[AlmiregoDisplayLight] font-extralight leading-[98%] max-2xl:text-5xl min-2xl:px-24 max-xl:text-4xl'>
-              We help build <span className='font-NewsreaderItalic font-light -tracking-[1.75px]'>digital businesses. </span>
+              We help build <span className='font-NewsreaderItalic font-light tracking-normal'>digital businesses. </span>
             </p>
             <div className='mt-12'>
-              <button href="#" className='px-5 py-[8px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-lg text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
+              <button onClick={scrollToApproach} className='px-5 py-[8px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-ls text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
                 Discover our approach
               </button>
             </div>
@@ -115,7 +168,7 @@ export default function Expertise() {
           {/* Text div */}
           <div className='w-1/2'>
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight'>One of a few end-to-end digital product teams.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-[21px] pr-[85px] tracking-normal'>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[85px] tracking-normal'>
               No matter how well defined or vague their idea, our clients can count on us to help them turn their vision into a functional digital product or service that delivers an exceptional user experience, enables them to achieve their business goals, and supports their digital strategy.
             </p>
           </div>
@@ -125,7 +178,7 @@ export default function Expertise() {
         <div className='flex gap-14 mx-md'>
           <div className='w-1/2'>
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-relaxed-lg tracking-tight'>Build the right things, build things right.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-[21px] pr-[5px] leading-relaxed-lg tracking-normal'>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[5px] leading-relaxed-lg tracking-normal'>
               We've been immersed in the technology industry for decades, working on a wide variety of projects. Among the startups we've helped, some have enjoyed resounding success at launch, while others have been less fortunate. Among the established organizations we have helped, some have managed to reinvent themselves rather than disappear, while others could not adapt to the new environment.
               <br />
               The most important lesson we've learned is this: A robust strategy without proper execution is useless, and vice versa. One constantly supports the other.<br />
@@ -142,11 +195,11 @@ export default function Expertise() {
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-relaxed-lg tracking-tight'>Our manifesto</p>
           </div>
           <div className='w-1/2'>
-            <p className='font-[AlmiregoRegular] text-[21px] pr-[5px] leading-relaxed-lg tracking-normal'>
+            <p className='font-[AlmiregoRegular] text-lm pr-[5px] leading-relaxed-lg tracking-normal'>
               A single digital product now has the power to transform an entire industry. The performance and survival of many organizations now depend on their ability to integrate digital products into the core of their business strategy. Our team's manifesto documents 16 principles that we believe are the cornerstone of creating exceptional digital products that achieve their goals and stand the test of time.
             </p>
             <div className='mt-12'>
-              <button href="#" className='px-5 py-[9px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-xl text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
+              <button href="#" className='px-5 py-[9px] cursor-pointer font-[AlmiregoDisplayRegular] bg-[#050307] rounded-ls text-xxs text-[#FFFFFF] tracking-[0.3px] align-middle'>
                 Read our manifesto
               </button>
             </div>
@@ -157,7 +210,7 @@ export default function Expertise() {
           <img alt='error_Img' src={Img3} className='rounded-3xl' />
         </div>
 
-        {/* Ending cards */}
+        {/* Our Approach section */}
         <div className='w-full'>
           {/* Card 1 */}
           <div className='mt-24 w-full pb-2.5xl rounded-t-4xl bg-[#ff462a] '>
@@ -175,7 +228,7 @@ export default function Expertise() {
           </div>
 
           {/* Card 2 */}
-          <div className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-[#113b31]'>
+          <div ref={ourApproachRef} className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-[#113b31]'>
             <div className='mx-md pt-24'>
               <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular border-white'>
                 Services
@@ -187,42 +240,102 @@ export default function Expertise() {
               <div className='pt-24'>
                 {/* Section - 1 Roll-up/down functionality */}
                 {sections.map((section, idx) => (
-                  <div className={`pt-10 ${idx !== 0 ? 'mt-5' : ''}`} key={section.index}>
+                  <div className={`pt-2 ${idx !== 0 ? 'mt-4' : ''}`} key={section.index}>
                     <div className='flex justify-between items-center'>
                       <p className='text-sm font-AlmiregoRegular'>
                         <span className='font-NewsreaderItalic'>{section.title}</span> ⏤ {section.subtitle}
                       </p>
 
                       {/* Chevron Button */}
-                      <button  onClick={() => toggleSection(section.index)}  className={`border-2 rounded-full w-7 h-7 flex justify-center items-center transition-all duration-300 ${openSections[section.index] ? 'bg-white' : '' } hover:bg-white`}>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={`w-6 h-6 transition-transform duration-300 ${openSections[section.index] ? '' : 'hover:rotate-180'}`} 
-                        fill={openSections[section.index] ? '#113b31' : '#FFFFFF'} onMouseEnter={(e) => (e.currentTarget.style.fill = '#113b31')} onMouseLeave={(e) => (e.currentTarget.style.fill = openSections[section.index] ? '#113b31' : '#FFFFFF')}>
-                      <path d="M12 15.75l-6-6 1.06-1.06L12 13.69l4.94-4.94 1.06 1.06z"/>
-                       </svg>
+                      <button  onClick={() => toggleSection(section.index)}  className={`border-2 rounded-full w-7 h-7 flex justify-center items-center transition-all duration-300 ${openSections[section.index] ? 'bg-cream-primary' : '' } hover:bg-cream-primary`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={`w-6 h-6 transition-transform duration-300 ${openSections[section.index] ? '' : 'hover:rotate-180'}`} 
+                          fill={openSections[section.index] ? '#113b31' : '#FFFFFF'} onMouseEnter={(e) => (e.currentTarget.style.fill = '#113b31')} onMouseLeave={(e) => (e.currentTarget.style.fill = openSections[section.index] ? '#113b31' : '#FFFFFF')}>
+                          <path d="M12 15.75l-6-6 1.06-1.06L12 13.69l4.94-4.94 1.06 1.06z"/>
+                        </svg>
                       </button>
                     </div>
 
                     {/* Section Content */}
                     {openSections[section.index] && (
                       <div className='mt-8'>
-                        <p className='text-[21px] font-AlmiregoRegular'>{section.content}</p>
+                        <p className='text-lm font-AlmiregoRegular'>{section.content}</p>
 
                         {/* Conditionally render the "Key Services" title if needed */}
                         {section.keyServices && (
-                          <p className='text-[20px] font-AlmiregoDisplayBold mt-4'>Key services:</p>
-                        )}
+                          <p className='text-[20px] font-AlmiregoDisplayBold mt-4'>Key services:</p>)}
 
                         <ul className='mt-3'>
                           {section.services.map((service, idx) => (
-                            <li key={idx} className='mt-2 pb-4 text-small font-AlmiregoRegular'>• {service}</li>
-                          ))}
+                            <li key={idx} className='mt-2 pb-4 text-small font-AlmiregoRegular'>• {service}</li>))}
                         </ul>
                       </div>
+                    )}
+                    {/* Add a divider line below all sections except the last one */}
+                    {idx < sections.length - 1 && (
+                      <hr className='mt-5 border-t border-cream-primary' />  // Horizontal line
                     )}
                   </div>
                 ))}
               </div>
             </div>
+            {/* Add two images side by side */}
+            <div className='flex px-lg pt-32 gap-2'>
+            <img src={Img4} alt='error_expertise' className='rounded-3xl w-[49.7%]'/>
+            <img src={Img5} alt='error_expertise' className='rounded-3xl w-[49.7%]'/>
+            </div>
+
+            <div className='pt-24'>
+             <p className='mx-md font-[AlmiregoDisplayLight] mt-5 text-4xl leading-[140%] tracking-tight'>
+               We believe that a great digital product is as beautiful as it is useful and reliable, meeting business goals while satisfying user needs.
+              <span className="inline-block -mt-24 ml-4 align-middle">
+               {/* Avatar Stack */}
+              <div className="space-x-[-28px] inline-flex items-center align-middle">
+              {avatars.map((avatar, index) => (
+               <div key={index} className="relative w-[58px] h-[58px] p-[6px] rounded-full align-middle overflow-hidden bg-[#113b31]" 
+                style={{ border: `1.5px solid ${avatar.outlineColor}`, zIndex: avatars.length - index }}>
+              <img src={avatar.imgSrc} alt={`Person ${index + 1}`} className="w-auto h-full object-cover align-middle" />
+              </div>
+              ))}
+              </div>
+             </span>
+             </p>
+            </div>
+
+            <div className='mx-md pt-32 flex gap-12'>
+            <p className='w-1/2 font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-normal'>Making a difference in people's everyday lives</p>
+            <p className='w-1/2 font-[AlmiregoRegular] -mr-1 leading-tight text-lm tracking-tight'><strong className='tracking-[1.1px]'>We have vast ambitions in creating digital products.</strong> To make thousands of families aware of the quality of the air they breathe ⏤ Accompany thousands of people on their travels ⏤ Reinventing the way millions of Canadians view their favorite content ⏤ Building tomorrow's health-centric pharmacy ⏤ Reinventing telemedicine with a human approach ⏤ Inspiring the discovery of new wines, beers, and spirits for millions of Quebecers  ⏤ Creating tomorrow's grocery experience across Canada ⏤ Building the future of driving experiences for millions of recreational product fans
+            </p>
+            </div>
+
+          {/* Carousel of words */}
+          <div className="mt-16 pb-12 overflow-hidden">
+          {[...Array(5)].map((_, rowIndex) => (
+            <div key={rowIndex} className="carousel-row cursor-pointer flex space-x-6 mt-8">
+              {[...randomizeTags(), ...randomizeTags()].map((tag, index) => (
+                <div key={`${tag}-${index}`}
+                  className={`inline-block py-5 px-11 border-4 border-cream-primary text-cream-primary font-AlmiregoDisplayRegular text-1.75xl ${generateShape(index)} whitespace-nowrap transition-colors duration-300 hover:bg-cream-primary hover:text-black`}>
+                  {tag}
+                </div>
+              ))}
+            </div>
+             ))}
+             </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-black-secondary'>
+              <div className='flex justify-between items-center mx-10'>
+              <a href='/projects' className='flex items-center mt-14 cursor-pointer hover:text-purple-primary transition-colors duration-300 ease-in-out'>
+                  <p className='font-AlmiregoDisplayRegular text-sm-base'>Go to Projects</p>
+                  <span className='inline-block ml-2 group-hover:text-purple-primary'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-7 h-6 fill-current transform rotate-180">
+                  <path d="M12 2l1.41 1.41L7.83 9H22v2H7.83l5.58 5.59L12 18l-8-8 8-8z"/>
+                 </svg>
+                 </span>
+              </a>
+              <img src={GFoot} alt='error_Footer' className='mt-14 w-[108px] h-14'/>
+             </div>
+            </div>          
           </div>
         </div>
       </div>
