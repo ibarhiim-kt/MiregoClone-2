@@ -1,6 +1,5 @@
 import React from 'react'
-import Enterprenuership from '../Pages/About/Enterprenuership'
-
+// import Enterprenuership from '../Pages/About/Enterprenuership'
 export default function ParaResuse({
     text1,
     marginClasses,
@@ -18,33 +17,30 @@ export default function ParaResuse({
     stickyCardsClasses,
     stickyCardsPadding,
     aboutHeroParaClasses,
+    aboutHeroParaAnima,
     buildFutureClasses,
+    buildFutureAnima,
     enterprenuershipClasses,
     paraContainer,
+    enterpreneurshipParaAnima,
     text3,
     teamClasses,
     teamParaAnima,
     teamText2Class,
-    // showCards=false,
-    // cardsNumber,
-    // cardsPlus,
-    // cardsIndex,
-    // cardsText
 }) {    
   return (
     <>
-      <p className={`font-AlmiregoDisplayRegular text-xl leading-relaxed-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base ${marginClasses}`}>
+      <p className={`font-AlmiregoDisplayRegular text-xl leading-relaxed-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base ${marginClasses} ${aboutHeroParaAnima}`}>
       {text1}
       </p>
-
       {showParagraph && (
         <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses} ${enterprenuershipClasses} ${aboutHeroParaClasses} ${teamClasses}`}>
           <div className='w-1/2 max-md:w-0'></div>
           <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-            <p className={`home-para ${distinctiveParaAnima} ${discoverParaAnima} ${stickyCardsPadding} ${teamParaAnima} ${teamText2Class}`}>
+            <p className={`home-para ${distinctiveParaAnima} ${discoverParaAnima} ${buildFutureAnima} ${stickyCardsPadding} ${aboutHeroParaAnima} ${teamParaAnima} ${teamText2Class} ${enterpreneurshipParaAnima}`}>
               {text2}
             </p>
-            <p className="home-para">
+            <p className={`home-para ${teamParaAnima}`}>
               {text3}
             </p>
             {showButton && (

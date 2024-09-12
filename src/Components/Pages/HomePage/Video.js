@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import video from './assets/videos/video.mp4';
 import go from './assets/go.svg';
+// import ParaResuse from '../../ReusableCode/ParaResuse';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ParaResuse from '../../ReusableCode/ParaResuse';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Video() {

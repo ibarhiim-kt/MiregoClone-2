@@ -1,14 +1,13 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import digitalTrends from './assets/digitalTrends.webp'
 import arrow from './assets/arrow.svg'
 import githubCopilot from './assets/githubCopilot.webp'
 import basicNeeds from './assets/basicNeeds.webp'
 import symbol from './assets/symbol.svg'
 import yoshua from './assets/yoshua.jpeg'
-import { useEffect } from 'react'
+import ParaResuse from '../../ReusableCode/ParaResuse'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ParaResuse from '../../ReusableCode/ParaResuse'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function DiscoverVision() {  

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import ParaResuse from '../../ReusableCode/ParaResuse';
 import teamMem1 from './assets/teamMem1.webp';
 import teamMem2 from './assets/teamMem2.webp';
@@ -17,6 +17,9 @@ import teamMem14 from './assets/teamMem14.webp';
 import teamMem15 from './assets/teamMem15.webp';
 import teamMem16 from './assets/teamMem16.webp';
 import teamMem17 from './assets/teamMem17.webp';
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Team() {
   const [showShapes, setShowShapes] = useState(null);
@@ -39,10 +42,76 @@ export default function Team() {
     { img: teamMem16, name: "Jean Benoit Dubé", expertise: "Director ⏤ Digital Strategy" },
     { img: teamMem17, name: "Sylvain Jacques", expertise: "Director ⏤ Design" },
   ];
-
+  useEffect(()=>{  
+    gsap.set(".teamHeadingAnima",{y:0, opacity:1})
+    gsap.from(".teamHeadingAnima",{
+      duration:0.8,
+      opacity:0,  
+      y:50,
+      scrollTrigger:{
+      trigger:".teamHeadingAnima",   
+              
+    } 
+    })
+    gsap.set(".teamParaAnima",{opacity:1,y:0})
+    gsap.from(".teamParaAnima",{
+      duration:2,
+      opacity:0,  
+      y:50,
+      scrollTrigger:{
+      trigger:".teamParaAnima",            
+    } 
+    })
+      gsap.set(".teamRow1",{opacity:1})
+      gsap.from(".teamRow1",{
+        duration:0.8,
+        opacity:0,         
+        scrollTrigger:{
+        trigger:".teamRow1",
+        start:"top 80%"     
+      } 
+      })
+      gsap.set(".teamRow2",{opacity:1})
+      gsap.from(".teamRow2",{
+        duration:0.8,
+        opacity:0,         
+        scrollTrigger:{
+        trigger:".teamRow2",      
+        start:"top 90%"     
+      } 
+      })
+      gsap.set(".teamRow3",{y:0, opacity:1})
+      gsap.from(".teamRow3",{
+        duration:0.8,
+        opacity:0,        
+        scrollTrigger:{
+        trigger:".teamRow3",        
+        start:"top 90%"     
+      } 
+      })
+      gsap.set(".teamRow4",{y:0, opacity:1})
+      gsap.from(".teamRow4",{
+        duration:0.8,
+        opacity:0,          
+        scrollTrigger:{
+        trigger:".teamRow4",      
+        start:"top 90%"     
+      } 
+      })
+      gsap.set(".teamRow5",{opacity:1})
+      gsap.from(".teamRow5",{
+        duration:0.8,
+        opacity:0,  
+        scrollTrigger:{
+        trigger:".teamRow5",      
+        start:"top 90%"     
+      } 
+      })
+  },[])
+ 
   return (
     <div className="pt-32 max-xl:pt-24 max-md:pt-16 max-sm:pt-12">
-      <h1 className="home-h1">Our team</h1>
+      <h1 className="home-h1 teamHeadingAnima">Our team</h1>
       <ParaResuse 
         text2="Mirego is a team of passionate people dedicated to creating remarkable digital products. We believe that work should be an opportunity to innovate, have fun, and make a difference. We work as a team, sharing our ideas in the hope of making a difference and creating a better world." 
         showParagraph={true} 
@@ -57,7 +126,7 @@ export default function Team() {
         {teamMembers.map((map, index) => (
           <div
             key={index}
-            className={`relative rounded-3xl overflow-hidden  ${
+            className={`relative rounded-3xl overflow-hidden ${index<4? 'teamRow1':index>=4 && index<=7?"teamRow2":index>=8 && index<=11?"teamRow3":index>=12 && index<=15?"teamRow4":'teamRow5'} ${
               index === 1 || index === 4 || index === 7 || index === 10 || index === 13 || index === 16
                 ? 'custom-class-1'
                 : index === 2 || index === 5 || index === 8 || index === 11 || index === 14
@@ -72,16 +141,15 @@ export default function Team() {
             </div>
             
             <div
-              className={`teamShapes absolute inset-0 transition-transform duration-500 ease-in-out ${
-                showShapes === index ? 'translate-x-[-100%]' : 'translate-x-0'
+              className={`teamShapes absolute rounded-3xl inset-0 transition-transform duration-500 ease-in-out ${
+                showShapes === index ? '-translate-x-full' : 'translate-x-0'
               }`}            
             >               
             </div>                    
-              <div className={`px-6 py-7 rounded-t-2xl absolute bottom-0 left-0 right-0 backdrop-blur-[40px] transition-transform duration-500 ease-in-out ${showShapes === index? 'translate-y-0' :'translate-y-full'}`} style={{ background: "rgba(247, 237, 222, 0.16)" }}>
+              <div className={`px-6 py-7 rounded-t-2xl absolute bottom-0 left-0 right-0 backdrop-blur-[40px] transition-transform duration-500 ease-in-out ${showShapes === index? 'translate-y-0' :'translate-y-full'}`} style={{ background: "rgba(247, 237, 222, 0.16)"}}>
                 <h1 className='text-base mb-6 leading-relaxed-md'>{map.name}</h1>
                 <p className='text-[15px]'>{map.expertise}</p>
-              </div>
-           
+              </div>           
           </div>
         ))}
       </div>
