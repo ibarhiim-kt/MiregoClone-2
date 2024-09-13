@@ -141,11 +141,11 @@ export default function Expertise() {
         <title>Expertise - Mirego</title>
         <meta name="description" content="This is the expertise page description" />
       </Helmet>
-      <div className='min-h-screen mx-auto max-w-screen-xl'>
+      <div className='min-h-screen mx-auto max-w-screen-6xl'>
         <div className='flex-grow'>
-        <div className='pt-24 px-lg flex'>
+        <div className='pt-24 max-6xl:px-2xl max-medium-large:px-lg flex max-md:px-6 max-md:pt-20'>
           <div>
-            <p className='text-2xl font-[AlmiregoDisplayLight] font-extralight leading-[98%] max-2xl:text-5xl min-2xl:px-24 max-xl:text-4xl'>
+            <p className='text-5xl font-[AlmiregoDisplayLight] font-extralight leading-[98%] max-xxs:text-base max-sm:text-xs max-large:text-xl max-4.5xl:text-4xl'>
               We help build <span className='font-NewsreaderItalic font-light tracking-normal'>digital businesses. </span>
             </p>
             <div className='mt-12'>
@@ -155,47 +155,47 @@ export default function Expertise() {
             </div>
             <br></br>
           </div>
-          <div className='w-1/3'></div>
+          <div className='w-1/3 hidden md:block'></div>
         </div>
 
         <div className='flex justify-center align-middle pt-lg'>
           <img src={Img1} className='w-[94%] rounded-3xl' />
         </div>
 
-        <div className='pt-20 flex gap-14'>
-          <div className='w-1/2'>{/* Animation div */}</div>
+        <div className='pt-20 flex max-md:flex-col gap-14 max-md:mx-7'>
+          <div className='w-1/2 max-md:w-full'>{/* Animation div */}</div>
           
           {/* Text div */}
-          <div className='w-1/2'>
-            <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight'>One of a few end-to-end digital product teams.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[85px] tracking-normal'>
+          <div className='w-1/2 max-md:w-full'>
+            <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight max-large:text-sm max-large:leading-none max-sm:text-base'>One of a few end-to-end digital product teams.</p>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[85px] tracking-normal max-large:pr-0 max-large:mt-10 max-sm:text-small max-sm:mt-6'>
               No matter how well defined or vague their idea, our clients can count on us to help them turn their vision into a functional digital product or service that delivers an exceptional user experience, enables them to achieve their business goals, and supports their digital strategy.
             </p>
           </div>
         </div>
 
         <br />
-        <div className='flex gap-14 mx-md'>
-          <div className='w-1/2'>
-            <p className='font-[AlmiregoDisplayRegular] text-lg leading-relaxed-lg tracking-tight'>Build the right things, build things right.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[5px] leading-relaxed-lg tracking-normal'>
+        <div className='flex gap-14 mx-md max-md:flex-col max-md:mx-7'>
+          <div className='w-1/2 max-md:w-full'>
+            <p className='font-[AlmiregoDisplayRegular] text-xl leading-relaxed-lg tracking-tight max-medium-large:text-lg max-large:text-sm'>Build the right things,<br className='max-md:mt-8'/> build things right.</p>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[5px] leading-relaxed-lg tracking-normal max-large:mt-6 max-md:pr-0'>
               We've been immersed in the technology industry for decades, working on a wide variety of projects. Among the startups we've helped, some have enjoyed resounding success at launch, while others have been less fortunate. Among the established organizations we have helped, some have managed to reinvent themselves rather than disappear, while others could not adapt to the new environment.
-              <br />
+              <br className='max-md:hidden' />
               The most important lesson we've learned is this: A robust strategy without proper execution is useless, and vice versa. One constantly supports the other.<br />
               <span className='mt-3 block'>We have perfected a rigorous process and developed the skills needed to identify the right things to build and the ideal way to build them. We learn by doing. We think while building. And with each iteration, we help create digital businesses driven by new digital products and services.</span>
             </p>
           </div>
-          <div className='w-1/2'>
+          <div className='w-1/2 max-md:w-full'>
             <img alt='error_Img' src={Img2} className='rounded-3xl' />
           </div>
         </div>
 
-        <div className='flex mx-md gap-14 mt-[155px]'>
-          <div className='w-1/2'>
-            <p className='font-[AlmiregoDisplayRegular] text-lg leading-relaxed-lg tracking-tight'>Our manifesto</p>
+        <div className='flex mx-md gap-14 mt-[155px] max-md:flex-col max-md:mx-7 max-md:mt-20'>
+          <div className='w-1/2 max-md:w-full'>
+            <p className='font-[AlmiregoDisplayRegular] text-xl leading-relaxed-lg tracking-tight max-medium-large:text-lg max-large:text-sm'>Our manifesto</p>
           </div>
-          <div className='w-1/2'>
-            <p className='font-[AlmiregoRegular] text-lm pr-[5px] leading-relaxed-lg tracking-normal'>
+          <div className='w-1/2 max-md:w-full'>
+            <p className='font-[AlmiregoRegular] text-lm pr-[5px] leading-relaxed-lg tracking-normal max-md:mt-5'>
               A single digital product now has the power to transform an entire industry. The performance and survival of many organizations now depend on their ability to integrate digital products into the core of their business strategy. Our team's manifesto documents 16 principles that we believe are the cornerstone of creating exceptional digital products that achieve their goals and stand the test of time.
             </p>
             <div className='mt-12'>
@@ -211,17 +211,17 @@ export default function Expertise() {
         </div>
 
         {/* Our Approach section */}
-        <div className='w-full'>
+        <div className='w-full max-w-full'>
           {/* Card 1 */}
-          <div className='mt-24 w-full pb-2.5xl rounded-t-4xl bg-[#ff462a] '>
-            <div className='mx-md pt-24'>
-              <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular text-white border-white'>
+          <div className='mt-24 w-full pb-2.5xl max-large:pb-2xl rounded-t-4xl bg-[#ff462a]'>
+            <div className='max-2xl:mx-md pt-24 max-6xl:mx-2xl max-md:mx-8'>
+              <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular text-white border-white max-large:text-[15px]'>
                 Devices
               </div>
-              <p className='font-[AlmiregoDisplayLight] mt-5 text-7xl text-white-primary leading-tight-sm tracking-tight'>
+              <p className='font-[AlmiregoDisplayLight] mt-5 max-2.5xl:text-7xl text-white-primary leading-tight-sm tracking-tight max-6xl:text-[120px] max-large:text-2xl max-sm:text-md'>
                 We build for these platforms
               </p>
-              <p className='font-AlmiregoDisplay mt-14 text-lg text-white-primary leading-tight-md'>
+              <p className='font-AlmiregoDisplayRegular mt-14 max-medium-large:text-lg text-white-primary leading-tight-md max-6xl:text-xl max-large:text-sm max-sm:text-base'>
                 Mobile ⏤ Tablet ⏤ Web ⏤ Cloud-native ⏤ Wearables ⏤ Kiosk ⏤ Smart TV ⏤ Streaming ⏤ AR & VR ⏤ AI & ML ⏤ Blockchain ⏤ IoT
               </p>
             </div>
