@@ -82,11 +82,29 @@ export default function ValueCard() {
           trigger:"valueCardsAnima1",                       
         } 
         })
+    gsap.set(".valueCardsFirstRow",{opacity:1,y:0})
+    gsap.from(".valueCardsFirstRow",{
+      duration:0.8,
+      opacity:0,  
+      y:50,
+      scrollTrigger:{
+      trigger:".valueCardsFirstRow",       
+    }     
+    })
+    gsap.set(".valueCardsSecondRow",{opacity:1,y:0})
+    gsap.from(".valueCardsSecondRow",{
+      duration:0.8,
+      opacity:0,  
+      y:50,
+      scrollTrigger:{
+      trigger:".valueCardsSecondRow",        
+    } 
   })
+  },[])
   return (
     <div className="relative grid grid-cols-4 gap-2 pb-52 pt-16 max-xl:grid-cols-2 max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-md-large:grid-cols-1 max-sm:pb-[88px]">    
     {cards.map((map, index) => (
-      <div key={index} className="relative font-AlmiregoDisplayRegular rounded-3xl group overflow-hidden " onMouseEnter={()=>setShowValueCards(index)} onMouseLeave={()=>setShowValueCards(null)}>
+      <div key={index} className={`relative font-AlmiregoDisplayRegular rounded-3xl group overflow-hidden ${index<4?'valueCardsFirstRow':"valueCardsSecondRow"}`} onMouseEnter={()=>setShowValueCards(index)} onMouseLeave={()=>setShowValueCards(null)}>
         <div className={`p-7 max-2xl:p-6 border rounded-3xl text-cream-primary aspect-[2/3] flex flex-col justify-between max-xl:p-8`}>
           <div>
             <div className="text-xs-base mb-12 flex gap-1 max-sm:mb-6">
@@ -106,7 +124,7 @@ export default function ValueCard() {
           />
         </div>
        
-        <div className={`rounded-3xl absolute top-0 left-0 w-full h-full z-10  overflow-hidden  transition-transform duration-200 ease-in-out ${index == 0 || index == 6 ?"bg-[#b5a6ff]":index == 1 || index == 7?"bg-[#ff4524]":index == 2 || index==4?"bg-cream-primary":index == 3 || index == 5? "bg-[#3e8372]":""} ${showValueCards === index? 'translate-x-0':'-translate-x-full'}`}>
+        <div className={`rounded-3xl absolute top-0 left-0 w-full h-full z-10  overflow-hidden  transition-transform duration-200 ease-in-out ${index == 0 || index == 6 ?"bg-purple-primary":index == 1 || index == 7?"bg-orange-primary":index == 2 || index==4?"bg-cream-primary":index == 3 || index == 5? "bg-green-primary":""} ${showValueCards === index? 'translate-x-0':'-translate-x-full'}`}>
           <div className="p-7 max-2xl:p-6 aspect-[2/3] flex flex-col justify-between opacity-75 max-xl:p-8">
             <div>
               <div className="text-xs-base mb-12 flex gap-1 max-sm:mb-6">

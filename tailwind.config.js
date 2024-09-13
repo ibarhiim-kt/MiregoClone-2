@@ -76,7 +76,10 @@ module.exports = {
         "black-primary":"#050307",
         "black-secondary":"#242424",
         "cream-primary":"#F7EDDE",
-        "purple-primary":"#b5a6ff"            
+        "purple-primary":"#b5a6ff",
+        "orange-primary":"#FF4524",
+        "purple-primary":"#b5a6ff",
+        "green-primary":"#3e8372"         
       },
       colors:{
         "black-primary":"#050307",
@@ -127,7 +130,8 @@ module.exports = {
         '3xl': '32px',
         '2xl': '24px',
         'xl':  '20px',
-        "lg":  '9.5px'    
+        'lg': '12px',
+        "md":  '9.5px'    
       },      
     },
   },

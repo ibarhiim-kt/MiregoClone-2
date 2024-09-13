@@ -72,9 +72,9 @@ export default function Enterprenuership() {
     
     <div className='flex gap-2 pt-16 font-AlmiregoDisplayLight enterprenuerCardsTrigger overflow-hidden text-black max-xl:pt-14  max-lg:pt-12 max-lg:flex-wrap max-md:pt-8 max-md:flex-col'>
     {aboutCards.map((map,index)=>(
-      <div className={`p-8 w-1/4 rounded-3xl  max-lg:rounded-2xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 ${index === 0 ? 'enterpreneurCard1 bg-[#FF4524]': index === 1 ? 'enterpreneurCard2 bg-[#F7EDDE]':index===2 ?'enterpreneurCard3 bg-[#3E8372]' : 'enterpreneurCard4 bg-[#B5A6FF]' }`}>
+      <div className={`p-8 w-1/4 rounded-3xl max-lg:rounded-2xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 ${index === 0 ? 'enterpreneurCard1 bg-orange-primary': index === 1 ? 'enterpreneurCard2 bg-cream-primary':index===2 ?'enterpreneurCard3 bg-green-primary' : 'enterpreneurCard4 bg-purple-primary' }`}>
         <div className={`enterprenureCard${index+1}`}>
-        <p className=' mb-4 leading-tight-sm animaCard1'>
+        <p className='mb-4 leading-tight-sm animaCard1'>
         <span className='text-5xl leading-normal tracking-[-1.75px] max-xl:text-3xl max-md:text-xl
          max-sm:text-md max-xxs:text-xs '>{map.number}</span>
         <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>

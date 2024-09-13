@@ -49,13 +49,12 @@ export default function Team() {
       opacity:0,  
       y:50,
       scrollTrigger:{
-      trigger:".teamHeadingAnima",   
-              
+      trigger:".teamHeadingAnima",              
     } 
     })
     gsap.set(".teamParaAnima",{opacity:1,y:0})
     gsap.from(".teamParaAnima",{
-      duration:2,
+      duration:0.8,
       opacity:0,  
       y:50,
       scrollTrigger:{

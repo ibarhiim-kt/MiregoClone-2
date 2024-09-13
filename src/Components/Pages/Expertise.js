@@ -18,7 +18,7 @@ export default function Expertise() {
       <a href="#" className='px-5 py-3 bg-[#050307] rounded-xl text-base text-[#FFFFFF] tracking-[0.3px]'>Discover our approach</a>
       </div>
       </div>
-      <div className='w-[33%]'>         
+      <div className='w-1/3'>         
       </div>
       {/* <div className='bg-[#242424] flex justify-between text-[#F7EDDE] px-[40px] pt-[64px] pb-[70px] min-h-[260px] rounded-t-[44px] mb-[-44px]'>
       <div className='flex items-center h-[36px] '>

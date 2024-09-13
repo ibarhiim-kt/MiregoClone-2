@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import sliderImg1 from './assets/sliderImg1.png'
 import sliderImg2 from './assets/sliderImg2.png'
 import Slider from 'react-slick'
+import dragIcon from './assets/dragIcon.svg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ParaResuse from '../../ReusableCode/ParaResuse';
@@ -10,7 +11,24 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function BuildFuture() {
-       
+  const [isHovering, setIsHovering] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+    window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
     const settings = {        
         infinite: true,
         slidesToShow: 1,        
@@ -33,7 +51,7 @@ export default function BuildFuture() {
           trigger:".buildFutureAnima",            
         } 
         })
-      })
+      },[])
   return (
     <div className='pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-sm:pt-5xl max-xxs:pt-lg min-2xl:pt-64'>
 
@@ -48,8 +66,16 @@ export default function BuildFuture() {
       showParagraph={true} paraContainer="para-container" buildFutureClasses="px-0 flex-row-reverse" buildFutureAnima="buildFutureAnima"/>
       </div>      
       
-       <div className='pt-16 pb-52 overflow-hidden  max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-sm:pb-5xl max-xxs:pt-6 max-xxs:pb-3xl min-2xl:pb-64'>
-        <div className='slider-container' >
+       <div className='pt-16 pb-52 overflow-hidden  max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-sm:pb-5xl max-xxs:pt-6 max-xxs:pb-3xl min-2xl:pb-64' >
+       {isHovering && (
+        <img
+          src={dragIcon}
+          alt="drag Icon"
+          style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+          className="fixed h-[5vw] w-[5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
+        />
+      )}
+        <div className='slider-container cursor-none' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Slider {...settings} >
         <img src={sliderImg1} alt="slider1" className=' mr-4'/>
         <img src={sliderImg2} alt="slider2" className=' mr-4'/>        

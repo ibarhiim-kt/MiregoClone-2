@@ -21,7 +21,7 @@
         @apply mt-12 flex max-sm:mt-8
     }
     .home-btns{
-        @apply px-5 py-3 bg-black-primary rounded-lg tracking-tight text-white-primary
+        @apply px-5 py-3 bg-black-primary rounded-md tracking-tight text-white-primary
         flex items-center justify-center leading-none hover:bg-black-secondary
     }
     .sticky-cards-li{
