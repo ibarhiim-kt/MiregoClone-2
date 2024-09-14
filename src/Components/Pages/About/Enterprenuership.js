@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import profilePics from './assets/profilePics.svg'
-import ParaResuse from '../../ReusableCode/ParaResuse'
+import ParaResuse from '../../Layout/ParaResuse'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -68,7 +68,7 @@ export default function Enterprenuership() {
     <h1 className='w-2/3 max-md:w-full enterpreneurshipParaAnima'>✲ Entrepreneurship is in our DNA</h1>
     <div className="w-lg max-md:w-0"></div>
     </div>
-    <ParaResuse text2="From day one, we've had a unique culture and DNA. We learn by doing. We think while we're building. We don't just buy software, we build it. We have a rigorous process for identifying the right things to build and the ideal way to build them. And with each iteration, we help create digital businesses driven by new digital products and services." showParagraph={true} paraContainer="para-container" enterprenuershipClasses="flex-row-reverse px-0" enterpreneurshipParaAnima="enterpreneurshipParaAnima"/>
+    <ParaResuse secondaryText="From day one, we've had a unique culture and DNA. We learn by doing. We think while we're building. We don't just buy software, we build it. We have a rigorous process for identifying the right things to build and the ideal way to build them. And with each iteration, we help create digital businesses driven by new digital products and services." showParagraph={true} paraContainer="para-container" enterprenuershipClasses="flex-row-reverse px-0" enterpreneurshipParaAnima="enterpreneurshipParaAnima"/>
     
     <div className='flex gap-2 pt-16 font-AlmiregoDisplayLight enterprenuerCardsTrigger overflow-hidden text-black max-xl:pt-14  max-lg:pt-12 max-lg:flex-wrap max-md:pt-8 max-md:flex-col'>
     {aboutCards.map((map,index)=>(

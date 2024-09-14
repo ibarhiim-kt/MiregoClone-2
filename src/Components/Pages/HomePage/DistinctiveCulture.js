@@ -3,7 +3,7 @@ import distinctiveCultureVideo from './assets/videos/distinctiveCultureVideo.mp4
 import distinctiveCultureImage from './assets/distinctiveCultureImage.webp'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ParaResuse from '../../ReusableCode/ParaResuse';
+import ParaResuse from '../../Layout/ParaResuse';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -44,7 +44,7 @@ export default function DistinctiveCulture() {
   return (
     <div className='pb-2 dist-disc-container'>        
         <h1 className='home-h1'>A <span className='h1-span'>distinctive </span>culture</h1>
-        <ParaResuse text2="We aim to create the best place to work. Crafting digital products is more than a job to us: it's a calling. Our strategy, design, and development teams are made up of inspired and inspiring people. Our passion for our art is boundless." paraContainer="para-container" buttonText="Discover our culture" showParagraph={true} showButton={true} buttonLink='#' distinctiveClasses="pb-2" distinctiveParaAnima="distinctiveParaAnima" 
+        <ParaResuse secondaryText="We aim to create the best place to work. Crafting digital products is more than a job to us: it's a calling. Our strategy, design, and development teams are made up of inspired and inspiring people. Our passion for our art is boundless." paraContainer="para-container" buttonText="Discover our culture" showParagraph={true} showButton={true} buttonLink='#' distinctiveClasses="pb-2" distinctiveParaAnima="distinctiveParaAnima" 
         distinctiveButtonAnima="distinctiveButtonAnima"/>
       {/* <div className='pb-2 para-container'>
         <div className='w-1/2 max-md:w-0'></div>

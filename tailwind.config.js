@@ -16,9 +16,11 @@ module.exports = {
         "2.5xl":"180px",
         "2xl":"140px",
         "xl":'100px',        
-        "lg":'72px',        
+        "lg":'72px',
+        "2md":'60px',        
         "md":'56px',
         "sm":'22px',
+        "2xs":'18px',
         "xs":"12.387px",
         "base":"2.55px"
       },
@@ -27,7 +29,8 @@ module.exports = {
         "xl":"88px",
         "lg":"62px",
         "md":"71px",    
-        "sm":"34px"    
+        "sm":"34px",
+        'xs':"10px"
       },      
       fontSize:{
         "8xl":'120px',
@@ -48,7 +51,8 @@ module.exports = {
         "xs-base":"19px",       
         "small":'18px',
         "x-small":'17px',
-        "xxs":'16px',              
+        "xxs":'16px', 
+        "xxs-base":"15px"             
       },
       screens:{        
         "6xl":"4700px",
@@ -86,7 +90,9 @@ module.exports = {
         "white-primary":"#FFFFFF",
         "gray-primary":"rgba(255,255,255,.3)",
         "cream-primary":"#F7EDDE", 
-        "purple-primary":"#b5a6ff"              
+        "purple-primary":"#b5a6ff",
+        "gray-secondary":"rgba(165,164,166,.33)",
+        "gray-tertiary":"rgba(255,255,255,.5)"           
       },
       borderColor:{
         "black-primary":"#272425",
@@ -99,6 +105,7 @@ module.exports = {
       },      
       gap:{
         "xl":"154px",
+        "2md":"70px",
         "md":"15px",
         "sm":"6px"
       },
@@ -109,8 +116,9 @@ module.exports = {
         "md":"84px",
         "sm":"80px",
         "xs":"50px",  
-        "base":"46px",
-        "sm-base":"40px"
+        "base":"46px",        
+        "sm-base":"40px",
+        "xs-base":"18px"
       },
       width:{
         "xl":"43%",

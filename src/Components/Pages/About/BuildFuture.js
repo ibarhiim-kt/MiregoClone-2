@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from 'react'
-import sliderImg1 from './assets/sliderImg1.png'
-import sliderImg2 from './assets/sliderImg2.png'
+import sliderImg1 from './assets/sliderImg1.webp'
+import sliderImg2 from './assets/sliderImg2.webp'
 import Slider from 'react-slick'
 import dragIcon from './assets/dragIcon.svg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ParaResuse from '../../ReusableCode/ParaResuse';
+import ParaResuse from '../../Layout/ParaResuse';
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

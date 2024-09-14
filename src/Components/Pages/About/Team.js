@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import ParaResuse from '../../ReusableCode/ParaResuse';
+import ParaResuse from '../../Layout/ParaResuse';
 import teamMem1 from './assets/teamMem1.webp';
 import teamMem2 from './assets/teamMem2.webp';
 import teamMem3 from './assets/teamMem3.webp';
@@ -112,7 +112,7 @@ export default function Team() {
     <div className="pt-32 max-xl:pt-24 max-md:pt-16 max-sm:pt-12">
       <h1 className="home-h1 teamHeadingAnima">Our team</h1>
       <ParaResuse 
-        text2="Mirego is a team of passionate people dedicated to creating remarkable digital products. We believe that work should be an opportunity to innovate, have fun, and make a difference. We work as a team, sharing our ideas in the hope of making a difference and creating a better world." 
+        secondaryText="Mirego is a team of passionate people dedicated to creating remarkable digital products. We believe that work should be an opportunity to innovate, have fun, and make a difference. We work as a team, sharing our ideas in the hope of making a difference and creating a better world." 
         showParagraph={true} 
         teamClasses="px-0" 
         teamText2Class="mb-[15px]" 
@@ -135,7 +135,7 @@ export default function Team() {
             onMouseEnter={() => setShowShapes(index)}
             onMouseLeave={() => setShowShapes(null)}
           >
-            <div className='aspect-[2/3]'>
+            <div className='aspect-[2/3] relative'>
               <img src={map.img} alt="team member" className='h-full w-full object-cover' />
             </div>
             

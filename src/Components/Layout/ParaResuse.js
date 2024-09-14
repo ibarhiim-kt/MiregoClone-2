@@ -1,9 +1,9 @@
 import React from 'react'
 // import Enterprenuership from '../Pages/About/Enterprenuership'
 export default function ParaResuse({
-    text1,
+    primaryText,
     marginClasses,
-    text2,
+    secondaryText,
     showParagraph=false,
     showButton=false,
     buttonLink="",
@@ -23,7 +23,7 @@ export default function ParaResuse({
     enterprenuershipClasses,
     paraContainer,
     enterpreneurshipParaAnima,
-    text3,
+    tertiaryText,
     teamClasses,
     teamParaAnima,
     teamText2Class,
@@ -31,17 +31,17 @@ export default function ParaResuse({
   return (
     <>
       <p className={`font-AlmiregoDisplayRegular text-xl leading-relaxed-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base ${marginClasses} ${aboutHeroParaAnima}`}>
-      {text1}
+      {primaryText}
       </p>
       {showParagraph && (
         <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses} ${enterprenuershipClasses} ${aboutHeroParaClasses} ${teamClasses}`}>
           <div className='w-1/2 max-md:w-0'></div>
           <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
             <p className={`home-para ${distinctiveParaAnima} ${discoverParaAnima} ${buildFutureAnima} ${stickyCardsPadding} ${aboutHeroParaAnima} ${teamParaAnima} ${teamText2Class} ${enterpreneurshipParaAnima}`}>
-              {text2}
+              {secondaryText}
             </p>
             <p className={`home-para ${teamParaAnima}`}>
-              {text3}
+              {tertiaryText}
             </p>
             {showButton && (
               <div className='home-btn-container overflow-hidden'>  

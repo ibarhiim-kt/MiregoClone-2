@@ -145,8 +145,7 @@
   font-size: 2rem;
   font-weight: bold;
   white-space: nowrap;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 
 #animated-text {
