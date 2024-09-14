@@ -40,6 +40,7 @@ module.exports = {
         "1.75xl":"66px",
         "xl":'56px',
         "lg":'52px',
+        "mid": "48px",
         "md":'40px',
         "sm":'36px',
         "xs":'32px',

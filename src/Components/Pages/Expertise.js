@@ -218,7 +218,7 @@ export default function Expertise() {
               <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular text-white border-white max-large:text-[15px]'>
                 Devices
               </div>
-              <p className='font-[AlmiregoDisplayLight] mt-5 max-2.5xl:text-7xl text-white-primary leading-tight-sm tracking-tight max-6xl:text-[120px] max-large:text-2xl max-sm:text-md'>
+              <p className='font-[AlmiregoDisplayLight] mt-5 max-2.5xl:text-7xl text-white-primary leading-tight-sm tracking-tight max-6xl:text-[120px] max-large:text-2xl max-sm:text-md max-xxs:text-xs'>
                 We build for these platforms
               </p>
               <p className='font-AlmiregoDisplayRegular mt-14 max-medium-large:text-lg text-white-primary leading-tight-md max-6xl:text-xl max-large:text-sm max-sm:text-base'>
@@ -229,20 +229,20 @@ export default function Expertise() {
 
           {/* Card 2 */}
           <div ref={ourApproachRef} className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-[#113b31]'>
-            <div className='mx-md pt-24'>
-              <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular border-white'>
+            <div className='max-2xl:mx-md max-6xl:mx-2xl max-md:mx-8 pt-24'>
+              <div className='inline-block py-sm-base px-3 rounded-full border text-x-small font-AlmiregoDisplayRegular border-white max-large:text-[15px]'>
                 Services
               </div>
-              <p className='font-[AlmiregoDisplayLight] mt-5 text-7xl leading-tight-sm tracking-tight'>
+              <p className='font-[AlmiregoDisplayLight] mt-5 max-2.5xl:text-7xl leading-tight-sm tracking-tight max-6xl:text-[120px] max-large:text-2xl max-sm:text-md max-xxs:text-xs'>
                 Our approach
               </p>
 
-              <div className='pt-24'>
+              <div className='pt-24 max-xxs:pt-14'>
                 {/* Section - 1 Roll-up/down functionality */}
                 {sections.map((section, idx) => (
                   <div className={`pt-2 ${idx !== 0 ? 'mt-4' : ''}`} key={section.index}>
-                    <div className='flex justify-between items-center'>
-                      <p className='text-sm font-AlmiregoRegular'>
+                    <div className='flex justify-between items-center max-sm:justify-center max-sm:align-middle'>
+                      <p className='max-medium-large:text-sm font-AlmiregoRegular max-6xl:text-md max-large:text-xs max-md:text-sm-base max-xxs:text-[22px]'>
                         <span className='font-NewsreaderItalic'>{section.title}</span> ⏤ {section.subtitle}
                       </p>
 
@@ -279,19 +279,19 @@ export default function Expertise() {
               </div>
             </div>
             {/* Add two images side by side */}
-            <div className='flex px-lg pt-32 gap-2'>
-            <img src={Img4} alt='error_expertise' className='rounded-3xl w-[49.7%]'/>
-            <img src={Img5} alt='error_expertise' className='rounded-3xl w-[49.7%]'/>
+            <div className='flex px-lg pt-32 gap-2 max-md:flex-col max-md:px-8 max-md:pt-28'>
+            <img src={Img4} alt='error_expertise' className='rounded-3xl w-[49.7%] max-md:w-full'/>
+            <img src={Img5} alt='error_expertise' className='rounded-3xl w-[49.7%] max-md:w-full'/>
             </div>
 
             <div className='pt-24'>
-             <p className='mx-md font-[AlmiregoDisplayLight] mt-5 text-4xl leading-[140%] tracking-tight'>
+             <p className='max-2xl:mx-md max-6xl:mx-2xl max-md:mx-8 max-xxs:mx-6 font-[AlmiregoDisplayLight] mt-5 max-medium-large:text-4xl leading-[140%] tracking-tight max-6xl:text-5xl max-large:text-xl max-md:text-xs max-xxs:text-base'>
                We believe that a great digital product is as beautiful as it is useful and reliable, meeting business goals while satisfying user needs.
-              <span className="inline-block -mt-24 ml-4 align-middle">
+              <span className="inline-block -mt-24 ml-4 align-middle max-large:-mt-11 max-md:-mt-6">
                {/* Avatar Stack */}
-              <div className="space-x-[-28px] inline-flex items-center align-middle">
+              <div className="space-x-[-28px] inline-flex items-center align-middle max-large:space-x-[-20px] max-md:space-x-[-14px]">
               {avatars.map((avatar, index) => (
-               <div key={index} className="relative w-[58px] h-[58px] p-[6px] rounded-full align-middle overflow-hidden bg-[#113b31]" 
+               <div key={index} className="relative w-[58px] h-[58px] p-[6px] rounded-full align-middle overflow-hidden bg-[#113b31] max-large:h-10 max-large:w-10 max-large:p-1 max-md:h-6 max-md:w-6 max-md:p-[2px]" 
                 style={{ border: `1.5px solid ${avatar.outlineColor}`, zIndex: avatars.length - index }}>
               <img src={avatar.imgSrc} alt={`Person ${index + 1}`} className="w-auto h-full object-cover align-middle" />
               </div>
@@ -301,19 +301,19 @@ export default function Expertise() {
              </p>
             </div>
 
-            <div className='mx-md pt-32 flex gap-12'>
-            <p className='w-1/2 font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-normal'>Making a difference in people's everyday lives</p>
-            <p className='w-1/2 font-[AlmiregoRegular] -mr-1 leading-tight text-lm tracking-tight'><strong className='tracking-[1.1px]'>We have vast ambitions in creating digital products.</strong> To make thousands of families aware of the quality of the air they breathe ⏤ Accompany thousands of people on their travels ⏤ Reinventing the way millions of Canadians view their favorite content ⏤ Building tomorrow's health-centric pharmacy ⏤ Reinventing telemedicine with a human approach ⏤ Inspiring the discovery of new wines, beers, and spirits for millions of Quebecers  ⏤ Creating tomorrow's grocery experience across Canada ⏤ Building the future of driving experiences for millions of recreational product fans
+            <div className='max-2xl:mx-md max-6xl:mx-2xl max-md:mx-8 max-sm:pt-24 pt-32 flex gap-12 max-md:flex-col'>
+            <p className='w-1/2 max-md:w-full font-[AlmiregoDisplayRegular] max-medium-large:text-lg leading-tight-md tracking-normal max-6xl:text-xl max-large:text-sm max-sm:text-base max-xxs:text-sm-base'>Making a difference in people's everyday lives</p>
+            <p className='w-1/2 max-md:w-full font-[AlmiregoRegular] -mr-1 leading-tight text-lm tracking-tight max-sm:text-small max-xs:text-x-small'><strong className='tracking-[1.1px]'>We have vast ambitions in creating digital products.</strong> To make thousands of families aware of the quality of the air they breathe ⏤ Accompany thousands of people on their travels ⏤ Reinventing the way millions of Canadians view their favorite content ⏤ Building tomorrow's health-centric pharmacy ⏤ Reinventing telemedicine with a human approach ⏤ Inspiring the discovery of new wines, beers, and spirits for millions of Quebecers  ⏤ Creating tomorrow's grocery experience across Canada ⏤ Building the future of driving experiences for millions of recreational product fans
             </p>
             </div>
 
           {/* Carousel of words */}
-          <div className="mt-16 pb-12 overflow-hidden">
+          <div className="mt-16 pb-12 overflow-hidden max-sm:mt-12 max-sm:pb-2 max-xxs:pb-0">
           {[...Array(5)].map((_, rowIndex) => (
-            <div key={rowIndex} className="carousel-row cursor-pointer flex space-x-6 mt-8">
+            <div key={rowIndex} className="carousel-row cursor-pointer flex space-x-6 mt-8 max-sm:mt-3 max-sm:space-x-3">
               {[...randomizeTags(), ...randomizeTags()].map((tag, index) => (
                 <div key={`${tag}-${index}`}
-                  className={`inline-block py-5 px-11 border-4 border-cream-primary text-cream-primary font-AlmiregoDisplayRegular text-1.75xl ${generateShape(index)} whitespace-nowrap transition-colors duration-300 hover:bg-cream-primary hover:text-black`}>
+                  className={`inline-block py-5 px-11 border-4 border-cream-primary text-cream-primary font-AlmiregoDisplayRegular text-1.75xl max-large:text-mid max-large:py-3 max-large:px-8 max-sm:text-sm-base max-sm:py-2 max-sm:px-4 max-sm:border-2 ${generateShape(index)} whitespace-nowrap transition-colors duration-300 hover:bg-cream-primary hover:text-black`}>
                   {tag}
                 </div>
               ))}
@@ -323,17 +323,17 @@ export default function Expertise() {
             </div>
 
             {/* Card 3 */}
-            <div className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-black-secondary'>
-              <div className='flex justify-between items-center mx-10'>
+            <div className='-mt-10 w-full pb-36 rounded-t-4xl text-cream-primary bg-black-secondary max-md:pb-11'>
+              <div className='flex justify-between items-center mx-10 max-md:mx-6'>
               <a href='/projects' className='flex items-center mt-14 cursor-pointer hover:text-purple-primary transition-colors duration-300 ease-in-out'>
-                  <p className='font-AlmiregoDisplayRegular text-sm-base'>Go to Projects</p>
+                  <p className='font-AlmiregoDisplayRegular max-medium-large:text-sm-base max-6xl:text-base max-md:text-[22px] max-xxs:text-m'>Go to Projects</p>
                   <span className='inline-block ml-2 group-hover:text-purple-primary'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-7 h-6 fill-current transform rotate-180">
                   <path d="M12 2l1.41 1.41L7.83 9H22v2H7.83l5.58 5.59L12 18l-8-8 8-8z"/>
                  </svg>
                  </span>
               </a>
-              <img src={GFoot} alt='error_Footer' className='mt-14 w-[108px] h-14'/>
+              <img src={GFoot} alt='error_Footer' className='mt-14 w-[108px] h-14 max-medium:w-12 max-medium:h-6'/>
              </div>
             </div>          
           </div>
