@@ -1,0 +1,7 @@
+.projectsGo{
+    transition-duration: .3s;
+    transition-property: opacity, scale, filter;
+    /* filter: blur(10px); */
+    scale: 1.2;
+    transition-timing-function: ease-out;
+}

@@ -28,8 +28,7 @@
   transition-duration: .3s;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 51%, 50% 51%, 50% 49%, 0 49%);
   background: rgba(247, 237, 222, .1607843137);  
-  backdrop-filter: blur(40px);
-  
+  backdrop-filter: blur(40px);  
 }
 .custom-class-1 .teamShapes::before{
   border-bottom-right-radius: 50%;

@@ -58,13 +58,10 @@ export default function Navbar() {
   
   return (
     <header className='pt-2xl'>
-
-    <div className='flex justify-between items-center pt-2md px-2md w-full font-AlmiregoDisplayRegular fixed top-0 z-50 max-lg:p-10  max-md:p-8 max-sm:p-6 max-xxs:p-5'>
-   
+    <div className='flex justify-between items-center pt-2md px-2md w-full font-AlmiregoDisplayRegular fixed top-0 z-50 max-lg:p-10  max-md:p-8 max-sm:p-6 max-xxs:p-5'>   
       <a href="/" className='pr-2xs py-3'>         
          <Logo className="max-sm:h-xs-base max-xxs:h-4 logo-white"/>
-      </a>
-        
+      </a>        
       <div className='text-xxs-base flex items-center gap-2md text-black-primary justify-between 
       bg-gray-tertiary rounded-lg backdrop-blur-14 leading-tight-xs max-2xl:gap-0  max-lg:hidden min-[1729px]:text-x-small blackNavbarAnima' style={{ backdropFilter: 'blur(14px)'}}>   
       {links.map((map,index)=>(  

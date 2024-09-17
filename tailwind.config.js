@@ -11,7 +11,12 @@ module.exports = {
         AlmiregoDisplayBold:["AlmiregoDisplayBold"],
         NewsreaderItalic:["newsreader-italic"],        
       },
-      padding:{
+      background:{
+        backgroundImage: {
+          'custom-gradient': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 50%)',
+        },
+      },
+      padding:{ 
         "3xl":"280px",
         "2.5xl":"180px",
         "2xl":"140px",
@@ -110,6 +115,7 @@ module.exports = {
         "sm":"6px"
       },
       height:{
+        "3xl":"140px",
         "2xl":"134px",
         "xl":"121.94px",
         "lg":"117.94px",        
@@ -121,6 +127,7 @@ module.exports = {
         "xs-base":"18px"
       },
       width:{
+        "2xl":"140px",
         "xl":"43%",
         "lg":"33%",
         "md":"30%",
@@ -139,7 +146,7 @@ module.exports = {
         '2xl': '24px',
         'xl':  '20px',
         'lg': '12px',
-        "md":  '9.5px'    
+        // "md":  '9.5px'    
       },      
     },
   },

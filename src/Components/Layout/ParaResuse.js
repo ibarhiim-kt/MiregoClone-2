@@ -27,11 +27,13 @@ export default function ParaResuse({
     teamClasses,
     teamParaAnima,
     teamText2Class,
+    spanText,
+    spanClasses
 }) {    
   return (
     <>
       <p className={`font-AlmiregoDisplayRegular text-xl leading-relaxed-md max-xl:text-lg max-lg:text-sm max-sm:text-base max-xxs:text-sm-base ${marginClasses} ${aboutHeroParaAnima}`}>
-      {primaryText}
+      {primaryText}<span className={spanClasses}>{spanText}</span>.
       </p>
       {showParagraph && (
         <div className={`${paraContainer} ${distinctiveClasses} ${discoverClasses} ${stickyCardsClasses} ${buildFutureClasses} ${enterprenuershipClasses} ${aboutHeroParaClasses} ${teamClasses}`}>
