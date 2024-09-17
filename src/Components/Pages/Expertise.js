@@ -14,7 +14,7 @@ import Person4 from './assets/person-4.webp';
 import Person5 from './assets/person-5.webp';
 import './Expertise.css';
 import GFoot from '../../assets/GFooterImg.png';
-import Arrow from '../../assets/arrow.svg';
+import Arrow from './assets/black-arrow-right.webp';
 
 gsap.registerPlugin(MotionPathPlugin);
 
@@ -51,31 +51,30 @@ export default function Expertise() {
   };
 
   useEffect(() => {
-    gsap.to('#arrowRight', {
-      duration: 10,  
+    gsap.to('#arrowStrategy', {
+      duration: 11,  
       repeat: -1,
       motionPath: {
-        path: '#pathTop',
-        align: '#pathTop',
+        path: '#pathStrategy',
+        align: '#pathStrategy',
         autoRotate: true,
         alignOrigin: [0.5, 0.5],
       },
       ease: "linear",  
     });
 
-    gsap.to('#arrowLeft', {
-      duration: 10,  
+    const tweenDevelopment = gsap.to('#arrowDevelopment', {
+      duration: 11,
       repeat: -1,
       motionPath: {
-        path: '#pathBottom',
-        align: '#pathBottom',
+        path: '#pathDevelopment',
+        align: '#pathDevelopment',
         autoRotate: true,
         alignOrigin: [0.5, 0.5],
-        start: 0.25,
-        end: 1.25,
       },
-      ease: "linear",  
+      ease: 'linear',
     });
+    tweenDevelopment.progress(0.5);
   }, []);
 
   const sections = [
@@ -162,20 +161,55 @@ export default function Expertise() {
           <img src={Img1} className='w-[94%] rounded-3xl' />
         </div>
 
-        <div className='pt-20 flex max-md:flex-col gap-14 max-md:mx-7'>
-          <div className='w-1/2 max-md:w-full'>{/* Animation div */}</div>
+        <div className='pt-24 flex max-md:-pt-3 max-md:flex-col gap-0 max-md:mx-7'>
+        <div className='w-1/2 max-md:w-full'>
+        <div className='relative left-5 w-full max-md:left-0 max-medium-large:h-[800px] max-6xl:h-[840px]' >
+        {/* Shape #1 */}
+        <svg className="w-full h-full absolute top-0 left-0" viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg">
+       {/* Slightly Rounded Rectangle */}
+        <rect x="107" y="-330" width="900" height="318" rx="95" ry="95" fill="transparent" stroke="black" strokeWidth="4"/>
+        {/* Path for the Arrow to Follow */}
+        <path id="pathStrategy" d="M 202,-330 H 912 A 95,95 0 0 1 1007,-235 V -107 A 95,95 0 0 1 912,-12 H 202 A 95,95 0 0 1 107,-107 V -235 A 95,95 0 0 1 202,-330 Z" fill="none" stroke="none"/>
+        {/* Moving Arrow */}
+        <image id="arrowStrategy" href={Arrow} width="30" height="30"/>
+       {/* Centered Text */}
+        <text x="550" y="-180" fill="black" fontSize="40" fontFamily="Arial" textAnchor="middle" alignmentBaseline="middle">STRATEGY</text>
+        </svg>
+
+       {/* Shape #2 */}
+         <svg className="w-full h-full absolute top-0 left-0" viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg">
+         {/* Rounded Shape */}
+          <rect x="107" y="-102" width="900" height="318" rx="157.5" ry="157.5" fill="transparent" stroke="black" strokeWidth="4"/>
+         {/* Centered Text */}
+         <text x="550" y="63" fill="black" fontSize="40" fontFamily="Arial" textAnchor="middle" alignmentBaseline="middle">DESIGN</text>
+         </svg>
+
+      {/* Shape #3 */}
+        <svg className="w-full h-full absolute top-0 left-0" viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg">
+       {/* Rounded Corners Rectangle */}
+        <rect x="107" y="130" width="900" height="318" rx="30" ry="30" fill="transparent" stroke="black" strokeWidth="4"/>
+        {/* Path for the Arrow to Follow */}
+        <path
+          id="pathDevelopment" d="M 137,130 H 977 A 30,30 0 0 1 1007,160 V 418 A 30,30 0 0 1 977,448 H 137 A 30,30 0 0 1 107,418 V 160 A 30,30 0 0 1 137,130 Z" fill="none" stroke="none"/>
+        {/* Moving Arrow */}
+        <image id="arrowDevelopment" href={Arrow} width="30" height="30"/>
+       {/* Centered Text */}
+        <text x="550" y="300" fill="black" fontSize="40" fontFamily="Arial" textAnchor="middle" alignmentBaseline="middle">DEVELOPMENT</text>
+        </svg>
+
+        </div>
+       </div>
           
           {/* Text div */}
-          <div className='w-1/2 max-md:w-full'>
+          <div className='w-1/2 pl-8 max-md:pl-0 max-md:w-full'>
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight max-large:text-sm max-large:leading-none max-sm:text-base'>One of a few end-to-end digital product teams.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[85px] tracking-normal max-large:pr-0 max-large:mt-10 max-sm:text-small max-sm:mt-6'>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[80px] tracking-normal max-large:pr-0 max-large:mt-10 max-sm:text-small max-sm:mt-3'>
               No matter how well defined or vague their idea, our clients can count on us to help them turn their vision into a functional digital product or service that delivers an exceptional user experience, enables them to achieve their business goals, and supports their digital strategy.
             </p>
           </div>
         </div>
-
         <br />
-        <div className='flex gap-14 mx-md max-md:flex-col max-md:mx-7'>
+        <div className='max-6xl:-mt-28 max-md:mt-4 max-medium-large: flex gap-14 mx-md max-md:flex-col max-md:mx-7'>
           <div className='w-1/2 max-md:w-full'>
             <p className='font-[AlmiregoDisplayRegular] text-xl leading-relaxed-lg tracking-tight max-medium-large:text-lg max-large:text-sm'>Build the right things,<br className='max-md:mt-8'/> build things right.</p>
             <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[5px] leading-relaxed-lg tracking-normal max-large:mt-6 max-md:pr-0'>
