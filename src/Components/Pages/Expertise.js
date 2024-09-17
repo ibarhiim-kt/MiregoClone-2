@@ -163,7 +163,7 @@ export default function Expertise() {
 
         <div className='pt-24 flex max-md:-pt-3 max-md:flex-col gap-0 max-md:mx-7'>
         <div className='w-1/2 max-md:w-full'>
-        <div className='relative left-5 w-full max-md:left-0 max-medium-large:h-[800px] max-6xl:h-[840px]' >
+        <div className='relative left-5 w-full max-md:left-0 max-6xl:h-[820px] max-2xl:h-[750px] max-medium-large:h-[700px] max-1.5xl:h-[650px] max-large:h-[540px] max-md:h-[720px] max-medium:h-[530px] max-sm:h-[400px]' >
         {/* Shape #1 */}
         <svg className="w-full h-full absolute top-0 left-0" viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg">
        {/* Slightly Rounded Rectangle */}
@@ -201,13 +201,14 @@ export default function Expertise() {
        </div>
           
           {/* Text div */}
-          <div className='w-1/2 pl-8 max-md:pl-0 max-md:w-full'>
+          <div className='w-1/2 pl-8 max-large:pl-0 max-md:w-full max-md:-mt-40 max-medium:-mt-32'>
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight max-large:text-sm max-large:leading-none max-sm:text-base'>One of a few end-to-end digital product teams.</p>
-            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[80px] tracking-normal max-large:pr-0 max-large:mt-10 max-sm:text-small max-sm:mt-3'>
+            <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[80px] tracking-normal max-md:pr-0 max-large:mt-10 max-md:mt-7 max-sm:text-small max-sm:mt-3'>
               No matter how well defined or vague their idea, our clients can count on us to help them turn their vision into a functional digital product or service that delivers an exceptional user experience, enables them to achieve their business goals, and supports their digital strategy.
             </p>
           </div>
         </div>
+
         <br />
         <div className='max-6xl:-mt-28 max-md:mt-4 max-medium-large: flex gap-14 mx-md max-md:flex-col max-md:mx-7'>
           <div className='w-1/2 max-md:w-full'>
