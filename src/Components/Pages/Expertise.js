@@ -157,7 +157,7 @@ export default function Expertise() {
           <div className='w-1/3 hidden md:block'></div>
         </div>
 
-        <div className='flex justify-center align-middle pt-lg'>
+        <div className='flex justify-center align-middle pt-lg max-md:-mb-14 max-sm:-mb-24 max-xs:-mb-32 max-xxs:-mb-36'>
           <img src={Img1} className='w-[94%] rounded-3xl' />
         </div>
 
@@ -201,7 +201,7 @@ export default function Expertise() {
        </div>
           
           {/* Text div */}
-          <div className='w-1/2 pl-8 max-large:pl-0 max-md:w-full max-md:-mt-40 max-medium:-mt-32'>
+          <div className='w-1/2 pl-8 max-large:pl-0 max-md:w-full max-md:-mt-40 max-medium:-mt-32 max-sm:-mt-24'>
             <p className='font-[AlmiregoDisplayRegular] text-lg leading-tight-md tracking-tight max-large:text-sm max-large:leading-none max-sm:text-base'>One of a few end-to-end digital product teams.</p>
             <p className='font-[AlmiregoRegular] mt-12 text-lm pr-[80px] tracking-normal max-md:pr-0 max-large:mt-10 max-md:mt-7 max-sm:text-small max-sm:mt-3'>
               No matter how well defined or vague their idea, our clients can count on us to help them turn their vision into a functional digital product or service that delivers an exceptional user experience, enables them to achieve their business goals, and supports their digital strategy.
