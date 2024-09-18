@@ -63,8 +63,7 @@ export default function Video() {
           src={go}
           alt="Go svg"
           style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
-          className="fixed h-[7.5vw] w-[7.5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
-        />
+          className="fixed h-[7.5vw] w-[7.5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"/>
       )}
       <div className='flex justify-between mb-8 uppercase tracking-tight opacity-0'>
         <span>Digital</span>
@@ -79,8 +78,7 @@ export default function Video() {
         </button>
       </div>
       
-      <div className='flex gap-2 pt-2 font-AlmiregoDisplayLight max-lg:flex-wrap max-md:flex-col cardsTrigger overflow-hidden'>
-      
+      <div className='flex gap-2 pt-2 font-AlmiregoDisplayLight max-lg:flex-wrap max-md:flex-col cardsTrigger overflow-hidden'>      
       {cards.map((map, index) => (
         <div 
         key={index}

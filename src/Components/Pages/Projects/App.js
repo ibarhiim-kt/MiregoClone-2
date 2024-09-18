@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <Hero/>
-      <div className='px-10'>
+      <div className='px-10 max-md:px-4 max-sm:px-2'>
       <Cards/>
       <ContactUs/>
       </div>

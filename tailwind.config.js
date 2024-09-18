@@ -114,7 +114,7 @@ module.exports = {
         "md":"15px",
         "sm":"6px"
       },
-      height:{
+      height:{        
         "3xl":"140px",
         "2xl":"134px",
         "xl":"121.94px",
@@ -126,6 +126,10 @@ module.exports = {
         "sm-base":"40px",
         "xs-base":"18px"
       },
+      minHeight:{
+        "xl":"260px",
+        "lg":"176px"
+      },
       width:{
         "2xl":"140px",
         "xl":"43%",
@@ -133,9 +137,12 @@ module.exports = {
         "md":"30%",
         "sm":"15%"
       },
+      maxWidth:{
+        "xl":"50px",
+      },
       borderWidth:{
         "lg":"4px",
-        "md":"3px",
+        "md":"3px",   
         "sm":"2px",
         "normal":"1px"
       },
