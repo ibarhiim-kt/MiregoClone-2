@@ -10,9 +10,7 @@ import ParaResuse from '../../Layout/ParaResuse';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
-    const words = ['of bussiness','of organization','of sports','of media','of entertainment','of travel','of agriculture','of retail','of food','of health','of real estate','of manufacturing','of finance', 'of insurance'];
-    // const TEXTS = ['of bussiness','of organization','of sports','of media','of entertainment','of travel','of agriculture','of retail','of food','of health','of real estate','of manufacturing','of finance', 'of insurance'];
-    // const TEX = ['Forest', 'Building', 'Tree', 'Color'];
+    const words = ['of bussiness','of organization','of sports','of media','of entertainment','of travel','of agriculture','of retail','of food','of health','of real estate','of manufacturing','of finance', 'of insurance'];    
     const [showTogether, setShowTogether] = useState(false);   
       const [index, setIndex] = React.useState(0);
     
