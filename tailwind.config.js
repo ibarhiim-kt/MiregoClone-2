@@ -153,7 +153,7 @@ module.exports = {
         '2xl': '24px',
         'xl':  '20px',
         'lg': '12px',
-        // "md":  '9.5px'    
+        "md":  '9.5px'    
       },      
     },
   },

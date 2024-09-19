@@ -78,15 +78,6 @@ export default function DiscoverVision() {
     <div className='dist-disc-container'>
       <h1 className='home-h1'>Building for the future</h1>      
         <ParaResuse secondaryText="Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future." buttonText="Discover our vision of the future" showParagraph={true} showButton={true} buttonLink='#' discoverClasses="overflow-hidden" discoverParaAnima="discoverParaAnima" paraContainer="para-container" discoverButtonAnima="discoverButtonAnima"/>
-      {/* <div className='para-container overflow-hidden'> 
-        <div className='w-1/2 max-md:w-0'></div>
-        <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='home-para discoverParaAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='home-btn-container discoverButtonAnima'>
-      <a href="#" className='home-btns'>Discover our vision of the future</a>
-      </div>  
-      </div>
-      </div> */}
       
       <div className='pt-32 grid grid-cols-4 gap-8 max-2xl:grid-cols-3 max-lg:grid-cols-2 
        max-md:grid-cols-1 max-md:pt-16 cardsGsap'>

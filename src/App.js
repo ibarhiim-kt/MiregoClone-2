@@ -5,7 +5,7 @@ import About from '../src/Components/Pages/About/App'
 import Expertise from '../src/Components/Pages/Expertise'
 import Projects from '../src/Components/Pages/Projects/App'
 import Culture from '../src/Components/Pages/Culture'
-import Perspectives from '../src/Components/Pages/Perspectives'
+import Perspectives from '../src/Components/Pages/Perspectives/App'
 import Footer from './Components/Layout/Footer';
 import Navbar from './Components/Layout/Navbar';
 import HomePage from './Components/Pages/HomePage/App'
@@ -23,10 +23,10 @@ function App() {
       <Route path="/expertise" element={<Expertise />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/culture" element={<Culture />} />
-      <Route path="/perspectives" element={<Perspectives />} />       
+      <Route path="/perspectives/*" element={<Perspectives />} />       
     </Routes>
     </div>
-    <Footer/>   
+    <Footer/>
     </div>
     </Router>
     </HelmetProvider>
