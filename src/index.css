@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-    font-family:"Newsreader_14pt-LightItalic" ;
-    src: url('./fonts/Newsreader/static/Newsreader_14pt-LightItalic.ttf');
-}
 @font-face {
     font-family:"AlmiregoDisplayRegular";
     src: url('./fonts/Almirego/AlmiregoDisplayRegular.woff2');
@@ -24,10 +19,16 @@
     src: url('./fonts/Almirego/AlmiregoDisplayBold.woff2');
 }
 @font-face {
+    font-family: "AlmiregoLight";
+    src: url('./fonts/Almirego/AlmiregoLight.woff2');
+}
+@font-face {
     font-family:"newsreader-italic";
     src: url('./fonts/Almirego/newsreader-italic.ttf');
 }
-@font-face {
-    font-family: "AlmiregoLight";
-    src: url('./fonts/Almirego/AlmiregoLight.woff2');
+
+@layer components{
+    .footer-col1-a{
+        @apply hover:text-purple-primary self-start transition-colors duration-100 ease-in-out
+    }
 }
