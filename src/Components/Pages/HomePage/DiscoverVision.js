@@ -78,34 +78,26 @@ export default function DiscoverVision() {
     <div className='dist-disc-container'>
       <h1 className='home-h1'>Building for the future</h1>      
         <ParaResuse secondaryText="Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future." buttonText="Discover our vision of the future" showParagraph={true} showButton={true} buttonLink='#' discoverClasses="overflow-hidden" discoverParaAnima="discoverParaAnima" paraContainer="para-container" discoverButtonAnima="discoverButtonAnima"/>
-      {/* <div className='para-container overflow-hidden'> 
-        <div className='w-1/2 max-md:w-0'></div>
-        <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='home-para discoverParaAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='home-btn-container discoverButtonAnima'>
-      <a href="#" className='home-btns'>Discover our vision of the future</a>
-      </div>  
-      </div>
-      </div> */}
       
-      <div className='pt-32 grid grid-cols-4 gap-8 max-2xl:grid-cols-3 max-lg:grid-cols-2 
-       max-md:grid-cols-1 max-md:pt-16 cardsGsap'>
+      
+      <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
+       max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-[424px]:px-2 cardsGsap'>
       {cards.map((map,index)=>(
         <>
         <a className='group' key={index} >
-          <div className={`relative overflow-hidden border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-2xl:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0':''}
-          ${index=== 0 ? 'border-black-primary':'border-cream-primary'} text-white cursor-pointer font-AlmiregoRegular `}>
+          <div className={`relative overflow-hidden  border-[1.5px] ${index===2?'rounded-[34px]':'rounded-[44px]'} ${index===3?'max-[1440px]:mt-[-52.8px] max-[1376px]:mt-[-84.8px] max-[1311px]:mt-[-116.8px] max-[1188px]:mt-[-148.8px] max-[1143px]:mt-[-118.8px] max-[1112px]:mt-[-150.8px] max-[1076px]:mt-[-182.8px] max-lg:mt-0':''} ${index===2?'max-[986px]:mt-[-30px] max-[778px]:mt-0 cursor-text selection:text-[white]':''}
+          ${index=== 0 ? 'border-[#272425]':'border-[#e0dfe0]'} text-white cursor-pointer font-AlmiregoRegular `}>
            {index<2 || index == 3 ?(
             <>
             <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
              
-            <img src={map.image} alt="digitalTrends" className='h-full w-full max-w-full object-cover'/>
+            <img src={map.image} alt="digitalTrends" className='h-full w-full max-w-[100%] object-cover'/>
             </div>
             <div className='py-8 px-6 relative text-white top-0 left-0 w-full h-full flex flex-col'>
               <div className='flex justify-between items-center'>
-                <ul className='flex items-center max-w-[80%] gap-1 text-xxs'>
-                  <li className='discover-vision-li'>{map.btn1}</li>
-                  <li className='discover-vision-li'>{map.btn2}</li>
+                <ul className='flex  items-center max-w-[80%] gap-1 text-[14px]'>
+                  <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn1}</li>
+                  <li className='py-[2px] px-3 rounded-[50vh] border border-white'>{map.btn2}</li>
                 </ul>
                 <ul>
                   <a href="#" className='flex items-center'>

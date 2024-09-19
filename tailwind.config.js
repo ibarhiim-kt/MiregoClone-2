@@ -27,6 +27,7 @@ module.exports = {
         "sm":'22px',
         "2xs":'18px',
         "xs":"12.387px",
+        "sm-base": "6px",
         "base":"2.55px"
       },
       margin:{
@@ -45,14 +46,17 @@ module.exports = {
         "4xl":'80px',
         "3xl":'72px',
         "2xl":'68px',
+        "1.75xl":"66px",
         "xl":'56px',
         "lg":'52px',
+        "mid": "48px",
         "md":'40px',
         "sm":'36px',
         "xs":'32px',
         "base":'28px',
-        "sm-base":"24px", 
-        "md-base":"20px",
+        "sm-base":"24px",
+        "lm": "21px",
+        "m": "20px",     ///check
         "xs-base":"19px",       
         "small":'18px',
         "x-small":'17px',
@@ -63,8 +67,11 @@ module.exports = {
         "6xl":"4700px",
         "5xl":"3100px",
         "4xl":"2400px",
-        "3xl":"1921px", 
-        "2xl":"1440px",       
+        "3xl":"1921px",
+        "2.5xl":"1550px", 
+        "2xl":"1440px", 
+        "medium-large":"1300px",
+        "1.5xl": "1280px",      
         "large":"1014px",
         "md-large":"670px",
         "medium":"563px",
@@ -152,8 +159,10 @@ module.exports = {
         '3xl': '32px',
         '2xl': '24px',
         'xl':  '20px',
+        "ls": "13px",
+        // "lg":  '9.5px', //check wan
         'lg': '12px',
-        // "md":  '9.5px'    
+        "md":  '9.5px'    
       },      
     },
   },

@@ -1,12 +1,13 @@
 import React from 'react'
-import './Home.css'
 import Hero from './Hero'
+import './Home.css'
 import Video from './Video'
 import StickyCards from './StickyCards'
 import DiscoverVision from './DiscoverVision'
 import BlogTable from './BlogTable'
 import DistinctiveCulture from './DistinctiveCulture'
 import { Helmet } from 'react-helmet-async'
+
 export default function App() {
   return (
     <>
