@@ -87,10 +87,10 @@ export default function Hero() {
         </div>         
         </div>
         <div className='pt-16 pb-32 gsapAnima max-xl:pt-14 max-xl:pb-24 max-lg:pb-20 max-lg:pt-12 max-md:pb-16 max-md:pt-8 max-xxs:pt-6 max-xxs:pb-12'>      
-        <ParaResuse primaryText="Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners." buttonText='Learn more about expertise' showButton={true}/>
-        {/* <div className='home-btn-container'>
+        <ParaResuse primaryText="Mirego is a multidisciplinary development, strategy, and design team that powers the digital transformation of its partners." showButton={true} buttonText='Learn'/>
+        <div className='home-btn-container'>
         <a href="#" className='home-btns'>Learn more about our expertise</a>
-        </div>   */}
+        </div>  
         </div>       
       </div>
     )
