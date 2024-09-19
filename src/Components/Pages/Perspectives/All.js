@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Projects() {
+export default function All() {
   return (
     <div>
-      Projects Page
+      All Cards
     </div>
   )
 }
