@@ -11,14 +11,21 @@ module.exports = {
         AlmiregoDisplayBold:["AlmiregoDisplayBold"],
         NewsreaderItalic:["newsreader-italic"],        
       },
-      padding:{
+      background:{
+        backgroundImage: {
+          'custom-gradient': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent 50%)',
+        },
+      },
+      padding:{ 
         "3xl":"280px",
-        "2.5xl": "180px",
+        "2.5xl":"180px",
         "2xl":"140px",
-        "xl":'100px',
-        "lg":'72px',        
+        "xl":'100px',        
+        "lg":'72px',
+        "2md":'60px',        
         "md":'56px',
         "sm":'22px',
+        "2xs":'18px',
         "xs":"12.387px",
         "sm-base": "6px",
         "base":"2.55px"
@@ -28,9 +35,11 @@ module.exports = {
         "xl":"88px",
         "lg":"62px",
         "md":"71px",    
-        "sm":"34px"    
+        "sm":"34px",
+        'xs':"10px"
       },      
       fontSize:{
+        "8xl":'120px',
         "7xl":'96px',
         "6xl":'90px',
         "5xl":'88px',
@@ -47,11 +56,12 @@ module.exports = {
         "base":'28px',
         "sm-base":"24px",
         "lm": "21px",
-        "m": "20px", 
+        "m": "20px",     ///check
         "xs-base":"19px",       
         "small":'18px',
         "x-small":'17px',
-        "xxs":'16px',              
+        "xxs":'16px', 
+        "xxs-base":"15px"             
       },
       screens:{        
         "6xl":"4700px",
@@ -63,6 +73,7 @@ module.exports = {
         "medium-large":"1300px",
         "1.5xl": "1280px",      
         "large":"1014px",
+        "md-large":"670px",
         "medium":"563px",
         "sm":"424px",
         "xs":"390px",
@@ -81,14 +92,19 @@ module.exports = {
         "black-primary":"#050307",
         "black-secondary":"#242424",
         "cream-primary":"#F7EDDE",
-        "purple-primary":"#b5a6ff",  
+        "purple-primary":"#b5a6ff",
+        "orange-primary":"#FF4524",
+        "purple-primary":"#b5a6ff",
+        "green-primary":"#3e8372"         
       },
       colors:{
         "black-primary":"#050307",
         "white-primary":"#FFFFFF",
         "gray-primary":"rgba(255,255,255,.3)",
         "cream-primary":"#F7EDDE", 
-        "purple-primary":"#b5a6ff"              
+        "purple-primary":"#b5a6ff",
+        "gray-secondary":"rgba(165,164,166,.33)",
+        "gray-tertiary":"rgba(255,255,255,.5)"           
       },
       borderColor:{
         "black-primary":"#272425",
@@ -101,28 +117,39 @@ module.exports = {
       },      
       gap:{
         "xl":"154px",
+        "2md":"70px",
         "md":"15px",
         "sm":"6px"
       },
-      height:{
+      height:{        
+        "3xl":"140px",
         "2xl":"134px",
         "xl":"121.94px",
-        "lg":"117.94",        
+        "lg":"117.94px",        
         "md":"84px",
         "sm":"80px",
         "xs":"50px",  
-        "base":"46px",
-        "sm-base":"40px"
+        "base":"46px",        
+        "sm-base":"40px",
+        "xs-base":"18px"
+      },
+      minHeight:{
+        "xl":"260px",
+        "lg":"176px"
       },
       width:{
+        "2xl":"140px",
         "xl":"43%",
         "lg":"33%",
         "md":"30%",
         "sm":"15%"
       },
+      maxWidth:{
+        "xl":"50px",
+      },
       borderWidth:{
         "lg":"4px",
-        "md":"3px",
+        "md":"3px",   
         "sm":"2px",
         "normal":"1px"
       },
@@ -133,9 +160,11 @@ module.exports = {
         '2xl': '24px',
         'xl':  '20px',
         "ls": "13px",
-        "lg":  '9.5px'   
+        // "lg":  '9.5px', //check wan
+        'lg': '12px',
+        "md":  '9.5px'    
       },      
     },
   },
-  plugins: [],
+  
 }

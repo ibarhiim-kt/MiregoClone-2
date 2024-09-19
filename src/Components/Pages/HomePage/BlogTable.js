@@ -65,7 +65,7 @@ export default function BlogTable() {
             <div className='flex flex-col justify-between flex-1 max-md:flex-none'>
             <p className='flex text-small flex-col justify-between max-lg:text-xxs max-lg:mb-4 max-md:mb-3'>{map.date}</p>
             <ul className='flex'>
-            <li className='rounded-lg py-base px-xs border border-black-primary text-xs-base'>{map.blogText}</li>
+            <li className='rounded-md py-base px-xs border border-black-primary text-xs-base'>{map.blogText}</li>
             </ul>
             </div>
             <div className="text-xs max-lg:text-sm-base" style={{flex:2}}>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import video from './assets/videos/video.mp4';
 import go from './assets/go.svg';
+// import ParaResuse from '../../ReusableCode/ParaResuse';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -21,7 +22,7 @@ export default function Video() {
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+    window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -49,7 +50,7 @@ export default function Video() {
         y: 50,
         delay: index * 0.2,
         scrollTrigger: {
-          trigger: ".cardsTrigger",
+        trigger: ".cardsTrigger",
         }
       });
     });
@@ -62,8 +63,7 @@ export default function Video() {
           src={go}
           alt="Go svg"
           style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
-          className="fixed h-[7.5vw] w-[7.5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
-        />
+          className="fixed h-[7.5vw] w-[7.5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"/>
       )}
       <div className='flex justify-between mb-8 uppercase tracking-tight opacity-0'>
         <span>Digital</span>
@@ -77,24 +77,27 @@ export default function Video() {
             src={video} autoPlay muted playsInline loop className='min-w-[300px] w-full h-[95vh] object-cover max-md:h-[80vh]'/>
         </button>
       </div>
-
-      <div className='flex gap-2 pt-2 font-AlmiregoDisplayLight max-lg:flex-wrap max-md:flex-col cardsTrigger overflow-hidden'>
-        {cards.map((map, index) => (
-          <div
-            key={index}
-            className={`bg-cream-primary p-8 w-1/4 rounded-3xl max-lg:rounded-xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-7 animaCard${index + 1}`}>
-            <div> 
-              <p className='mb-4 leading-tight-sm mt-[38px] max-md:mt-[21px] max-sm:mt-[15px] max-xxs:mt-2'>
-                <span className='text-5xl tracking-[-1.75px] max-xl:text-7xl max-md:text-xl max-sm:text-md max-xxs:text-xs'>{map.number}</span>
-                <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
-              </p>
-              <p className="text-[21px] leading-relaxed-lg mt-11 tracking-normal font-AlmiregoRegular max-md:text-small  max-xs:text-x-small ">
-                {map.text}
-              </p>
-            </div>
-          </div>
-        ))}
+      
+      <div className='flex gap-2 pt-2 font-AlmiregoDisplayLight max-lg:flex-wrap max-md:flex-col cardsTrigger overflow-hidden'>      
+      {cards.map((map, index) => (
+        <div 
+        key={index}
+        className={`bg-cream-primary p-8 w-1/4 rounded-3xl max-lg:rounded-xl max-lg:w-[calc(50%-4px)] max-md:w-full max-md:p-7 max-sm:p-6 animaCard${index + 1}`}>
+        <div> 
+        {/* mt-[38px] max-md:mt-[21px] max-sm:mt-[15px] max-xxs:mt-2 */}
+          <p className='leading-tight-sm '>
+            <span className='text-5xl leading-[100%] tracking-[-1.75px] max-2xl:text-4xl max-xl:text-3xl max-md:text-xl max-sm:text-md max-xxs:text-xs'>{map.number}</span>
+            <sup className='text-[48.4px] relative top-[-0.75em] max-lg:text-[39.6px] max-md:text-[30.8px] max-sm:text-[22px] max-xxs:text-[17.6px]'>{map.plus}</sup>
+          </p>
+          <p className="text-[21px] leading-relaxed-lg mt-[65px] tracking-normal font-AlmiregoRegular max-md:text-small max-md:mt-11 max-xs:text-x-small ">
+            {map.text}
+          </p>
+        </div>
       </div>
-    </div>
+          // <ParaResuse cardsIndex={index} showCards={true} cardsNumber={map.number} cardsPlus={map.plus} cardsText={map.text}/>                                                             
+        ))}
+        </div>
+      </div>
+    // </div>
   );
 }

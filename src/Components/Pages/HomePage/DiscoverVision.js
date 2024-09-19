@@ -1,14 +1,14 @@
-import React from 'react'
-import digitalTrends from '../../../assets/digitalTrends.webp'
-import arrow from '../../../assets/arrow.svg'
-import githubCopilot from '../../../assets/githubCopilot.webp'
-import basicNeeds from '../../../assets/basicNeeds.webp'
-import symbol from '../../../assets/symbol.svg'
-import yoshua from '../../../assets/yoshua.jpeg';
-import { useEffect } from 'react'
+import React,{ useEffect } from 'react'
+import digitalTrends from './assets/digitalTrends.webp'
+import arrow from './assets/arrow.svg'
+import githubCopilot from './assets/githubCopilot.webp'
+import basicNeeds from './assets/basicNeeds.webp'
+import symbol from './assets/symbol.svg'
+import yoshua from './assets/yoshua.webp'
+import ParaResuse from '../../Layout/ParaResuse'
+
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ParaResuse from '../../ReusableCode/ParaResuse'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function DiscoverVision() {  
@@ -48,7 +48,7 @@ export default function DiscoverVision() {
     gsap.set(".discoverParaAnima",{y:0, opacity:1})
     gsap.from(".discoverParaAnima",{
       duration:0.8,
-      opacity:0,
+      opacity:0,  
       y:50,
       scrollTrigger:{
       trigger:".discoverParaAnima",            
@@ -75,19 +75,10 @@ export default function DiscoverVision() {
     })
   },[])
   return (
-    <div className='pt-52 max-xl:pt-40 max-lg:pt-32 max-md:pt-24 max-424:pt-[88px] max-320:pt-[72px]'>
-      <h1 className='text-[120px] font-AlmiregoDisplayLight leading-105 max-[1440px]:text-[96px] max-lg:text-[68px] max-424:text-[40px] max-320:text-[32px]'>Building for the future</h1>
-      <div className='pt-16 px-25 gap-2 flex justify-between max-xl:pt-14 max-xl:px-8 max-lg:pt-12 max-md:px-4 max-md:pt-8  max-md:flex-col max-390:px-2 max-320:pt-6 overflow-hidden'> 
-        <div className='w-1/2 max-md:w-0'></div>
-        <div className='w-1/2 font-AlmiregoRegular max-md:w-full'>
-        <p className='tracking-[0.4px] leading-[125%] text-[21px] max-424:text-lg 
-        max-390:text-[17px] paraAnima'>Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future.</p>
-        <div className='mt-12 flex max-424:mt-8 buttonAnima'>
-      <a href="#" className='text-[16px] px-5 py-3 bg-#050307 rounded-xl text-white tracking-[0.3px] 
-      flex items-center justify-center leading-none hover:bg-#242424'>Discover our vision of the future</a>
-      </div>  
-      </div>
-      </div> 
+    <div className='dist-disc-container'>
+      <h1 className='home-h1'>Building for the future</h1>      
+        <ParaResuse secondaryText="Over the past decade and a half, mobile and cloud computing have transformed countless industries. But emerging technologies will drive even greater change in the years to come. Want to take a peek at what tomorrow holds? From a diversity of angles, our experts share insights on the digital future." buttonText="Discover our vision of the future" showParagraph={true} showButton={true} buttonLink='#' discoverClasses="overflow-hidden" discoverParaAnima="discoverParaAnima" paraContainer="para-container" discoverButtonAnima="discoverButtonAnima"/>
+      
       
       <div className='px-10 pt-32 grid grid-cols-4 gap-[32px] max-[1440px]:grid-cols-3 max-lg:grid-cols-2 
        max-md:grid-cols-1 max-md:pt-16 max-md:px-4 max-[424px]:px-2 cardsGsap'>
