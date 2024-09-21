@@ -58,9 +58,9 @@ const StickyCards = () => {
       mt:0
      },
      {
-        name:"See all projects", 
-        arrow:Arrow,
-        mt:1  
+      name:"See all projects", 
+      arrow:Arrow,
+      mt:1  
      }
   ]  
   return (   
@@ -98,7 +98,7 @@ const StickyCards = () => {
               <li className="sticky-cards-li">{map.btn3}</li>
             </ul>               
             <ul className={`${index < 3?"hidden":"inline"} flex items-center gap-1.5`}>
-                <li className="w-8 h-8 border-2 border-white rounded-[10px] max-md:w-4 max-md:h-4 max-md:rounded-[5px] max-md:border max-sm:w-3 max-sm:h-3 max-sm:rounded-[3px]"></li>
+                <li className="w-8 h-8 border-2 border-white rounded-[10px] max-md:w-4 max-md:h-4 max-md:rounded-[5px] max-md:border max-sm:w-3 max-sm:h-3 max-sm:rounded-[3px]"></li>  
                 <li className="w-8 h-8 rounded-full bg-white max-md:w-4 max-md:h-4 max-sm:w-3 max-sm:h-3"></li>
               </ul>
               </div>                              
@@ -113,8 +113,7 @@ const StickyCards = () => {
           </div>
           ))}    
           </div>            
-      </div>
-       
+      </div>       
   );
 };
 

@@ -90,7 +90,7 @@ export default function DiscoverVision() {
            {index<2 || index == 3 ?(
             <>
             <div className='absolute top-0 left-0 w-full h-full object-cover overlay'>
-             
+            
             <img src={map.image} alt="digitalTrends" className='h-full w-full max-w-[100%] object-cover'/>
             </div>
             <div className='py-8 px-6 relative text-white top-0 left-0 w-full h-full flex flex-col'>

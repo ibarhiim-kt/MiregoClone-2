@@ -15,8 +15,7 @@ export default function DistinctiveCulture() {
       opacity:0,
       y:50,
       scrollTrigger:{
-      trigger:".distinctiveParaAnima",  
-      
+      trigger:".distinctiveParaAnima",      
     } 
     })
     gsap.set(".distinctiveButtonAnima",{y:0, opacity:1})

@@ -7,6 +7,7 @@ import Development from './Development'
 import AI from './Ai'
 import Strategy from './Strategy'
 import Design from './Design'
+import './Perspectives.css'
 
 export default function App() {
   return (   

@@ -145,8 +145,12 @@ module.exports = {
         "sm":"15%"
       },
       maxWidth:{
+       
         "xl":"50px",
       },
+      minWidth:{
+        "2xl":"190px",
+      },                                                                                                                      
       borderWidth:{
         "lg":"4px",
         "md":"3px",   
