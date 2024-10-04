@@ -171,6 +171,9 @@ module.exports = {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)',
       }, 
+      scale:{
+        'sm':'0.8'
+      }
     },
   },
   

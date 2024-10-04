@@ -133,9 +133,9 @@ export default function CardsCode({filteredCards}) {
               </div>  
             
            ):map.id===16?(
-            <div className='bg-orange-primary aspect-[1/1] flex flex-col items-center justify-center text-black-primary'>
+            <div className='bg-orange-primary aspect-[1/1] flex flex-col items-center justify-center text-black-primary '>
               <div className='flex flex-col items-center'>
-                <div className='rounded-[50vh] border-black py-[25px] px-10 border min-w-2xl flex items-center justify-center text-[44px] bg-video leading-[116%]'>
+                <div className='rounded-[50vh] border-black py-[25px] px-10 border min-w-2xl flex items-center justify-center text-[44px] bg-video leading-[116%] duration-300 group-hover:scale-sm'>
                     AI
                 </div>
                 <p className='text-lm absolute leading-relaxed-lg bottom-8 '>{map.primaryPara}</p>
