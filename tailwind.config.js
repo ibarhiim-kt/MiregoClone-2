@@ -166,8 +166,11 @@ module.exports = {
         "ls": "13px",
         // "lg":  '9.5px', //check wan
         'lg': '12px',
-        "md":  '9.5px'    
-      },      
+        "md": '9.5px'    
+      },     
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(251deg, #b5a6ff 2.43%, #f7edde 98.82%)',
+      }, 
     },
   },
   

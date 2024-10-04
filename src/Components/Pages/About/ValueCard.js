@@ -10,7 +10,7 @@ import worthy from "./assets/worthy.svg"
 import albert from "./assets/albert.webp"
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import TeamWin from './assets/TeamWin.js'
+// import TeamWin from './assets/TeamWin.js'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ValueCard() {

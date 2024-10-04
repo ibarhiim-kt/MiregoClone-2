@@ -26,14 +26,21 @@ import remi from '../../Pages/About/assets/teamMem8.webp'
 import philippe from '../../Pages/About/assets/teamMem13.webp'
 import robert from './assets/robert.jpeg'
 import alex from './assets/alex.jpeg'
+import invertedCommas from './assets/invertedCommas.svg'
+import invertedCommasBlack from './assets/invertedCommasBlack.svg'
 import smarterExperiences from './assets/smarterExperiences.webp'
+import greenSymbol from './assets/greenSymbol.svg'
+import symbol from './assets/symbol.svg'
+import pauseIcon from './assets/pauseIcon.svg'
 // import { symbol } from 'framer-motion/client'
 import yoshua from '../HomePage/assets/yoshua.webp'
+import Filter from './Filter'
 // import { i } from 'framer-motion/client'
 export default function All() {
   
   const cards = [
     {
+      id:0,
       btn1:'Development',
       btn2:'Security',
       read:'Read',        
@@ -45,8 +52,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
-      btn1:'Development',
-      btn2:'AI',
+      id:1,      
       read:'Read',       
       image:valorization,
       primaryPara:'Digital trends on data valorization in agriculture',
@@ -56,6 +62,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:2,
       btn1:'Development',
       btn2:'AI',
       read:'Read',       
@@ -67,6 +74,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:3,
       btn1:'Report',
       btn2:'Sport',
       read:'Read',       
@@ -78,15 +86,18 @@ export default function All() {
       showSecondaryPara:false
     },
     {      
+      id:4,
       primaryPara:'Artificial intelligence is not just about efficiency gains, it’s about opening up new possibilities, unlocking human potential and solving some of society’s biggest challenges.',
       image:yoshua,
       name:'Yoshua Bengio',
       showbtn1:false,
       showbtn2:false,
       showbtn3:false,
-      showSecondaryPara:false
+      showSecondaryPara:false,
+      symbol:symbol
     },
     {
+      id:5,
       btn1:'Work',
       btn2:'AI',
       read:'Read',       
@@ -98,6 +109,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:6,
       btn1:'AI',
       read:'Watch',     
       image:scout,  
@@ -105,9 +117,11 @@ export default function All() {
       showbtn1:true,
       showbtn2:false,
       showbtn3:false,
+      pauseIcon:pauseIcon,
       showSecondaryPara:false
     },
     {
+      id:7,
       btn1:'Work',      
       read:'Read',       
       image:hrAnalytics,
@@ -118,6 +132,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:8,
       btn1:'AI',      
       read:'Watch',       
       image:laRuche,
@@ -126,9 +141,11 @@ export default function All() {
       showbtn1:true,
       showbtn2:false,
       showbtn3:false,
-      showSecondaryPara:true
+      showSecondaryPara:true,
+      pauseIcon:pauseIcon,
     },
     {
+      id:9,
       btn1:'AI',
       btn2:'Strategy',
       read:'Read',       
@@ -140,6 +157,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:10,
       btn1:'Development',
       image:reins,      
       read:'Read',
@@ -150,6 +168,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:11,
       btn1:'AI',
       btn2:'Retail',
       read:'Read',       
@@ -161,6 +180,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:12,
       btn1:'Design',
       btn2:'AI',
       read:'Read',       
@@ -172,10 +192,9 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:13,
       btn1:'AI',
-      btn2:'QA',
-      // read:'Read',
-      //  
+      btn2:'QA',        
       primaryImage:remi,
       secondaryImage:philippe,
       primaryPara:'Podcast · QA, AI and Automation (French only)',
@@ -184,8 +203,10 @@ export default function All() {
       showbtn3:false,
       showSecondaryPara:false,
       showTertiaryImage:false,
+      pauseIcon:pauseIcon,
     },
     {
+      id:14,
       btn1:"AI",
       btn2:"Strategy",
       read:'Read',
@@ -198,6 +219,7 @@ export default function All() {
       showSecondaryPara:true
     },
     {
+      id:15,
       btn1:'Multiplatform',
       btn2:'Product Management',
       read:'Read',       
@@ -210,22 +232,30 @@ export default function All() {
       showSecondaryPara:true
     },
     {
-      image:digitalTrends,
-      showbtn1:true,
-      showbtn2:true,
+      id:16,
+      btn1:'AI',
+      primaryPara:"Our Vision on Artificial Intelligence",
+      showbtn1:false,
+      showbtn2:false,
       showbtn3:false,
       showSecondaryPara:false
     },
     {
+      id:17,
+      btn1:invertedCommas,
+      invertedCommasBlack:invertedCommasBlack,
       image:billGates,
+      read:'Source',
       name:'Bill Gates',
       primaryPara:'In my lifetime, I’ve seen two demonstrations of technology that struck me as revolutionary: the GUI and ChatGPT.',
       showbtn1:true,
-      showbtn2:true,
+      showbtn2:false,
       showbtn3:false,
-      showSecondaryPara:false
+      showSecondaryPara:false,
+      symbol:symbol
     },
     {
+      id:18,
       btn1:'AI',
       btn2:'Travel',
       read:'Read',       
@@ -238,6 +268,7 @@ export default function All() {
       showSecondaryPara:true
     },   
     {
+      id:19,
       btn1:'Work',
       btn2:'AI',
       btn3:'Development',
@@ -251,6 +282,7 @@ export default function All() {
       showSecondaryPara:true
     },
     {      
+      id:20,
       read:'Read',       
       primaryImage:remi,
       secondaryImage:robert,
@@ -260,8 +292,10 @@ export default function All() {
       showbtn2:false,
       showbtn3:false,
       showTertiaryImage:true,
+      pauseIcon:pauseIcon,
     },
     {
+      id:21,
       btn1:'QA',
       btn2:'AI',
       read:'Read',       
@@ -272,6 +306,7 @@ export default function All() {
       showbtn3:false
     },
     {
+      id:22,
       btn1:"Work",
       image:workspaces,
       name:'Yoshua Bengio',
@@ -283,15 +318,20 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:23,
       image:david,
+      invertedCommasBlack:invertedCommasBlack,
+      btn2:invertedCommas,
       name:'David Deutsch',
       primaryPara:'We have a duty to be optimistic. Because the future is open, not predetermined and therefore cannot just be accepted: we are all responsible for what it holds. Thus it is our duty to fight for a better world.',
-      showbtn1:true,
+      showbtn1:false,
       showbtn2:true,
       showbtn3:false,
-      showSecondaryPara:false
+      showSecondaryPara:false,
+      symbol:greenSymbol
     },    
     {
+      id:24,
       btn1:'QA',     
       read:'Read',       
       image:evolution,
@@ -302,6 +342,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:25,
       btn1:'Development',
       btn2:'Security',
       read:'Read',       
@@ -313,6 +354,7 @@ export default function All() {
       showSecondaryPara:false
     },
     {
+      id:26,
       btn1:'Development',
       btn2:'IoT',
       btn3:'AI',
@@ -327,7 +369,7 @@ export default function All() {
   ]
   return (
     <div>
-    <CardsCode cards={cards}/>
+    <Filter cards={cards}/>
     </div>
   )
 }
