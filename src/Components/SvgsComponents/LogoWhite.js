@@ -70,8 +70,7 @@ const AnimatedLogo = () => {
         xlinkHref="#mask-fill"
         dur="300ms"
         begin="indefinite"
-        fill="freeze"
-        
+        fill="freeze"        
       />      
       
       <path
