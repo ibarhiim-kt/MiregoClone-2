@@ -42,6 +42,7 @@ const AnimatedLogo = () => {
                    });
         }
     }, [isScrolling]);
+    
   return (  
     <svg 
       className="_link__logo_84be5d" 
@@ -49,8 +50,7 @@ const AnimatedLogo = () => {
       viewBox="0 0 560 110" 
       width="122" 
       xmlns="http://www.w3.org/2000/svg" 
-      xmlnsXlink="http://www.w3.org/1999/xlink"  
-      
+      xmlnsXlink="http://www.w3.org/1999/xlink"      
     >
       <mask id="logo-mask">
         <rect width="100%" height="100%"></rect>
