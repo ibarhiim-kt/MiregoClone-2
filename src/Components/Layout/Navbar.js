@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Logo from '../SvgsComponents/Logo';
-import LogoWhite from '../SvgsComponents/LogoWhite'
+import Logo from '../../assets/SvgsComponents/Logo';
+import LogoWhite from '../../assets/SvgsComponents/LogoWhite'
 
 gsap.registerPlugin(ScrollTrigger);
 

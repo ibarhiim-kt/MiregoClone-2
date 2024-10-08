@@ -6,6 +6,8 @@ import BuildFuture from './BuildFuture'
 import Enterprenuership from './Enterprenuership'
 import ValueCard from './ValueCard'
 import Team from './Team'
+import Pulse from './assets/Pulse'
+import TeamWin from './assets/TeamWin'
 import { Helmet } from 'react-helmet-async';
 
 export default function App() {
@@ -21,11 +23,15 @@ export default function App() {
       <BuildFuture/>
       <div className='bg-black-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6 3xl:px-3xl'>
       <Enterprenuership/>
-      <ValueCard/>             
+      <ValueCard/> 
+      {/* <Pulse/>
+      <div>
+      <TeamWin/>
+      </div> */}
       </div>
       <div className='bg-black-primary'>
       <div className="bg-cream-primary rounded-t-4xl px-2xl max-xl:px-lg max-md:px-8 max-xs:px-6">
-        <Team/>
+      <Team/>
       </div> 
       </div>
     </div>

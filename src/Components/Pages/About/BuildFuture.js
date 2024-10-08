@@ -66,22 +66,22 @@ export default function BuildFuture() {
       showParagraph={true} paraContainer="para-container" buildFutureClasses="px-0 flex-row-reverse" buildFutureAnima="buildFutureAnima"/>
       </div>      
       
-       <div className='pt-16 pb-52 overflow-hidden  max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-sm:pb-5xl max-xxs:pt-6 max-xxs:pb-3xl min-2xl:pb-64' >
-       {isHovering && (
-        <img
-          src={dragIcon}
-          alt="drag Icon"
-          style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
-          className="fixed h-[5vw] w-[5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
-        />
-      )}
-        <div className='slider-container cursor-none' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <Slider {...settings} >
-        <img src={sliderImg1} alt="slider1" className=' mr-4'/>
-        <img src={sliderImg2} alt="slider2" className=' mr-4'/>        
-        </Slider>
+      <div className='pt-16 pb-52 overflow-hidden  max-xl:pt-14 max-xl:pb-40 max-lg:pt-12 max-lg:pb-32 max-md:pt-8 max-md:pb-24 max-sm:pb-5xl max-xxs:pt-6 max-xxs:pb-3xl min-2xl:pb-64' >
+        {isHovering && (
+          <img
+            src={dragIcon}
+            alt="drag Icon"
+            style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+            className="fixed h-[5vw] w-[5vw] transform -translate-x-1/2 -translate-y-1/2 custom-cursor pointer-events-none"
+          />
+        )}
+          <div className='slider-container cursor-none' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Slider {...settings} >
+          <img src={sliderImg1} alt="slider1" className=' mr-4'/>
+          <img src={sliderImg2} alt="slider2" className=' mr-4'/>        
+          </Slider>
+          </div>
         </div>
-      </div>
     </div>
    
   )

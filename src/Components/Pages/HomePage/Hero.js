@@ -47,24 +47,9 @@ export default function Hero() {
     <div className='font-AlmiregoDisplayRegular px-xl max-xl:px-8 max-md:px-4 3xl:px-60'>
       <div className='font-AlmiregoDisplayLight'>  
      
-        <p className='gsapAnima text-5xl mr-3 align-middle inline-block leading-tight-md max-xl:text-4xl max-lg:text-xl max-md:text-xs max-md:mr-2 max-xxs:text-base '>
+        <p className='gsapAnima text-5xl mr-3 align-middle inline-block leading-tight-md max-xl:text-4xl max-lg:text-xl max-md:text-xs max-md:mr-2 max-xxs:text-base'>
           Building the future
-        </p>
-        {/* <div className='pt-0.5 align-middle inline-block max-large:mt-[1.5px] max-xxs:mt-0'>           
-      <div className='   overflow-hidden h-2xl max-xl:h-xl max-lg:h-md max-md:h-xs max-xxs:h-sm-base max-xxs:mt-[-3px]'>
-        <TextTransition  springConfig={presets.direct}
-       >
-        <div className={`mb-1  max-lg:mb-0.5`}>
-      <div className='flex leading-[1.334]'>
-        <div className='py-0.5 text-6xl px-[33px] border-lg border-black rounded-[70px] max-xl:py-[1.5px] max-xl:text-[82px] max-lg:text-[53px] max-lg:px-[18px] max-lg:py-1 max-lg:border-md max-md:text-xs max-md:px-3 max-md:py-[3px] max-md:border-sm max-xxs:border-normal max-xxs:py-px'>
-        <h className='flex gap-3'>{TEXTS[index % TEXTS.length]}</h>
-        </div>                                                                                                                          
-      </div>
-      </div>       
-      </TextTransition>    
-      </div>
-      </div> */}
-      
+        </p>     
             
        <div className='pt-0.5 align-middle inline-block max-large:mt-[1.5px] max-xxs:mt-0'>           
       <div className='overflow-hidden h-2xl max-xl:h-xl max-lg:h-md max-md:h-xs max-xxs:h-sm-base max-xxs:mt-[-3px] transform'>

@@ -1,170 +1,158 @@
-import React, { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import '../About.css';
+import { useEffect,useRef} from "react";
+import * as React from "react"
+import {motion} from "framer-motion"
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-const TeamWin = () => {
-      gsap.set("#myGroup", {
-        transformOrigin: "center center",
-        x: 100.5,
-        y: 97.875,
-        scaleX: -1,
-        scaleY: -1
-      });
 
-  return (
-    <svg
-    viewBox="0 0 151 151"
-    width="151"
-    height="151"
-    style={{ width: '100%', height: '100%' }}
+const SvgComponent = (props) => {
+  
+  return(
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    // width={151}
+    // height={151}
+    style={{
+      width: "100%",
+      height: "100%",
+      transform: "translate3d(0,0,0)",
+      contentVisibility: "visible",
+    }}
+    {...props}
   >
     <defs>
-      <clipPath id="clip-1">
-        <rect width="151" height="151" x="0" y="0" />
+      <clipPath id="a">
+        <path d="M0 0h151v151H0z" />
       </clipPath>
-      <clipPath id="clip-2">
-        <path d="M0,0 L200,0 L200,200 L0,200z" />
+      <clipPath id="b">
+        <path d="M0 0h200v200H0z" />
       </clipPath>
     </defs>
-    <g clipPath="url(#clip-1)">
-      <g clipPath="url(#clip-2)" transform="matrix(1,0,0,1,-25,-26)" opacity="1">
-        <g transform="matrix(-1,0,0,-1,100.49199676513672,102.09400177001953)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.3,-0.001 C71.3,39.377 39.38,71.298 0,71.298 C-39.38,71.298 -71.3,39.377 -71.3,-0.001 C-71.3,-39.378 -39.38,-71.298 0,-71.298 C39.38,-71.298 71.3,-39.378 71.3,-0.001z"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-1.283 60.741,6.949 -0.015,6.949 C-60.771,6.949 -71.105,-1.289 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-4.969 61.186,-7.266 -0.016,-7.266 C-61.218,-7.266 -71.105,-5.015 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-8.763 60.374,-21.441 -0.046,-21.441 C-60.466,-21.441 -71.105,-8.877 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-12.557 59.562,-35.616 -0.076,-35.616 C-59.714,-35.616 -71.105,-12.739 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-16.352 58.75,-49.791 -0.106,-49.791 C-58.962,-49.791 -71.105,-16.6 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,-20.146 57.938,-63.966 -0.136,-63.966 C-58.21,-63.966 -71.105,-20.463 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,13.601 57.533,64.865 -0.039,64.865 C-57.611,64.865 -71.105,13.726 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,9.945 58.321,50.64 -0.033,50.64 C-58.387,50.64 -71.105,10.038 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,6.289 59.109,36.415 -0.027,36.415 C-59.163,36.415 -71.105,6.35 -71.105,-4.185"
-          />
-        </g>
-        <g transform="matrix(-1,0,0,-1,100.5,97.875)" opacity="1">
-          <path
-            strokeLinecap="butt"
-            strokeLinejoin="miter"
-            fillOpacity="0"
-            strokeMiterlimit="4"
-            stroke="rgb(181,166,255)"
-            strokeOpacity="1"
-            strokeWidth="2.5"
-            d="M71.105,-4.154 C71.105,2.634 59.897,22.19 -0.021,22.19 C-59.939,22.19 -71.105,2.662 -71.105,-4.185"
-          />
-        </g>    
+    <g clipPath="url(#a)">
+      <g  
+        clipPath="url(#b)"
+        style={{
+          display: "block",
+        }}
+        transform="translate(-25 -26)"
+      >
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.3-.001c0 39.378-31.92 71.299-71.3 71.299-39.38 0-71.3-31.921-71.3-71.299 0-39.377 31.92-71.297 71.3-71.297 39.38 0 71.3 31.92 71.3 71.297z"
+          style={{
+            display: "block",
+          }}
+          transform=" rotate(180 50.246 51.047)"
+        />
+
+        <path
         
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0 2.87-10.364 11.103-71.12 11.103s-71.09-8.238-71.09-11.134"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0-.815-9.92-3.112-71.121-3.112-61.202 0-71.089 2.251-71.089 3.081"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0-4.61-10.731-17.287-71.151-17.287-60.42 0-71.059 12.564-71.059 17.256"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0-8.403-11.543-31.462-71.181-31.462S-71.105-12.739-71.105-4.185"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0-12.198-12.355-45.637-71.211-45.637-58.856 0-70.999 33.19-70.999 45.606"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0-15.992-13.167-59.812-71.241-59.812S-71.105-20.463-71.105-4.185M71.105-4.154c0 17.755-13.572 69.019-71.144 69.019s-71.066-51.139-71.066-69.05"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0 14.1-12.784 54.794-71.138 54.794-58.354 0-71.072-40.602-71.072-54.825"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0 10.443-11.996 40.569-71.132 40.569S-71.105 6.35-71.105-4.185"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0 6.788-11.208 26.344-71.126 26.344-59.918 0-71.084-19.528-71.084-26.375"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
+        <path
+          fill="none"
+          stroke="#B5A6FF"
+          strokeWidth={2.5}
+          d="M71.105-4.154c0 3.132-10.42 12.119-71.12 12.119s-71.09-8.99-71.09-12.15"
+          style={{
+            display: "block",
+          }}
+          transform="rotate(180 50.25 48.938)"
+        />
       </g>
     </g>
   </svg>
-  );
-};
-
-export default TeamWin;
+  )
+}
+export default SvgComponent

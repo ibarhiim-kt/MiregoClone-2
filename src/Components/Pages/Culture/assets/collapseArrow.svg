@@ -1,0 +1,11 @@
+<svg class="_list-item__arrow_k8elkj" width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <mask id="mask-0">
+                        <rect class="_mask-rect_k8elkj" width="100%" height="100%" fill="black"></rect>
+                        <path class="_mask-path_k8elkj" d="M19.6133 12.4439L14.2975 17.7597C14.1335 17.9237 13.8676 17.9237 13.7036 17.7597L8.38782 12.4439" fill="none" stroke="white" stroke-width="1.5"></path>
+                      </mask>
+                    </defs>
+
+                    <circle class="_outer-circle_k8elkj" cx="14" cy="14.5" r="13.25" fill="none" stroke="black" stroke-width="1.5"></circle>
+                    <circle class="_masked-circle_k8elkj" cx="14" cy="14.5" r="13.25" fill="black" stroke="black" stroke-width="1.5" mask="url(#mask-0)"></circle>
+                  </svg>

@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import About from '../src/Components/Pages/About/App'
 import Expertise from '../src/Components/Pages/Expertise'
 import Projects from '../src/Components/Pages/Projects/App'
-import Culture from '../src/Components/Pages/Culture'
+import Culture from '../src/Components/Pages/Culture/App'
 import Perspectives from '../src/Components/Pages/Perspectives/App'
 import Footer from './Components/Layout/Footer';
 import Navbar from './Components/Layout/Navbar';

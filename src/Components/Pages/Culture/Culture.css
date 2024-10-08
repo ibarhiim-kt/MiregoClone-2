@@ -1,0 +1,19 @@
+.slick-slide{
+    margin-right: 16px;
+}
+.slick-track {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .collapseBeforDot::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+  }

@@ -8,9 +8,11 @@ import passionate from "./assets/passionate.svg"
 import seriously from "./assets/seriously.svg"
 import worthy from "./assets/worthy.svg"
 import albert from "./assets/albert.webp"
+import Embrace from './assets/Embrace'
+import WinTeam from './assets/WinTeam'
+// import TeamWin from './assets/TeamWin.js'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// import TeamWin from './assets/TeamWin.js'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ValueCard() {
@@ -123,12 +125,15 @@ export default function ValueCard() {
               {map.text}
             </div>
           </div>
+          <div className='ll'>
           <img src={map.img}            
-            className="rotating-image h-[8.1391vw] w-[8.1391vw] max-xl:h-[19.481vw] max-xl:w-[19.481vw] max-md-large:h-[40.52vw] max-md-large:w-[40.52vw] max-sm:w-[34.72vw} max-sm:h-auto max-sm:w-[34.72vw]"
+            className={`${index===3?'rotation':''} h-[8.1391vw] w-[8.1391vw] max-xl:h-[19.481vw] max-xl:w-[19.481vw] max-md-large:h-[40.52vw] max-md-large:w-[40.52vw] max-sm:w-[34.72vw} max-sm:h-auto max-sm:w-[34.72vw] `}
           />
-        </div>
-       
-        <div className={`rounded-3xl absolute top-0 left-0 w-full h-full z-10  overflow-hidden  transition-transform duration-200 ease-in-out ${index === 0 || index === 6 ?"bg-purple-primary":index === 1 || index === 7?"bg-orange-primary":index === 2 || index==4?"bg-cream-primary":index === 3 || index === 5? "bg-green-primary":""} ${showValueCards === index? 'translate-x-0':'-translate-x-full'}`}>
+          </div>
+          {/* <Embrace className='rotate-globe'/> */}
+          {/* <WinTeam/> */}
+        </div>       
+        <div className={`rounded-3xl absolute top-0 left-0 w-full h-full z-10 overflow-hidden  transition-transform duration-200 ease-in-out ${index === 0 || index === 6 ?"bg-purple-primary":index === 1 || index === 7?"bg-orange-primary":index === 2 || index==4?"bg-cream-primary":index === 3 || index === 5? "bg-green-primary":""} ${showValueCards === index? 'translate-x-0':'-translate-x-full'}`}>
           <div className="p-7 max-2xl:p-6 aspect-[2/3] flex flex-col justify-between opacity-75 max-xl:p-8">
             <div>
               <div className="text-xs-base mb-12 flex gap-1 max-sm:mb-6">

@@ -22,8 +22,8 @@ export default function Filter({cards}) {
       <button
         key={filter}
         onClick={() => setSelectedFilter(filter === "All" ? "" : filter)}
-        className={`border border-white-primary py-[5px] px-3 hover:bg-white hover:text-black-primary group-hover:mr-2 duration-300 ${
-          filter === "All" ? "rounded-[50vh] " : "rounded-md"} ${selectedFilter === filter || (filter === "All" && selectedFilter === "") ? "bg-white text-black-primary" : ""}
+        className={`border border-white-primary h-[35.2px] px-3 hover:bg-white hover:text-black-primary group-hover:mr-2 duration-300 flex items-center justify-center ${
+          filter === "All" ? "rounded-[50vh] " : "rounded-md"} ${selectedFilter === filter || (filter === "All" && selectedFilter === " ") ? "bg-white text-black-primary" : ""}
           `}>
         {filter}
       </button>

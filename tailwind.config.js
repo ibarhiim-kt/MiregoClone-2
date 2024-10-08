@@ -27,7 +27,7 @@ module.exports = {
         "sm":'22px',
         "2xs":'18px',
         "xs":"12.387px",
-        "sm-base": "6px",
+        "sm-base":"6px",
         "base":"2.55px"
       },
       margin:{
@@ -144,13 +144,12 @@ module.exports = {
         "md":"30%",
         "sm":"15%"
       },
-      maxWidth:{
-       
+      maxWidth:{       
         "xl":"50px",
       },
       minWidth:{
         "2xl":"190px",
-      },                                                                                                                      
+      },                                                                                      
       borderWidth:{
         "lg":"4px",
         "md":"3px",   
